@@ -1,6 +1,6 @@
 /*
- *	Global variables
- * 	Component specific colors should be in that component's scss file.
+ *  Global variables
+ *  Component specific colors should be in that component's scss file.
  */
 
  /*
@@ -16,23 +16,23 @@ $baseline: 18;
  */
 
 $color-map: (
-	// Primary
-	gray					: #55555a,
-	orange				: #fa6423,
-	blue					: #37aadc,
+  // Primary
+  gray          : #55555a,
+  orange        : #fa6423,
+  blue          : #37aadc,
 
-	// Secondary
-	green					:	#9bcd5a,
-	magenta				:	#b94696,
-	mustard				:	#e3af00,
-	teal					:	#0097b3,
+  // Secondary
+  green         : #9bcd5a,
+  magenta       : #b94696,
+  mustard       : #e3af00,
+  teal          : #0097b3,
 
-	// Alert
-	alert					: #f00a0a,
+  // Alert
+  alert         : #f00a0a,
 
-	// Hovers
-	orange--dark	: #e9591b,
-	blue--dark		: #2693c3,
+  // Hovers
+  orange--dark  : #e9591b,
+  blue--dark    : #2693c3,
 );
 
 /*
@@ -40,17 +40,17 @@ $color-map: (
  * Usage: background: grayscale(1);
  */
 $grayscale-map: (
-	0  : #000000,
-	1  : #414146, // Primary
-	2  : #55555a, // Primary
-	3  : #6e6e73,
-	4  : #828287,
-	5  : #aaaaaf,
-	6  : #bebec3,
-	7  : #d2d2d7,
-	8  : #e1e1e6,
-	9  : #f2f2f5, // Primary
-	10 : #ffffff
+  0  : #000000,
+  1  : #414146, // Primary
+  2  : #55555a, // Primary
+  3  : #6e6e73,
+  4  : #828287,
+  5  : #aaaaaf,
+  6  : #bebec3,
+  7  : #d2d2d7,
+  8  : #e1e1e6,
+  9  : #f2f2f5, // Primary
+  10 : #ffffff
 );
 
 /*
