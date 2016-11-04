@@ -1,0 +1,15 @@
+
+/*
+ *  Reset Styles in addition to normalize
+ */
+
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+html {
+  background-color: grayscale(10);
+}

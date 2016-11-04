@@ -1,0 +1,91 @@
+@function base($n, $round: false) {
+  $result: $n * $baseline + 0px;
+
+  @if $round == "up" {
+    $result: ceil($result)
+  } @else if $round == "down" {
+    $result: floor($result)
+  }
+
+  @return $result;
+}
+
+@function rem($n) {
+  $result: 0rem + $n / $baseline;
+  @return $result;
+}
+
+// Functions to get map values
+@function color($c: white) {
+  @if not map-has-key($color-map, $c) {
+    @warn "color(#{$c}) undefined in _variables.scss. ";
+  }
+  @return map-get($color-map, $c);
+}
+
+@function grayscale($i: 5) {
+  @if not map-has-key($grayscale-map, $i) {
+    @warn "grayscale(#{$i}) undefined in _variables.scss. ";
+  }
+  @return map-get($grayscale-map, $i);
+}
+
+@function break($size: xs) {
+  @if not map-has-key($breakpoints, $size) {
+    @warn "break(#{$size}) undefined in _variables.scss. ";
+  }
+  @return map-get($breakpoints, $size);
+}
+
+@function shadow($level) {
+  $box-shadow: map-get($shadows, 1);
+
+  @if not map-has-key($shadows, $level) {
+    @warn "shadow(#{$level}) undefined in _variables.scss. ";
+  }
+
+  @if $level > 1 {
+    @for $i from 2 through $level {
+      $box-shadow: $box-shadow , map-get($shadows, $i);
+    }
+  }
+
+  @return $box-shadow;
+}
+
+@mixin clearfix {
+  &:before, &:after {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after {
+      clear: both;
+  }
+}
+
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+// Styles Placeholder Text
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}

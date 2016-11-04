@@ -1,7 +1,26 @@
 /*
  * Vendor
  */
+
 @import "vendor/normalize";
+@import url("//cloud.typography.com/6240112/781206/css/fonts.css");
+
+/*
+ *  Base
+ */
+
+@import "foundation/config";
+@import "foundation/functions";
+@import "foundation/base";
+@import "foundation/grid";
+@import "foundation/typography";
+
+
+/*
+ *  Components
+ */
+
+
 
 body {
   background: white;

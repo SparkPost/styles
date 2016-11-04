@@ -1,0 +1,79 @@
+/*
+ *	Global variables
+ * 	Component specific colors should be in that component's scss file.
+ */
+
+ /*
+  * Adjusts baseline font size.
+  * Vertical rhythm is set through this baseline.
+  */
+
+$baseline: 18;
+
+/*
+ * SparkPost Brand Colors 🖌
+ * Usage: background: color(orange);
+ */
+
+$color-map: (
+	// Primary
+	gray					: #55555a,
+	orange				: #fa6423,
+	blue					: #37aadc,
+
+	// Secondary
+	green					:	#9bcd5a,
+	magenta				:	#b94696,
+	mustard				:	#e3af00,
+	teal					:	#0097b3,
+
+	// Alert
+	alert					: #f00a0a,
+
+	// Hovers
+	orange--dark	: #e9591b,
+	blue--dark		: #2693c3,
+);
+
+/*
+ * Grayscale Map
+ * Usage: background: grayscale(1);
+ */
+$grayscale-map: (
+	0  : #000000,
+	1  : #414146, // Primary
+	2  : #55555a, // Primary
+	3  : #6e6e73,
+	4  : #828287,
+	5  : #aaaaaf,
+	6  : #bebec3,
+	7  : #d2d2d7,
+	8  : #e1e1e6,
+	9  : #f2f2f5, // Primary
+	10 : #ffffff
+);
+
+/*
+ * Outputs breakpoint value 📱
+ * Usage: @media screen and (min-width: break(md)) { ... }
+ */
+
+$breakpoints: (
+  xl: 80em,
+  lg: 64em,
+  md: 48em,
+  sm: 30em
+);
+
+/*
+ * Outputs box shadow 🆒
+ * Usage: box-shadow: shadow(2);
+ * Concatenates all shodows below selected level.
+ * shadow(3) will output 1, 2, and 3 together.
+ */
+
+$shadows: (
+  1: 0px 1px 3px rgba(#000, 0.12),
+  2: 2px 6px 12px rgba(#000, 0.14),
+  3: 0px 10px 20px rgba(#000, 0.16)
+);
