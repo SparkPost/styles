@@ -1,0 +1,51 @@
+<nav class="navigation {% if secondaryNav %}is-open{% endif %}">
+  <ul class="navigation__primary-list">
+
+    <li class="navigation__item">
+      <a class="navigation__link">Brand</a>
+    </li>
+
+    <li class="navigation__item {% if primaryNav == 'overview' %}is-active{% endif %}">
+      <a class="navigation__link" href="/">Overview</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item {% if secondaryNav == 'intro' %}is-active{% endif %}">
+          <a class="navigation__link" href="/">Overview</a>
+        </li>
+        <li class="navigation__item {% if secondaryNav == 'codeguidelines' %}is-active{% endif %}">
+          <a class="navigation__link" href="/codeguidelines.html">Code Guidelines</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item">
+      <a class="navigation__link is-disabled">Design</a>
+    </li>
+
+    <li class="navigation__item {% if primaryNav == 'components' %}is-active{% endif %}">
+      <a class="navigation__link" href="/buttons.html">Components</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item {% if secondaryNav == 'buttons' %}is-active{% endif %}">
+          <a class="navigation__link" href="/buttons.html">Buttons</a>
+        </li>
+        <li class="navigation__item {% if secondaryNav == 'panels' %}is-active{% endif %}">
+          <a class="navigation__link" href="/panels.html">Panels</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item {% if primaryNav == 'utility' %}is-active{% endif %}">
+      <a class="navigation__link" href="/grid.html">Utility</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item {% if secondaryNav == 'grid' %}is-active{% endif %}">
+          <a class="navigation__link" href="/grid.html">Grid</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>

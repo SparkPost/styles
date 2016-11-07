@@ -1,0 +1,18 @@
+.panel {
+  background: grayscale(white);
+  border-bottom: 1px solid grayscale(8);
+  box-shadow: shadow(1);
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+
+  &__heading {
+    padding: 1rem;
+    border-bottom: 1px solid grayscale(9);
+  }
+
+  &__body {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,36 @@
+$page-accent-height: 6px;
+
+.page {
+  padding-top: $page-accent-height;
+  min-height: 100vh;
+  background: grayscale(light);
+
+  // Page Accent Bar at the top
+  // Uses after to avoid zindexing
+  &:after {
+    display: block;
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $page-accent-height;
+    background: color(orange);
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__content {
+    width: 100%;
+    padding: 1rem 1rem 1rem $nav-width + 1rem;
+
+    .page--open-nav & {
+      padding: 1rem 1rem 1rem $nav-width + $secondary-nav-width + 1rem;
+    }
+
+    .page--full & {
+
+    }
+  }
+}

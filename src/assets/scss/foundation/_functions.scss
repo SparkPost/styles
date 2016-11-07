@@ -15,6 +15,11 @@
   @return $result;
 }
 
+@function em($n) {
+  $result: 0em + $n / $baseline;
+  @return $result;
+}
+
 // Functions to get map values
 @function color($c: white) {
   @if not map-has-key($color-map, $c) {

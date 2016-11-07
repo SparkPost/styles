@@ -1,0 +1,85 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: $nav-width;
+  height: 100vh;
+
+  &__primary-list, &__secondary-list {
+    min-height: 100vh;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__primary-list {
+    background: grayscale(medium);
+    text-align: center;
+
+    .is-open > &:after {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      box-shadow: shadow(3);
+      pointer-events: none;
+    }
+  }
+
+  &__item {
+    display: block;
+  }
+
+  &__link {
+    display: block;
+    padding: 1rem 0.5rem;
+
+    font-size: rem(12);
+    color: grayscale(white);
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+
+    &:hover, &:active, &:focus {
+      color: grayscale(white);
+    }
+
+    &:hover[href], &:active[href], &:focus[href] {
+      color: grayscale(white);
+      background: grayscale(3);
+    }
+
+    &.is-disabled {
+      cursor: not-allowed;
+      color: rgba(grayscale(white), 0.25);
+    }
+
+    .navigation__item.is-active > & {
+      background: color(blue);
+    }
+
+    .navigation__secondary-list & {
+      // font-weight: 300;
+      // font-size: rem(12);
+    }
+  }
+
+  &__secondary-list {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: $nav-width;
+    width: $secondary-nav-width;
+
+    background: grayscale(1);
+    text-align: left;
+
+    .navigation__item.is-active > & {
+      display: block;
+    }
+  }
+}
