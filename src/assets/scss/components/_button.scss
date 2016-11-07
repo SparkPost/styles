@@ -1,0 +1,50 @@
+$orange-border: darken(color(orange--dark), 8);
+$blue-border: darken(color(blue--dark), 8);
+$gray-border: darken(grayscale(6), 8);
+
+.button {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 0.33rem 1rem;
+
+  background: color(orange);
+  border: 1px solid rgba($orange-border, 0);
+  outline: none;
+
+  color: grayscale(white);
+  text-transform: uppercase;
+  font-family: $gotham-regular;
+  font-weight: 500;
+
+  transition: background 0.15s, border 0.15s;
+
+  &:hover, &:active, &:focus {
+    background: color(orange--dark);
+  }
+
+  &:active, &:focus {
+    text-decoration: underline;
+    border: 1px solid rgba($orange-border, 1);
+  }
+
+  &--secondary {
+    background: color(blue);
+    border: 1px solid rgba($blue-border, 0);
+
+    &:hover, &:active, &:focus {
+      background: color(blue--dark);
+      border: 1px solid rgba($blue-border, 1);
+    }
+  }
+
+  &--tertiary {
+    color: grayscale(1);
+    background: grayscale(7);
+    border: 1px solid rgba($gray-border, 0);
+
+    &:hover, &:active, &:focus {
+      background: grayscale(6);
+      border: 1px solid rgba($gray-border, 1);
+    }
+  }
+}

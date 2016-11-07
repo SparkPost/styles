@@ -19,3 +19,35 @@
     font-weight: 500;
   }
 }
+
+.demo__display, .demo__desc {
+  margin-left: 0;
+}
+
+.demo__display {
+  & > * {
+    padding: 2rem 0;
+    text-align: center;
+    border: 1px solid #e6e6ec;
+    border-left: none;
+
+    &:first-child {
+      border-left: 1px solid #e6e6ec;
+      border-top-left-radius: 6px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 6px;
+    }
+  }
+}
+
+.demo__desc {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background: lighten(#e6e6ec, 7);
+
+  border: 1px solid #e6e6ec;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
