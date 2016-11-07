@@ -41,16 +41,21 @@ $color-map: (
  */
 $grayscale-map: (
   0  : #000000,
-  1  : #414146, // Primary
-  2  : #55555a, // Primary
+  1  : #414146,
+  2  : #55555a,
   3  : #6e6e73,
   4  : #828287,
   5  : #aaaaaf,
   6  : #bebec3,
   7  : #d2d2d7,
   8  : #e1e1e6,
-  9  : #f2f2f5, // Primary
-  10 : #ffffff
+  9  : #f2f2f5,
+  10 : #ffffff,
+
+  // Primary Grays
+  dark    : #414146,
+  medium  : #55555a,
+  light   : #f2f2f5
 );
 
 /*
