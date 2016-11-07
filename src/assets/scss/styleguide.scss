@@ -1,1 +1,21 @@
 // Styleguide specific styles
+//
+.flex-demo {
+  & > * {
+    margin-bottom: 1rem !important;
+    background: #e6e6ec;
+    background-clip: content-box;
+    text-align: center;
+
+    font-size: 12px;
+    font-weight: 500;
+    color: darken(#e6e6ec, 24);
+  }
+
+  &__header {
+    text-align: center;
+    color: darken(#e6e6ec, 24);
+    margin: 0.5rem;
+    font-weight: 500;
+  }
+}
