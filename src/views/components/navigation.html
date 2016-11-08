@@ -2,7 +2,7 @@
   <ul class="navigation__primary-list">
 
     <li class="navigation__item">
-      <a class="navigation__link">Brand</a>
+      <a class="navigation__link">logo here</a>
     </li>
 
     <li class="navigation__item {% if primaryNav == 'overview' %}is-active{% endif %}">
@@ -36,6 +36,24 @@
         <li class="navigation__item {% if secondaryNav == 'formelements' %}is-active{% endif %}">
           <a class="navigation__link" href="/formelements.html">Form elements</a>
         </li>
+        <li class="navigation__item {% if secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link" href="/">Tables</a>
+        </li>
+        <li class="navigation__item {% if secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link" href="/">Tooltips</a>
+        </li>
+        <li class="navigation__item {% if secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link" href="/">Icons</a>
+        </li>
+        <li class="navigation__item {% if secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link" href="/">Pagination</a>
+        </li>
+        <li class="navigation__item {% if secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link" href="/">Progress Bars</a>
+        </li>
+        <li class="navigation__item {% if secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link" href="/">Navigation</a>
+        </li>
       </ul>
 
     </li>
@@ -46,6 +64,9 @@
       <ul class="navigation__secondary-list">
         <li class="navigation__item {% if secondaryNav == 'grid' %}is-active{% endif %}">
           <a class="navigation__link" href="/grid.html">Grid</a>
+        </li>
+        <li class="navigation__item {% if secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link" href="/">Helpers</a>
         </li>
       </ul>
     </li>

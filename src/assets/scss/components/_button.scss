@@ -21,11 +21,11 @@ $gray-border: darken(grayscale(6), 8);
 
   &:hover, &:active, &:focus {
     background: color(orange--dark);
+    border: 1px solid rgba($orange-border, 1);
   }
 
   &:active, &:focus {
     text-decoration: underline;
-    border: 1px solid rgba($orange-border, 1);
   }
 
   // Button Colors
@@ -75,5 +75,28 @@ $gray-border: darken(grayscale(6), 8);
   &--disabled, &[disabled] {
     pointer-events: none;
     opacity: 0.55;
+  }
+}
+
+// Button Group
+.button-group {
+  & > .button {
+    position: relative;
+    margin-right: -3px;
+
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: -1px;
+      bottom: -1px;
+      width: 2px;
+      background: rgba(#000, 0.05);
+    }
+
+    &:first-child:after {
+      display: none;
+    }
   }
 }
