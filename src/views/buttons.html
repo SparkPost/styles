@@ -13,49 +13,95 @@
     </div>
     <div class="panel__body">
 
-      <h5>Button Sizes</h5>
-      <p>Define button size with</p>
+      <h5>Button colors</h5>
+      <p>Define button colors with <code class="inline">.button--blue</code> or <code class="inline">.button--muted</code>. Orange is used with no modifier class.</p>
 
-      <div class="row demo__display">
-        <div class="col-xs-3 ">
-          <button class="button">Button</button>
+      <div class="demo__table">
+        <div class="row demo__display">
+          <div class="col-xs-4">
+            <button class="button">Button</button>
+          </div>
+          <div class="col-xs-4">
+            <button class="button button--blue">Button</button>
+          </div>
+          <div class="col-xs-4">
+            <button class="button button--muted">Button</button>
+          </div>
         </div>
-        <div class="col-xs-3">
-          <button class="button button--secondary">Button</button>
-        </div>
-        <div class="col-xs-3">
-          <button class="button button--secondary">Button</button>
-        </div>
-        <div class="col-xs-3">
-          <button class="button button--tertiary">Button</button>
+
+        <div class="row demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;button class="button"&gt;...&lt;/button&gt;<br>
+              &lt;button class="button button--blue"&gt;...&lt;/button&gt;<br>
+              &lt;button class="button button--muted"&gt;...&lt;/button&gt;
+            </code>
+          </pre>
         </div>
       </div>
 
-      <div class="row demo__desc">
-        asdf
+      <h5>Button sizes</h5>
+      <p>Define button font and padding sizing with <code class="inline">.button--l</code>, <code class="inline">.button--m</code>, or <code class="inline">.button--s</code>. Medium is used with no modifier class.</p>
+
+      <div class="demo__table">
+
+        <div class="row demo__display">
+          <div class="col-xs-3 padding--lr-1">
+            <button class="button button--full">Button</button>
+          </div>
+          <div class="col-xs-3">
+            <button class="button button--l">Button</button>
+          </div>
+          <div class="col-xs-3">
+            <button class="button button--m">Button</button>
+          </div>
+          <div class="col-xs-3">
+            <button class="button button--s">Button</button>
+          </div>
+        </div>
+
+        <div class="row demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;button class="button button--full"&gt;...&lt;/button&gt;<br>
+              &lt;button class="button button--l"&gt;...&lt;/button&gt;<br>
+              &lt;button class="button button--m"&gt;...&lt;/button&gt;<br>
+              &lt;button class="button button--s"&gt;...&lt;/button&gt;<br>
+            </code>
+          </pre>
+        </div>
+
       </div>
 
-      <h5>Button Colors</h5>
-      <p>Define button size with</p>
 
-      <div class="row demo__display">
-        <div class="col-xs-3">
-          <button class="button">Button</button>
+      <h5>Other options</h5>
+      <p><code class="inline">.button--full</code> expands the button to 100% of its parent's width. <code class="inline">.button--disabled</code> or the <code class="inline">disabled</code> attribute disables pointer events.</p>
+      <div class="demo__table">
+
+        <div class="row demo__display">
+          <div class="col-xs-6 padding--lr-1">
+            <button class="button button--blue button--full">Button</button>
+          </div>
+          <div class="col-xs-6">
+            <button class="button button--blue button--disabled">Button</button>
+          </div>
         </div>
-        <div class="col-xs-3">
-          <button class="button button--secondary">Button</button>
+
+        <div class="row demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;button class="button button--blue button--full"&gt;...&lt;/button&gt;<br><br>
+              &lt;button class="button button--blue button--disabled"&gt;...&lt;/button&gt;<br>
+              // or<br>
+              &lt;button class="button button--blue" disabled&gt;...&lt;/button&gt;
+            </code>
+          </pre>
         </div>
-        <div class="col-xs-3">
-          <button class="button button--secondary">Button</button>
-        </div>
-        <div class="col-xs-3">
-          <button class="button button--tertiary">Button</button>
-        </div>
+
       </div>
 
-      <div class="row demo__desc">
-        asdf
-      </div>
+      <h5>Button with icon</h5>
+      <h5>Button group</h5>
 
     </div>
   </div>

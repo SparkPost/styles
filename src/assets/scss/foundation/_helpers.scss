@@ -1,3 +1,167 @@
+.text--no-dec {
+  text-decoration: none;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.text--lowercase {
+  text-transform: lowercase;
+}
+
+.text--capitalize {
+  text-transform: capitalize;
+}
+
+.text--light {
+  font-weight: 300;
+}
+
+.text--regular {
+  font-weight: 400;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
 .text--center {
   text-align: center;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.float--right {
+  float: right;
+}
+
+.float--left {
+  float: left;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+/*
+Box Helpers
+ This is to ensure vertical rhythm and spacing consistency.
+ All block elements and buttons have a margin bottom of base(1), 1rem.
+ Do NOT use .padding--l on .row or .col elements unless you do not have a gutter width.
+*/
+
+@for $i from 0 through 5 {
+  .margin--t-#{$i} {
+    margin-top: $i + 0rem !important;
+  }
+
+  .margin--b-#{$i} {
+    margin-bottom: $i + 0rem !important;
+  }
+
+  .margin--l-#{$i} {
+    margin-left: $i + 0rem !important;
+  }
+
+  .margin--r-#{$i} {
+    margin-right: $i + 0rem !important;
+  }
+
+  .margin--tb-#{$i} {
+    margin-top: $i + 0rem !important;
+    margin-bottom: $i + 0rem !important;
+  }
+
+  .margin--lr-#{$i}{
+    margin-left: $i + 0rem !important;
+    margin-right: $i + 0rem !important;
+  }
+
+  .padding--t-#{$i} {
+    padding-top: $i + 0rem !important;
+  }
+
+  .padding--b-#{$i} {
+    padding-bottom: $i + 0rem !important;
+  }
+
+  .padding--l-#{$i} {
+    padding-left: $i + 0rem !important;
+  }
+
+  .padding--r-#{$i} {
+    padding-right: $i + 0rem !important;
+  }
+
+  .padding--tb-#{$i} {
+    padding-top: $i + 0rem !important;
+    padding-bottom: $i + 0rem !important;
+  }
+
+  .padding--lr-#{$i}{
+    padding-left: $i + 0rem !important;
+    padding-right: $i + 0rem !important;
+  }
+}
+
+/*
+  Responsive Helpers
+*/
+
+.hide--l {
+  @media screen and (max-width: break(lg)) {
+    display: none;
+  }
+}
+
+.hide--m {
+  @media screen and (max-width: break(md)) {
+    display: none;
+  }
+}
+
+.hide--s {
+  @media screen and (max-width: break(sm)) {
+    display: none;
+  }
+}
+
+
+/* Display Helpers */
+.h-invisible {
+  visibility: hidden;
+}
+
+.h-hide {
+  display: none !important;
+}
+
+.h-inline {
+  display: inline;
+}
+
+.h-block {
+  display: block !important;
+}
+
+.h-inline-block {
+  display: inline-block;
+}
+
+/* VA */
+.va-t {
+  display: table;
+  width: 100%;
+  .va-tc {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
