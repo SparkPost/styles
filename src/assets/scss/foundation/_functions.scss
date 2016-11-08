@@ -78,19 +78,19 @@
 
 // Styles Placeholder Text
 @mixin placeholder {
-  @include optional-at-root('::-webkit-input-placeholder') {
+  &::-webkit-input-placeholder {
     @content;
   }
 
-  @include optional-at-root(':-moz-placeholder') {
+  &:-moz-placeholder {
     @content;
   }
 
-  @include optional-at-root('::-moz-placeholder') {
+  &::-moz-placeholder {
     @content;
   }
 
-  @include optional-at-root(':-ms-input-placeholder') {
+  &:-ms-input-placeholder {
     @content;
   }
 }

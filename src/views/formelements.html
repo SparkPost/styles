@@ -12,16 +12,89 @@
       <h4>Form elements</h4>
     </div>
     <div class="panel__body">
+      <h5>Fieldsets</h5>
+
+      <fieldset class="fieldset">
+        <label class="input__label" for="foo">Label</label>
+        <input class="input--text" id="foo" type="text" placeholder="Text input" />
+      </fieldset>
+
       <h5>Input sizes</h5>
+
+      <div class="demo__table">
+        <div class="row demo__display">
+          <div class="col-xs-4 padding--lr-1">
+            <fieldset class="fieldset">
+              <input class="input--text input--s" type="text" placeholder="Text input" />
+            </fieldset>
+          </div>
+          <div class="col-xs-4 padding--lr-1">
+            <fieldset class="fieldset">
+              <input class="input--text input--m" type="text" placeholder="Text input" />
+            </fieldset>
+          </div>
+          <div class="col-xs-4 padding--lr-1">
+            <fieldset class="fieldset">
+              <input class="input--text input--l" type="text" placeholder="Text input" />
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="row demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;input class="input--text input--s" type="text" ... /><br>
+              &lt;input class="input--text input--m" type="text" ... /><br>
+              &lt;input class="input--text input--l" type="text" ... />
+            </code>
+          </pre>
+        </div>
+      </div>
+
 
       <h5>Input with icon</h5>
       <h5>Input with context</h5>
 
       <h5>Disabled input</h5>
 
+      <div class="demo__table">
+        <div class="row demo__display">
+          <div class="col-xs padding--lr-1">
+            <fieldset class="fieldset">
+              <input class="input--text is-disabled" type="text" placeholder="Disabled input" disabled/>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="row demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;input class="input--text is-disabled" ... disabled/>
+            </code>
+          </pre>
+        </div>
+      </div>
+
       <h5>Textarea</h5>
+      <fieldset>
+        <textarea class="textarea" id="bar" name="name" rows="8" cols="40"></textarea>
+      </fieldset>
+
       <h5>Select</h5>
+      <select class="" name="">
+        <option value="">a</option>
+        <option value="">a</option>
+        <option value="">a</option>
+      </select>
+
       <h5>Checkbox &amp; Radio</h5>
+      <input type="checkbox" name="name" value="">
+
+      <input type="radio" name="name" value="">
+
+      <input class="button" type="submit" name="name" value="Submit">
+      <button class="button"  type="button" name="button">Submit</button>
+
     </div>
   </div>
 

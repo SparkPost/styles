@@ -1,0 +1,87 @@
+%input-base {
+  display: block;
+
+  outline: none;
+  border: 1px solid grayscale(7);
+
+  font-weight: 500;
+  font-size: rem(15);
+
+  transition: border 0.15s;
+
+  @include placeholder {
+    color: grayscale(4);
+    font-weight: 400;
+  }
+
+  &:hover {
+    border: 1px solid grayscale(5);
+  }
+
+  &:focus {
+    border: 1px solid color(blue);
+  }
+
+  &.is-disabled, &[disabled] {
+    background: grayscale(9);
+    border: 1px solid grayscale(7);
+    pointer-events: none;
+    @include placeholder {
+      color: grayscale(6);
+    }
+  }
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  text-align: left;
+}
+
+.input__label {
+  display: block;
+  margin-bottom: 0.5rem;
+
+  font-weight: 700;
+  font-size: rem(15);
+}
+
+.input {
+  &--text {
+    @extend %input-base;
+    width: 100%;
+    padding: 0.667rem;
+  }
+
+  &--s {
+    padding: 0.334rem;
+    font-size: rem(13);
+  }
+
+  &--m {
+    padding: 0.667rem;
+  }
+
+  &--l {
+    padding: 1rem;
+  }
+}
+
+.textarea {
+  @extend %input-base;
+  width: 100%;
+  padding: 0.667rem;
+
+  &--s {
+    padding: 0.334rem;
+    font-size: rem(13);
+  }
+
+  &--m {
+    padding: 0.667rem;
+  }
+
+  &--l {
+    padding: 1rem;
+  }
+}
