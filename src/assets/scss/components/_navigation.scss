@@ -9,12 +9,12 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+    overflow: scroll;
   }
 
   &__primary-list {
     background: grayscale(medium);
     text-align: center;
-    overflow: scroll;
 
     .is-open > &:after {
       display: block;
