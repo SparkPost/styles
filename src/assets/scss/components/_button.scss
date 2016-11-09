@@ -18,15 +18,20 @@ $gray-border: darken(grayscale(6), 8);
   letter-spacing: 0.04em;
   line-height: 1.5em;
 
-  transition: background 0.15s, border 0.15s;
+  transition: background 0.15s, border 0.15s, box-shadow 0.1s;
 
-  &:hover, &:active, &:focus {
+  &:hover, &:active, &:focus, &.is-pressed {
     background: color(orange--dark);
     border: 1px solid rgba($orange-border, 1);
   }
 
-  &:active, &:focus {
-    text-decoration: underline;
+  &:active, &.is-pressed {
+    box-shadow: inset 2px 3px 6px rgba(grayscale(1), 0.2);
+  }
+
+  &.is-disabled, &[disabled] {
+    pointer-events: none;
+    opacity: 0.55;
   }
 
   // Button Colors
@@ -34,7 +39,7 @@ $gray-border: darken(grayscale(6), 8);
     background: color(blue);
     border: 1px solid rgba($blue-border, 0);
 
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus, &.is-pressed {
       background: color(blue--dark);
       border: 1px solid rgba($blue-border, 1);
     }
@@ -45,9 +50,13 @@ $gray-border: darken(grayscale(6), 8);
     background: grayscale(7);
     border: 1px solid rgba($gray-border, 0);
 
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus, &.is-pressed {
       background: grayscale(6);
       border: 1px solid rgba($gray-border, 1);
+    }
+
+    &.is-pressed {
+
     }
   }
 
@@ -71,11 +80,6 @@ $gray-border: darken(grayscale(6), 8);
   &--full {
     display: block;
     width: 100%;
-  }
-
-  &.is-disabled, &[disabled] {
-    pointer-events: none;
-    opacity: 0.55;
   }
 }
 
