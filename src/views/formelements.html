@@ -20,22 +20,28 @@
       </fieldset>
 
       <h5>Input sizes</h5>
+      <p>Use the modifiers <code class="inline">--s</code>, <code class="inline">--m</code> and <code class="inline">--l</code> to adjust font-size and padding within text inputs. Use <code class="inline">--full</code> to expand its width to the width of its parent.</p>
 
       <div class="demo__table">
         <div class="row demo__display">
-          <div class="col-xs-4 padding--lr-1">
-            <fieldset class="fieldset">
+          <div class="col-xs-12 col-lg-6 padding--lr-1">
+            <fieldset class="fieldset text--center">
               <input class="input--text input--s" type="text" placeholder="Text input" />
             </fieldset>
           </div>
-          <div class="col-xs-4 padding--lr-1">
-            <fieldset class="fieldset">
+          <div class="col-xs-12 col-lg-6 padding--lr-1">
+            <fieldset class="fieldset text--center">
               <input class="input--text input--m" type="text" placeholder="Text input" />
             </fieldset>
           </div>
-          <div class="col-xs-4 padding--lr-1">
-            <fieldset class="fieldset">
+          <div class="col-xs-12 col-lg-6 padding--lr-1">
+            <fieldset class="fieldset text--center">
               <input class="input--text input--l" type="text" placeholder="Text input" />
+            </fieldset>
+          </div>
+          <div class="col-xs-12 col-lg-6 padding--lr-1">
+            <fieldset class="fieldset text--center">
+              <input class="input--text input--l input--full" type="text" placeholder="Text input" />
             </fieldset>
           </div>
         </div>
@@ -45,22 +51,19 @@
             <code class="html demo">
               &lt;input class="input--text input--s" type="text" ... /><br>
               &lt;input class="input--text input--m" type="text" ... /><br>
-              &lt;input class="input--text input--l" type="text" ... />
+              &lt;input class="input--text input--l" type="text" ... /><br>
+              &lt;input class="input--text input--l input--full" type="text" ... />
             </code>
           </pre>
         </div>
       </div>
 
-
-      <h5>Input with icon</h5>
-      <h5>Input with context</h5>
-
-      <h5>Disabled input</h5>
-
+      <h5>Disabled</h5>
+      <p>Use the class <code class="inline">.is-disabled</code> and the <code class="inline">disabled</code> attribute to disable an input</p>
       <div class="demo__table">
         <div class="row demo__display">
           <div class="col-xs padding--lr-1">
-            <fieldset class="fieldset">
+            <fieldset class="fieldset text--center">
               <input class="input--text is-disabled" type="text" placeholder="Disabled input" disabled/>
             </fieldset>
           </div>
@@ -75,10 +78,28 @@
         </div>
       </div>
 
+      <h5>Input with icon</h5>
+      <h5>Input with context</h5>
+
       <h5>Textarea</h5>
-      <fieldset>
-        <textarea class="textarea" id="bar" name="name" rows="8" cols="40"></textarea>
-      </fieldset>
+      <p>Use the modifiers <code class="inline">--s</code>, <code class="inline">--m</code> and <code class="inline">--l</code> to adjust font-size and padding within text inputs. Use <code class="inline">--full</code> to expand its width to the width of its parent.</p>
+      <div class="demo__table">
+        <div class="row demo__display">
+          <div class="col-xs padding--lr-1">
+            <fieldset class="text--center">
+              <textarea class="textarea textarea--s textarea--full" placeholder="Textarea"></textarea>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="row demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;textarea class="textarea textarea--s textarea--full" ... >&lt;/textarea>
+            </code>
+          </pre>
+        </div>
+      </div>
 
       <h5>Select</h5>
       <select class="" name="">

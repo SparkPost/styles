@@ -1,20 +1,19 @@
 // Styleguide specific styles
-//
 .flex-demo {
   & > * {
     margin-bottom: 1rem !important;
-    background: #e6e6ec;
+    background: grayscale(9);
     background-clip: content-box;
     text-align: center;
 
     font-size: 12px;
     font-weight: 500;
-    color: darken(#e6e6ec, 24);
+    color: grayscale(6);
   }
 
   &__header {
     text-align: center;
-    color: darken(#e6e6ec, 24);
+    color: grayscale(6);
     margin: 0.5rem;
     font-weight: 500;
   }
@@ -26,7 +25,8 @@
 
 
 .demo__table {
-  border: 1px solid #e6e6ec;
+  border-right: 1px solid grayscale(8);
+  border-top: 1px solid grayscale(8);
   border-radius: 6px;
   margin-bottom: 3rem;
 }
@@ -36,18 +36,24 @@
     padding: 2rem 0;
     text-align: center;
 
-    border-left: 1px solid #e6e6ec;
+    border-left: 1px solid grayscale(8);
+    border-bottom: 1px solid grayscale(8);
+
+    @media screen and (min-width: break(md)) {
+
+    }
 
     &:first-child {
-      border: none;
+      // border: none;
     }
   }
 }
 
 .demo__desc {
   padding: 1rem;
-  background: lighten(#e6e6ec, 7);
-  border-top: 1px solid #e6e6ec;
+  border-bottom: 1px solid grayscale(8);
+  border-left: 1px solid grayscale(8);
+  background: grayscale(9);
   border-radius: 0 0 6px 6px;
 }
 
@@ -56,10 +62,14 @@ code.inline {
 }
 
 pre.demo, code.demo {
-  background: transparent !important;
+  background: transparent;
   margin: 0;
 }
 
+code.demo--bg {
+  padding: 1rem;
+  border: 1px solid grayscale(8);
+}
 // Syntax Highlighting
 pre code.hljs {
   display: block;
