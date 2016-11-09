@@ -16,7 +16,7 @@ $gray-border: darken(grayscale(6), 8);
   font-family: $gotham-regular;
   font-weight: 500;
   letter-spacing: 0.04em;
-  line-height: 2em;
+  line-height: 1.5em;
 
   transition: background 0.15s, border 0.15s;
 
@@ -73,7 +73,7 @@ $gray-border: darken(grayscale(6), 8);
     width: 100%;
   }
 
-  &--disabled, &[disabled] {
+  &.is-disabled, &[disabled] {
     pointer-events: none;
     opacity: 0.55;
   }

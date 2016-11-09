@@ -1,4 +1,5 @@
 %input-base {
+  box-sizing: border-box;
   display: inline-block;
 
   outline: none;
@@ -6,6 +7,7 @@
 
   font-weight: 500;
   font-size: rem(15);
+  line-height: 1.5em;
 
   transition: border 0.15s;
 
@@ -30,24 +32,55 @@
       color: grayscale(6);
     }
   }
+
+  &.has-error {
+    border: 1px solid color(alert);
+    & + .input__error {
+      opacity: 1;
+    }
+  }
+
+  .fieldset--full & {
+    width: 100%;
+  }
 }
 
-fieldset {
+.fieldset {
+  display: inline-block;
+  position: relative;
   border: none;
   padding: 0;
   text-align: left;
+
+  &--full {
+    width: 100%;
+  }
 }
 
 .input__label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
 
   font-weight: 700;
   font-size: rem(15);
 }
 
+.input__error {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: rem(7);
+
+  color: color(alert);
+  font-size: rem(11);
+  font-weight: 500;
+  line-height: rem(12);
+
+  opacity: 0;
+}
+
 .input {
-  &--text {
+  &__text {
     @extend %input-base;
     padding: 0.667rem;
   }
@@ -63,10 +96,6 @@ fieldset {
 
   &--l {
     padding: 1rem;
-  }
-
-  &--full {
-    width: 100%;
   }
 }
 
@@ -87,8 +116,53 @@ fieldset {
   &--l {
     padding: 1rem;
   }
+}
 
-  &--full {
-    width: 100%;
+.select {
+  box-sizing: border-box;
+  @extend %input-base;
+  appearance: none;
+  max-width: 100%;
+  padding: 0.667rem 3rem 0.667rem 0.667rem;
+
+  border-radius: 0;
+  background: transparent;
+
+  &--s {
+    padding: 0.334rem 3rem 0.334rem 0.334rem;
+    font-size: rem(13);
+  }
+
+  &--m {
+    padding: 0.667rem 3rem 0.667rem 0.667rem;
+  }
+
+  &--l {
+    padding: 1rem 3rem 1rem 1rem;
+  }
+
+  &__arrow {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 1rem;
+    bottom: 27%;
+
+    height: 2px;
+    width: 2px;
+    border-top: 6px solid grayscale(6);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+
+    pointer-events: none;
+    transition: border 0.15s;
+  }
+
+  &:hover + .select__arrow {
+    border-top: 6px solid grayscale(4);
+  }
+
+  &:focus + .select__arrow {
+    border-top: 6px solid color(blue);
   }
 }

@@ -12,36 +12,76 @@
       <h4>Form elements</h4>
     </div>
     <div class="panel__body">
-      <h5>Fieldsets</h5>
+      <h5>Fieldset Components</h5>
 
-      <fieldset class="fieldset">
-        <label class="input__label" for="foo">Label</label>
-        <input class="input--text" id="foo" type="text" placeholder="Text input" />
-      </fieldset>
+      <p>Fieldsets have 3 children: an input, a label, and a span for errors. By default, Fieldsets are inline blocks and input width is set by the browser, use <code class="inline">.fieldset--full</code> to expand the fieldset and its input to the width of its parent.</p>
 
-      <h5>Input sizes</h5>
-      <p>Use the modifiers <code class="inline">--s</code>, <code class="inline">--m</code> and <code class="inline">--l</code> to adjust font-size and padding within text inputs. Use <code class="inline">--full</code> to expand its width to the width of its parent.</p>
+      <p>Example of all the components put together:</p>
 
       <div class="demo__table">
         <div class="row demo__display">
-          <div class="col-xs-12 col-lg-6 padding--lr-1">
+          <div class="col-xs padding--lr-1">
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <fieldset class="fieldset fieldset--full">
+                  <label class="input__label" for="foo">Label</label>
+                  <input class="input__text" id="foo" type="text" placeholder="Text input" />
+                  <span class="input__error">This is a hidden error</span>
+                </fieldset>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <fieldset class="fieldset fieldset--full">
+                  <label class="input__label" for="bar">Label</label>
+                  <input class="input__text has-error" id="bar" type="text" placeholder="Text input" />
+                  <span class="input__error">This is a visible error</span>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;div class="row"><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-6"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset class="fieldset fieldset--full"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="input__label" for="foo">Label&lt;/label><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="input__text" id="foo" type="text" ... /><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="input__error">This is a hidden error&lt;/span><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/fieldset><br>
+                &nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-6"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset class="fieldset fieldset--full"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="input__label" for="bar">Label&lt;/label><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="input__text has-error" id="bar" type="text" ... /><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="input__error">This is a visible error&lt;/span><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/fieldset><br>
+                &nbsp;&nbsp;&lt;/div><br>
+              &lt;/div>
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <h5>Input sizes</h5>
+      <p>Use the modifiers <code class="inline">--s</code>, <code class="inline">--m</code> and <code class="inline">--l</code> to adjust font-size and padding within text inputs.</p>
+
+      <div class="demo__table">
+        <div class="row demo__display">
+          <div class="col-xs-12 col-lg-4 padding--lr-1 text--center">
             <fieldset class="fieldset text--center">
-              <input class="input--text input--s" type="text" placeholder="Text input" />
+              <input class="input__text input--s" type="text" placeholder="Text input" />
             </fieldset>
           </div>
-          <div class="col-xs-12 col-lg-6 padding--lr-1">
+          <div class="col-xs-12 col-lg-4 padding--lr-1 text--center">
             <fieldset class="fieldset text--center">
-              <input class="input--text input--m" type="text" placeholder="Text input" />
+              <input class="input__text input--m" type="text" placeholder="Text input" />
             </fieldset>
           </div>
-          <div class="col-xs-12 col-lg-6 padding--lr-1">
+          <div class="col-xs-12 col-lg-4 padding--lr-1 text--center">
             <fieldset class="fieldset text--center">
-              <input class="input--text input--l" type="text" placeholder="Text input" />
-            </fieldset>
-          </div>
-          <div class="col-xs-12 col-lg-6 padding--lr-1">
-            <fieldset class="fieldset text--center">
-              <input class="input--text input--l input--full" type="text" placeholder="Text input" />
+              <input class="input__text input--l" type="text" placeholder="Text input" />
             </fieldset>
           </div>
         </div>
@@ -49,10 +89,9 @@
         <div class="row demo__desc">
           <pre class="demo">
             <code class="html demo">
-              &lt;input class="input--text input--s" type="text" ... /><br>
-              &lt;input class="input--text input--m" type="text" ... /><br>
-              &lt;input class="input--text input--l" type="text" ... /><br>
-              &lt;input class="input--text input--l input--full" type="text" ... />
+              &lt;input class="input__text input--s" type="text" ... /><br>
+              &lt;input class="input__text input--m" type="text" ... /><br>
+              &lt;input class="input__text input--l" type="text" ... />
             </code>
           </pre>
         </div>
@@ -64,7 +103,7 @@
         <div class="row demo__display">
           <div class="col-xs padding--lr-1">
             <fieldset class="fieldset text--center">
-              <input class="input--text is-disabled" type="text" placeholder="Disabled input" disabled/>
+              <input class="input__text is-disabled" type="text" placeholder="Disabled input" disabled/>
             </fieldset>
           </div>
         </div>
@@ -72,7 +111,29 @@
         <div class="row demo__desc">
           <pre class="demo">
             <code class="html demo">
-              &lt;input class="input--text is-disabled" ... disabled/>
+              &lt;input class="input__text is-disabled" ... disabled/>
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <h5>Input with error</h5>
+      <p>Use the class <code class="inline">.has-error</code> to display its error state. Note: a label is required to position the error message correctly. (You should always be using labels anyway)</p>
+      <div class="demo__table">
+        <div class="row demo__display">
+          <div class="col-xs padding--lr-1 text--center">
+            <fieldset class="fieldset">
+              <label class="input__label" for="baz">Label</label>
+              <input class="input__text has-error" id="baz" type="text" placeholder="Has error" />
+              <span class="input__error">This is an error message</span>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="row demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;input class="input__text has-error" ... />
             </code>
           </pre>
         </div>
@@ -82,12 +143,14 @@
       <h5>Input with context</h5>
 
       <h5>Textarea</h5>
-      <p>Use the modifiers <code class="inline">--s</code>, <code class="inline">--m</code> and <code class="inline">--l</code> to adjust font-size and padding within text inputs. Use <code class="inline">--full</code> to expand its width to the width of its parent.</p>
+      <p>Use the modifiers <code class="inline">--s</code>, <code class="inline">--m</code> and <code class="inline">--l</code> to adjust font-size and padding within the textarea.</p>
       <div class="demo__table">
         <div class="row demo__display">
           <div class="col-xs padding--lr-1">
-            <fieldset class="text--center">
-              <textarea class="textarea textarea--s textarea--full" placeholder="Textarea"></textarea>
+            <fieldset class="fieldset fieldset--full text--center">
+              <label class="input__label" for="foobar">Label</label>
+              <textarea class="textarea" id="foobar" placeholder="Textarea"></textarea>
+              <span class="input__error">This is an error message</span>
             </fieldset>
           </div>
         </div>
@@ -95,18 +158,48 @@
         <div class="row demo__desc">
           <pre class="demo">
             <code class="html demo">
-              &lt;textarea class="textarea textarea--s textarea--full" ... >&lt;/textarea>
+              &lt;textarea class="textarea" ... >&lt;/textarea>
             </code>
           </pre>
         </div>
       </div>
 
       <h5>Select</h5>
-      <select class="" name="">
-        <option value="">a</option>
-        <option value="">a</option>
-        <option value="">a</option>
-      </select>
+      <p>Selects require an additional span tag for the dropdown arrow. <code class="inline">&lt;span class="select__arrow">&lt;/span></code></p>
+      <p>Like the other inputs, use the modifiers <code class="inline">--s</code>, <code class="inline">--m</code> and <code class="inline">--l</code> to adjust font-size and padding.</p>
+
+      <div class="demo__table">
+        <div class="row demo__display">
+          <div class="col-xs-12 col-md-6 padding--lr-1">
+            <fieldset class="fieldset fieldset--full text--center">
+              <label class="input__label" for="barbaz">Label</label>
+              <select id="barbaz" class="select" name="">
+                <option value="">Select</option>
+                <option value="">Foo</option>
+                <option value="">Bar</option>
+                <option value="">Baz</option>
+              </select>
+              <span class="select__arrow"></span>
+              <span class="input__error">This is an error message</span>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="row demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;fieldset class="fieldset fieldset--full text--center"><br>
+                &nbsp;&nbsp;&lt;label class="input__label">Label&lt;/label><br>
+                &nbsp;&nbsp;&lt;select class="select"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                &nbsp;&nbsp;&lt;/select><br>
+                &nbsp;&nbsp;&lt;span class="select__arrow">&lt;/span><br>
+                &nbsp;&nbsp;&lt;span class="input__error">This is an error message&lt;/span><br>
+              &lt;/fieldset>
+            </code>
+          </pre>
+        </div>
+      </div>
 
       <h5>Checkbox &amp; Radio</h5>
       <input type="checkbox" name="name" value="">
