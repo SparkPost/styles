@@ -6,7 +6,6 @@
 
   &__heading {
     padding: 1rem;
-    border-bottom: 1px solid grayscale(9);
 
     & > *:last-child {
       margin-bottom: 0;
@@ -15,9 +14,24 @@
 
   &__body {
     padding: 1rem;
+    border-top: 1px solid grayscale(9);
 
     & > *:last-child {
       margin-bottom: 0;
+    }
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  &--accent {
+    &:before {
+      display: block;
+      content: "";
+      height: 3px;
+      margin-bottom: -3px;
+      background: color(orange);
     }
   }
 }
