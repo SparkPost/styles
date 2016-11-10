@@ -33,19 +33,16 @@
     }
   }
 
-  &.has-error {
+  .has-error > & {
     border: 1px solid color(alert);
-    & + .input__error {
-      opacity: 1;
-    }
   }
 
-  .fieldset--full & {
+  .input__fieldset--full & {
     width: 100%;
   }
 }
 
-.fieldset {
+.input__fieldset {
   display: inline-block;
   position: relative;
   border: none;
@@ -77,13 +74,15 @@
   line-height: rem(12);
 
   opacity: 0;
+
+  .has-error > & {
+    opacity: 1;
+  }
 }
 
-.input {
-  &__text {
-    @extend %input-base;
-    padding: 0.667rem;
-  }
+.input__text {
+  @extend %input-base;
+  padding: 0.667rem;
 
   &--s {
     padding: 0.334rem;
@@ -99,7 +98,7 @@
   }
 }
 
-.textarea {
+.input__textarea {
   @extend %input-base;
   max-width: 100%;
   padding: 0.667rem;
@@ -118,7 +117,7 @@
   }
 }
 
-.select {
+.input__select {
   box-sizing: border-box;
   @extend %input-base;
   appearance: none;
@@ -141,7 +140,7 @@
     padding: 1rem 3rem 1rem 1rem;
   }
 
-  &__arrow {
+  &Arrow {
     display: block;
     content: "";
     position: absolute;
@@ -158,11 +157,11 @@
     transition: border 0.15s;
   }
 
-  &:hover + .select__arrow {
+  &:hover + .input__selectArrow {
     border-top: 6px solid grayscale(4);
   }
 
-  &:focus + .select__arrow {
+  &:focus + .input__selectArrow {
     border-top: 6px solid color(blue);
   }
 }

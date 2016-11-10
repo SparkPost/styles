@@ -14,7 +14,7 @@
     <div class="panel__body">
       <h5>Fieldset Components</h5>
 
-      <p>Fieldsets have 3 children: an input, a label, and a span for errors. By default, Fieldsets are inline blocks and input width is set by the browser, use <code class="inline">.fieldset--full</code> to expand the fieldset and its input to the width of its parent.</p>
+      <p>Fieldsets have 3 children: an input, a label, and a span for errors. By default, Fieldsets are inline blocks and input width is set by the browser, use <code class="inline">.input__fieldset--full</code> to expand the fieldset and its input to the width of its parent.</p>
 
       <p>Example of all the components put together:</p>
 
@@ -23,16 +23,16 @@
           <div class="col-xs padding--lr-1">
             <div class="row">
               <div class="col-xs-12 col-md-6">
-                <fieldset class="fieldset fieldset--full">
+                <fieldset class="input__fieldset input__fieldset--full">
                   <label class="input__label" for="foo">Label</label>
                   <input class="input__text" id="foo" type="text" placeholder="Text input" />
                   <span class="input__error">This is a hidden error</span>
                 </fieldset>
               </div>
               <div class="col-xs-12 col-md-6">
-                <fieldset class="fieldset fieldset--full">
+                <fieldset class="input__fieldset input__fieldset--full has-error">
                   <label class="input__label" for="bar">Label</label>
-                  <input class="input__text has-error" id="bar" type="text" placeholder="Text input" />
+                  <input class="input__text" id="bar" type="text" placeholder="Text input" />
                   <span class="input__error">This is a visible error</span>
                 </fieldset>
               </div>
@@ -45,16 +45,16 @@
             <code class="html demo">
               &lt;div class="row"><br>
                 &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-6"><br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset class="fieldset fieldset--full"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset class="input__fieldset input__fieldset--full"><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="input__label" for="foo">Label&lt;/label><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="input__text" id="foo" type="text" ... /><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="input__error">This is a hidden error&lt;/span><br>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;/fieldset><br>
                 &nbsp;&nbsp;&lt;/div><br>
                 &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-6"><br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset class="fieldset fieldset--full"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset class="input__fieldset input__fieldset--full has-error"><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="input__label" for="bar">Label&lt;/label><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="input__text has-error" id="bar" type="text" ... /><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="input__text" id="bar" type="text" ... /><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="input__error">This is a visible error&lt;/span><br>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;/fieldset><br>
                 &nbsp;&nbsp;&lt;/div><br>
@@ -65,22 +65,22 @@
       </div>
 
       <h5>Input sizes</h5>
-      <p>Use the modifiers <code class="inline">--s</code>, <code class="inline">--m</code> and <code class="inline">--l</code> to adjust font-size and padding within text inputs.</p>
+      <p>Use the modifiers <code class="inline">input__text--s</code>, <code class="inline">input__text--m</code> and <code class="inline">input__text--l</code> to adjust font-size and padding within text inputs.</p>
 
       <div class="demo__table">
         <div class="row demo__display">
           <div class="col-xs-12 col-lg-4 padding--lr-1 text--center">
-            <fieldset class="fieldset text--center">
-              <input class="input__text input--s" type="text" placeholder="Text input" />
+            <fieldset class="input__fieldset text--center">
+              <input class="input__text input__text--s" type="text" placeholder="Text input" />
             </fieldset>
           </div>
           <div class="col-xs-12 col-lg-4 padding--lr-1 text--center">
-            <fieldset class="fieldset text--center">
-              <input class="input__text input--m" type="text" placeholder="Text input" />
+            <fieldset class="input__fieldset text--center">
+              <input class="input__text input__text--m" type="text" placeholder="Text input" />
             </fieldset>
           </div>
           <div class="col-xs-12 col-lg-4 padding--lr-1 text--center">
-            <fieldset class="fieldset text--center">
+            <fieldset class="input__fieldset text--center">
               <input class="input__text input--l" type="text" placeholder="Text input" />
             </fieldset>
           </div>
@@ -102,7 +102,7 @@
       <div class="demo__table">
         <div class="row demo__display">
           <div class="col-xs padding--lr-1">
-            <fieldset class="fieldset text--center">
+            <fieldset class="input__fieldset text--center">
               <input class="input__text is-disabled" type="text" placeholder="Disabled input" disabled/>
             </fieldset>
           </div>
@@ -118,13 +118,13 @@
       </div>
 
       <h5>Input with error</h5>
-      <p>Use the class <code class="inline">.has-error</code> to display its error state. Note: a label is required to position the error message correctly. (You should always be using labels anyway)</p>
+      <p>Use the class <code class="inline">.has-error</code> on the fieldset to display its error state. Note: a label is required to position the error message correctly. (You should always be using labels anyway)</p>
       <div class="demo__table">
         <div class="row demo__display">
           <div class="col-xs padding--lr-1 text--center">
-            <fieldset class="fieldset">
+            <fieldset class="input__fieldset has-error">
               <label class="input__label" for="baz">Label</label>
-              <input class="input__text has-error" id="baz" type="text" placeholder="Has error" />
+              <input class="input__text" id="baz" type="text" placeholder="Has error" />
               <span class="input__error">This is an error message</span>
             </fieldset>
           </div>
@@ -133,7 +133,9 @@
         <div class="row demo__desc">
           <pre class="demo">
             <code class="html demo">
-              &lt;input class="input__text has-error" ... />
+              &lt;fieldset class="input__fieldset has-error"><br>
+              &nbsp;&nbsp;&lt;input class="input__text" ... /><br>
+              &lt;/fieldset>
             </code>
           </pre>
         </div>
@@ -143,13 +145,13 @@
       <h5>Input with context</h5>
 
       <h5>Textarea</h5>
-      <p>Use the modifiers <code class="inline">--s</code>, <code class="inline">--m</code> and <code class="inline">--l</code> to adjust font-size and padding within the textarea.</p>
+      <p>Use the modifiers <code class="inline">input__textarea--s</code>, <code class="inline">input__textarea--m</code> and <code class="inline">input__textarea--l</code> to adjust font-size and padding within the textarea.</p>
       <div class="demo__table">
         <div class="row demo__display">
           <div class="col-xs padding--lr-1">
-            <fieldset class="fieldset fieldset--full text--center">
+            <fieldset class="input__fieldset input__fieldset--full text--center">
               <label class="input__label" for="foobar">Label</label>
-              <textarea class="textarea" id="foobar" placeholder="Textarea"></textarea>
+              <textarea class="input__textarea" id="foobar" placeholder="Textarea"></textarea>
               <span class="input__error">This is an error message</span>
             </fieldset>
           </div>
@@ -158,28 +160,28 @@
         <div class="row demo__desc">
           <pre class="demo">
             <code class="html demo">
-              &lt;textarea class="textarea" ... >&lt;/textarea>
+              &lt;textarea class="input__textarea" ... >&lt;/textarea>
             </code>
           </pre>
         </div>
       </div>
 
       <h5>Select</h5>
-      <p>Selects require an additional span tag for the dropdown arrow. <code class="inline">&lt;span class="select__arrow">&lt;/span></code></p>
-      <p>Like the other inputs, use the modifiers <code class="inline">--s</code>, <code class="inline">--m</code> and <code class="inline">--l</code> to adjust font-size and padding.</p>
+      <p>Selects require an additional span tag for the dropdown arrow. <code class="inline">&lt;span class="input__selectArrow">&lt;/span></code></p>
+      <p>Like the other inputs, use the modifiers <code class="inline">input__select--s</code>, <code class="inline">input__select--m</code> and <code class="inline">input__select--l</code> to adjust font-size and padding.</p>
 
       <div class="demo__table">
         <div class="row demo__display">
           <div class="col-xs-12 col-md-6 padding--lr-1">
-            <fieldset class="fieldset fieldset--full">
+            <fieldset class="input__fieldset input__fieldset--full">
               <label class="input__label" for="barbaz">Label</label>
-              <select id="barbaz" class="select" name="">
+              <select id="barbaz" class="input__select" name="">
                 <option value="">Select</option>
                 <option value="">Foo</option>
                 <option value="">Bar</option>
                 <option value="">Baz</option>
               </select>
-              <span class="select__arrow"></span>
+              <span class="input__selectArrow"></span>
               <span class="input__error">This is an error message</span>
             </fieldset>
           </div>
@@ -188,12 +190,12 @@
         <div class="row demo__desc">
           <pre class="demo">
             <code class="html demo">
-              &lt;fieldset class="fieldset fieldset--full"><br>
+              &lt;fieldset class="input__fieldset input__fieldset--full"><br>
                 &nbsp;&nbsp;&lt;label class="input__label">Label&lt;/label><br>
-                &nbsp;&nbsp;&lt;select class="select"><br>
+                &nbsp;&nbsp;&lt;select class="input__select"><br>
                   &nbsp;&nbsp;&nbsp;&nbsp;...<br>
                 &nbsp;&nbsp;&lt;/select><br>
-                &nbsp;&nbsp;&lt;span class="select__arrow">&lt;/span><br>
+                &nbsp;&nbsp;&lt;span class="input__selectArrow">&lt;/span><br>
                 &nbsp;&nbsp;&lt;span class="input__error">This is an error message&lt;/span><br>
               &lt;/fieldset>
             </code>
