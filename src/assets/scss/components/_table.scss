@@ -1,0 +1,41 @@
+.table {
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+
+  &__head {
+    font-weight: 500;
+  }
+
+  &__body {
+    font-weight: 300;
+  }
+
+  &__cell, &__heading {
+    padding: 0.882rem 1rem;
+  }
+
+  &__row {
+    transition: border 0.15s;
+
+    .table__body & {
+      border-top: 1px solid darken(grayscale(9), 2);
+    }
+
+    .table__body > &:nth-child(2n + 1) {
+      background: lighten(grayscale(9), 2);
+    }
+
+    &.is-active {
+
+    }
+  }
+
+  &__cell {
+
+  }
+
+  &__rowDetail {
+
+  }
+}
