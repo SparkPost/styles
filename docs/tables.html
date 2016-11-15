@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SparkPost | Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="public/css/styles.min.css">
+
+  </head>
+  <body class="page page--open-nav">
+    <div class="page__container">
+      <nav class="navigation is-open">
+  <ul class="navigation__primary-list">
+
+    <li class="navigation__item">
+      <a class="navigation__link">logo here</a>
+    </li>
+
+    <li class="navigation__item ">
+      <a class="navigation__link" href="/">Overview</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Overview</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/codeguidelines.html">Code Guidelines</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item">
+      <a class="navigation__link is-disabled">Design</a>
+    </li>
+
+    <li class="navigation__item is-active">
+      <a class="navigation__link" href="/buttons.html">Components</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/buttons.html">Buttons</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/panels.html">Panels</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/formelements.html">Form elements</a>
+        </li>
+        <li class="navigation__item is-active">
+          <a class="navigation__link" href="/tables.html">Tables</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Tooltips</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Icons</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Pagination</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Progress Bars</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Navigation</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item ">
+      <a class="navigation__link" href="/grid.html">Utility</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/grid.html">Grid</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Helpers</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+
+      <div class="page__content">
+        
+
+  <div class="panel">
+    <div class="panel__heading">
+      <h5>Tables</h5>
+    </div>
+    <div class="panel__body">
+      <p>Use the <code class="inline">.table</code> class on a table element to style it. Because there are couple different types of tables in the app (although not built yet, but they'll show up on this page), the child tags are also given classes.</p>
+
+      <p><em>Note:</em> This panel uses helper classes to kill padding. <code class="inline">padding--lr-0</code> <code class="inline">padding--tb-0</code></p>
+    </div>
+    <div class="panel__body padding--lr-0 padding--tb-0">
+
+      <table class="table">
+        <thead class="table__head">
+          <tr class="table__row">
+            <th class="table__heading">Foo</th>
+            <th class="table__heading">Bar</th>
+            <th class="table__heading">Baz</th>
+          </tr>
+        </thead>
+        <tbody class="table__body">
+          <tr class="table__row">
+            <td class="table__cell">Foo</td>
+            <td class="table__cell">Bar</td>
+            <td class="table__cell">Baz</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell">Foo</td>
+            <td class="table__cell">Bar</td>
+            <td class="table__cell">Baz</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell">Foo</td>
+            <td class="table__cell">Bar</td>
+            <td class="table__cell">Baz</td>
+          </tr>
+
+          <tr class="table__row">
+            <td class="table__cell">Foo</td>
+            <td class="table__cell">Bar</td>
+            <td class="table__cell">Baz</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <pre class="demo demo--border margin--b-3">
+    <code class="demo html">
+      &lt;div class="panel__body padding--lr-0 padding--tb-0"><br>
+      &nbsp;&nbsp;&lt;table class="table"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;thead class="table__head"><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="table__row"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="table__heading">...&lt;/th><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody class="table__body"><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="table__row"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="table__cell">...&lt;/td><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody><br>
+      &nbsp;&nbsp;&lt;/table><br>
+      &lt;/div>
+    </code>
+  </pre>
+
+
+      </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="public/js/bundle.js"></script> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>

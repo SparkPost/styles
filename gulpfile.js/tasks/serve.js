@@ -6,7 +6,7 @@ var serveTask = function() {
 
       // Static Server
       server: {
-        baseDir: "./build"
+        baseDir: "./docs"
       },
 
       // proxy: '',
@@ -25,7 +25,7 @@ var serveTask = function() {
       open: "internal"
   });
 
-  gulp.watch('./build/*.html').on('change', browserSync.reload);
+  gulp.watch('./docs/*.html').on('change', browserSync.reload);
   // gulp.watch('./dist/public/js/*.js').on('change', browserSync.reload);
 }
 

@@ -8,10 +8,10 @@ var cssTask = function() {
   return gulp.src('./src/assets/scss/**/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('./build/public/css'))
+    .pipe(gulp.dest('./docs/public/css'))
     .pipe(cleanCSS({ processImport: false }))
     .pipe(rename({suffix: '.min' }))
-    .pipe(gulp.dest('./build/public/css'));
+    .pipe(gulp.dest('./docs/public/css'));
 }
 
 gulp.task('css', cssTask);

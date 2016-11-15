@@ -6,7 +6,7 @@ var htmlTask = function () {
     .pipe(nunjucksRender({
       path: ['./src/views/']
     }))
-    .pipe(gulp.dest('./build/'));
+    .pipe(gulp.dest('./docs/'));
 }
 
 gulp.task('html', htmlTask);

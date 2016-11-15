@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SparkPost | Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="public/css/styles.min.css">
+
+  </head>
+  <body class="page page--open-nav">
+    <div class="page__container">
+      <nav class="navigation is-open">
+  <ul class="navigation__primary-list">
+
+    <li class="navigation__item">
+      <a class="navigation__link">logo here</a>
+    </li>
+
+    <li class="navigation__item ">
+      <a class="navigation__link" href="/">Overview</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Overview</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/codeguidelines.html">Code Guidelines</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item">
+      <a class="navigation__link is-disabled">Design</a>
+    </li>
+
+    <li class="navigation__item ">
+      <a class="navigation__link" href="/buttons.html">Components</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/buttons.html">Buttons</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/panels.html">Panels</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/formelements.html">Form elements</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/tables.html">Tables</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Tooltips</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Icons</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Pagination</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Progress Bars</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Navigation</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item is-active">
+      <a class="navigation__link" href="/grid.html">Utility</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item is-active">
+          <a class="navigation__link" href="/grid.html">Grid</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Helpers</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+
+      <div class="page__content">
+        
+
+  <div class="panel">
+    <div class="panel__heading">
+      <h5>Grid</h5>
+    </div>
+    <div class="panel__body">
+
+      <p>TODO: finish</p>
+
+      <p>The grid uses a responsive 12 column system built on flexbox. Wrap columns with the grid namespace <code>&lt;div class="flex"&gt;</code>. Use them like you would use a <em>row</em>, but because this is flexbox, they aren't necessarily rows and could be columns, ya know? The grid takes full the width of its parent, you can place these anywhere, ie. within a container, modal, or within another grid column.</p>
+
+      <p>A column without a declared width will grow to fill in the row.</p>
+
+      <h6 class="flex-demo__header">.flex</h6>
+
+      <div class="flex flex-demo">
+        <div class="col-xs">&nbsp;</div>
+      </div>
+
+      <div class="flex flex-demo">
+        <div class="col-xs-6">&nbsp;</div>
+        <div class="col-xs-6">&nbsp;</div>
+      </div>
+
+      <div class="flex flex-demo">
+        <div class="col-xs-4">&nbsp;</div>
+        <div class="col-xs-4">&nbsp;</div>
+        <div class="col-xs-4">&nbsp;</div>
+      </div>
+
+      <div class="flex flex-demo">
+        <div class="col-xs-3">&nbsp;</div>
+        <div class="col-xs-3">&nbsp;</div>
+        <div class="col-xs">&nbsp;</div>
+      </div>
+    </div>
+    <div class="panel__body">
+      <h6 class="flex-demo__header">Offset</h6>
+      <div class="flex flex-demo">
+        <div class="col-xs-3 col-xs-offset-9">&nbsp;</div>
+        <div class="col-xs-6 col-xs-offset-6">&nbsp;</div>
+        <div class="col-xs-10 col-xs-offset-2">&nbsp;</div>
+      </div>
+    </div>
+
+    <div class="panel__body">
+      <h6 class="flex-demo__header">Responsive</h6>
+      <div class="flex flex-demo">
+        <div class="col-xs-12 col-md-6 col-lg-4">&nbsp;</div>
+        <div class="col-xs-12 col-md-6 col-lg-4">&nbsp;</div>
+        <div class="col-xs-12 col-md-12 col-lg-4">&nbsp;</div>
+      </div>
+    </div>
+
+    <div class="panel__body">
+      <h6 class="flex-demo__header">Nest</h6>
+    </div>
+    <div class="panel__body">
+      <h6 class="flex-demo__header">Alignment</h6>
+    </div>
+    <div class="panel__body">
+      <h6 class="flex-demo__header">Distribution</h6>
+    </div>
+  </div>
+
+  <pre class="demo demo--border">
+    <code class="demo">
+      &lt;div class="flex"><br>
+        &nbsp;&nbsp;&lt;div class="col-xs">&nbsp;&lt;/div><br>
+      &lt;/div><br><br>
+
+      &lt;div class="flex"><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-6">&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-6">&nbsp;&lt;/div><br>
+      &lt;/div><br><br>
+
+      &lt;div class="flex"><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-4">&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-4">&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-4">&nbsp;&lt;/div><br>
+      &lt;/div><br><br>
+
+      &lt;div class="flex"><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-3">&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-3">&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="col-xs">&nbsp;&lt;/div><br>
+      &lt;/div><br><br>
+      // offset<br>
+      &lt;div class="flex"><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-3 col-xs-offset-9">&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-6 col-xs-offset-6">&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-10 col-xs-offset-2">&nbsp;&lt;/div><br>
+      &lt;/div><br><br>
+
+      // responsive!<br>
+      &lt;div class="flex flex-demo"><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-6 col-lg-4">&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-6 col-lg-4">&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-12 col-lg-4">&nbsp;&lt;/div><br>
+      &lt;/div>
+    </code>
+  </pre>
+
+
+      </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="public/js/bundle.js"></script> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>
