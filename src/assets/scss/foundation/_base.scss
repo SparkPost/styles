@@ -13,3 +13,8 @@ pre,table,fieldset,hr {
 html {
   background-color: grayscale(10);
 }
+
+hr {
+  border: none;
+  border-bottom: 1px solid grayscale(8);
+}

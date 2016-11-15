@@ -2,18 +2,18 @@
 .flex-demo {
   & > * {
     margin-bottom: 1rem !important;
-    background: grayscale(9);
+    background: grayscale(8);
     background-clip: content-box;
     text-align: center;
 
     font-size: 12px;
     font-weight: 500;
-    color: grayscale(6);
+    color: grayscale(4);
   }
 
   &__header {
     text-align: center;
-    color: grayscale(6);
+    color: grayscale(4);
     margin: 0.5rem;
     font-weight: 500;
   }

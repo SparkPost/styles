@@ -17,7 +17,7 @@
       <p>Define button colors with <code class="inline">.button--blue</code> or <code class="inline">.button--muted</code>. Orange is used with no modifier class.</p>
 
       <div class="demo__table">
-        <div class="row demo__display">
+        <div class="flex demo__display">
           <div class="col-xs-12 col-md-4">
             <button class="button">Button</button>
           </div>
@@ -29,7 +29,7 @@
           </div>
         </div>
 
-        <div class="row demo__desc">
+        <div class="flex demo__desc">
           <pre class="demo">
             <code class="html demo">
               &lt;button class="button"&gt;...&lt;/button&gt;<br>
@@ -47,7 +47,7 @@
 
       <div class="demo__table">
 
-        <div class="row demo__display">
+        <div class="flex demo__display">
           <div class="col-xs-12 col-md-4">
             <button class="button button--l">Button</button>
           </div>
@@ -59,7 +59,7 @@
           </div>
         </div>
 
-        <div class="row demo__desc">
+        <div class="flex demo__desc">
           <pre class="demo">
             <code class="html demo">
               &lt;button class="button button--l"&gt;...&lt;/button&gt;<br>
@@ -75,9 +75,9 @@
       <h5>Full width</h5>
       <p><code class="inline">.button--full</code> expands the button to 100% of its parent's width.</p>
       <div class="demo__table">
-        <div class="row demo__display">
+        <div class="flex demo__display">
           <div class="col-xs-12">
-            <div class="row padding--lr-1">
+            <div class="flex padding--lr-1">
               <div class="col-xs-12 col-xs-offset-0 col-md-4 col-md-offset-4">
                 <button class="button button--blue button--full">Button</button>
               </div>
@@ -85,7 +85,7 @@
           </div>
         </div>
 
-        <div class="row demo__desc">
+        <div class="flex demo__desc">
           <pre class="demo">
             <code class="html demo">
               &lt;button class="button button--blue button--full"&gt;...&lt;/button&gt;
@@ -98,7 +98,7 @@
       <p>Use the <code class="inline">.is-pressed</code> class to show an active state. Visually the same as <code class="inline">&amp;:active</code> styles.</p>
       <p><code class="inline">.is-disabled</code> and the <code class="inline">disabled</code> attribute disables pointer events.</p>
       <div class="demo__table">
-        <div class="row demo__display">
+        <div class="flex demo__display">
           <div class="col-xs-12 col-md-6 padding--lr-1">
             <button class="button button--muted is-pressed">Button</button>
           </div>
@@ -107,7 +107,7 @@
           </div>
         </div>
 
-        <div class="row demo__desc">
+        <div class="flex demo__desc">
           <pre class="demo">
             <code class="html demo">
               &lt;button class="button is-pressed"&gt;...&lt;/button&gt;<br>
@@ -120,7 +120,7 @@
       <h5>Button with icon</h5>
 
       <div class="demo__table">
-        <div class="row demo__display">
+        <div class="flex demo__display">
           <div class="col-xs-12 col-md-6 padding--lr-1">
             <button class="button button--muted"><i class="fa fa-trash"></i> Button</button>
           </div>
@@ -129,7 +129,7 @@
           </div>
         </div>
 
-        <div class="row demo__desc">
+        <div class="flex demo__desc">
           <pre class="demo">
             <code class="html demo">
               &lt;button class="button button--muted">&lt;i class="fa fa-trash">&lt;/i> Button&lt;/button><br>
@@ -139,11 +139,21 @@
         </div>
       </div>
 
+
+      <div class="button-group margin--tb-5">
+        <button class="button button--muted"><i class="fa fa-copy"></i> Clone</button>
+        <button class="button button--muted"><i class="fa fa-trash-o"></i> Delete</button>
+      </div>
+      <div class="button-group margin--tb-5">
+        <button class="button"><i class="fa fa-floppy-o"></i> Save</button>
+        <button class="button">Save &amp; Publish</button>
+      </div>
+
       <h5>Button group</h5>
       <p>Wrap two or more buttons within <code class="inline">.button-group</code>.</p>
 
       <div class="demo__table">
-        <div class="row demo__display">
+        <div class="flex demo__display">
           <div class="col-xs-12">
             <div class="button-group">
               <button class="button button--muted">Button</button>
@@ -153,7 +163,7 @@
           </div>
         </div>
 
-        <div class="row demo__desc">
+        <div class="flex demo__desc">
           <pre class="demo">
             <code class="html demo">
               &lt;div class="button-group"><br>
