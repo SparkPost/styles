@@ -1,6 +1,34 @@
+.fieldset {
+  display: inline-block;
+  width: 100%;
+
+  position: relative;
+  border: none;
+  padding: 0;
+  text-align: left;
+
+  &--inline {
+    width: auto;
+  }
+}
+
+.label {
+  display: block;
+  margin-bottom: 0rem;
+
+  font-weight: 700;
+  font-size: rem(15);
+}
+
+.input__group {
+  position: relative;
+  width: 100%;
+}
+
 %input-base {
   box-sizing: border-box;
   display: inline-block;
+  width: 100%;
 
   outline: none;
   border: 1px solid grayscale(7);
@@ -22,6 +50,10 @@
 
   &:focus {
     border: 1px solid color(blue);
+
+    & ~ .fa {
+      color: color(blue);
+    }
   }
 
   &.is-disabled, &[disabled] {
@@ -37,41 +69,25 @@
     border: 1px solid color(alert);
   }
 
-  .input__fieldset--full & {
-    width: 100%;
+  & ~ .fa {
+    position: absolute;
+    line-height: 1.5em;
+    font-size: rem(15);
+    color: grayscale(5);
+    transition: 0.15s;
   }
-}
-
-.input__fieldset {
-  display: inline-block;
-  position: relative;
-  border: none;
-  padding: 0;
-  text-align: left;
-
-  &--full {
-    width: 100%;
-  }
-}
-
-.input__label {
-  display: block;
-  margin-bottom: 0rem;
-
-  font-weight: 700;
-  font-size: rem(15);
 }
 
 .input__error {
   display: block;
   position: absolute;
   right: 0;
-  top: rem(7);
+  bottom: 102%;
 
   color: color(alert);
   font-size: rem(11);
   font-weight: 500;
-  line-height: rem(12);
+  line-height: rem(13);
 
   opacity: 0;
 
@@ -80,9 +96,20 @@
   }
 }
 
+// Text Input
 .input__text {
   @extend %input-base;
   padding: 0.667rem;
+
+  .input__group--icon & {
+    padding-left: 2rem;
+  }
+
+  & ~ .fa {
+    top: 49%;
+    left: 0.667rem;
+    transform: translate(0, -50%);
+  }
 
   &--s {
     padding: 0.334rem;
@@ -98,14 +125,34 @@
   }
 }
 
+// Textarea
 .input__textarea {
   @extend %input-base;
   max-width: 100%;
   padding: 0.667rem;
 
+  & ~ .fa {
+    top: 0.667rem;
+    left: 0.667rem;
+    transform: none;
+  }
+
+  .input__group--icon & {
+    padding-left: 2rem;
+  }
+
   &--s {
     padding: 0.334rem;
     font-size: rem(13);
+
+    .input__group--icon & {
+      padding-left: 1.334rem;
+    }
+
+    & ~ .fa {
+      top: 0.334rem;
+      left: 0.334rem;
+    }
   }
 
   &--m {
@@ -114,9 +161,19 @@
 
   &--l {
     padding: 1rem;
+
+    .input__group--icon & {
+      padding-left: 2.334rem;
+    }
+
+    & ~ .fa {
+      top: 1rem;
+      left: 1rem;
+    }
   }
 }
 
+// Select
 .input__select {
   box-sizing: border-box;
   @extend %input-base;
@@ -126,6 +183,16 @@
 
   border-radius: 0;
   background: transparent;
+
+  .input__group--icon & {
+    padding-left: 2rem;
+  }
+
+  & ~ .fa {
+    top: 49%;
+    left: 0.667rem;
+    transform: translate(0, -50%);
+  }
 
   &--s {
     padding: 0.334rem 3rem 0.334rem 0.334rem;
@@ -145,7 +212,8 @@
     content: "";
     position: absolute;
     right: 1rem;
-    bottom: 27%;
+    top: 50%;
+    transform: translate(0, -50%);
 
     height: 2px;
     width: 2px;
