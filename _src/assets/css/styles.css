@@ -4686,6 +4686,16 @@ Box Helpers
   margin: 0.5rem;
   font-weight: 500; }
 
+.flex-demo .flex-demo {
+  margin-left: 0; }
+
+.flex-demo .flex-demo > * {
+  margin-top: 1rem;
+  background-clip: content-box !important;
+  background: #bebec3; }
+  .flex-demo .flex-demo > *:last-child {
+    padding-right: 1rem; }
+
 .demo__display, .demo__desc {
   margin-left: 0; }
 

@@ -17,6 +17,18 @@
     margin: 0.5rem;
     font-weight: 500;
   }
+  & .flex-demo {
+    margin-left: 0;
+  }
+  & .flex-demo > * {
+    margin-top: 1rem;
+    background-clip: content-box !important;
+    background: grayscale(6);
+
+    &:last-child {
+      padding-right: 1rem;
+    }
+  }
 }
 
 .demo__display, .demo__desc {

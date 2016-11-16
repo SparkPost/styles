@@ -12,7 +12,7 @@ secondaryNav: grid
 
       <p>TODO: finish</p>
 
-      <p>The grid uses a responsive 12 column system built on flexbox. Wrap columns with the grid namespace <code>&lt;div class="flex"&gt;</code>. Use them like you would use a <em>row</em>, but because this is flexbox, they aren't necessarily rows and could be columns, ya know? The grid takes full the width of its parent, you can place these anywhere, ie. within a container, modal, or within another grid column.</p>
+      <p>The grid uses a responsive 12 column system built on flexbox. Wrap columns with the grid namespace <code class="inline html">&lt;div class="flex"&gt;</code>. Use them like you would use a <em>row</em>, but because this is flexbox, they aren't necessarily rows and could be columns, ya know? The grid takes full the width of its parent, you can place these anywhere, ie. within a container, modal, or within another grid column.</p>
 
       <p>A column without a declared width will figure it out by itself.</p>
 
@@ -33,7 +33,7 @@ secondaryNav: grid
 
             <div class="flex flex-demo">
               <div class="col-xs-4">&nbsp;</div>
-              <div class="col-xs-4">&nbsp;</div>
+              <div class="col-xs">&nbsp;</div>
               <div class="col-xs-4">&nbsp;</div>
             </div>
 
@@ -49,38 +49,135 @@ secondaryNav: grid
         <div class="flex demo__desc">
           <pre class="demo">
             <code class="html demo">
-              &lt;button class="button"&gt;...&lt;/button&gt;<br>
-              &lt;button class="button button--blue"&gt;...&lt;/button&gt;<br>
-              &lt;button class="button button--muted"&gt;...&lt;/button&gt;<br>
-              // or<br>
-              &lt;a class="button"&gt;...&lt;/a&gt;<br>
+
+              &lt;div class="flex"><br>
+                &nbsp;&nbsp;&lt;div class="col-xs">&lt;/div><br>
+              &lt;/div><br><br>
+
+              &lt;div class="flex"><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-6">&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-6">&lt;/div><br>
+              &lt;/div><br><br>
+
+              &lt;div class="flex"><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-4">&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs">&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-4">&lt;/div><br>
+              &lt;/div><br><br>
+
+              &lt;div class="flex"><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-3">&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-3">&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs">&lt;/div><br>
+              &lt;/div>
+
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="demo__table">
+        <div class="flex demo__display">
+          <div class="col-xs-12 padding--lr-1">
+            <h6 class="flex-demo__header">Offset</h6>
+            <div class="flex flex-demo">
+              <div class="col-xs-1 col-xs-offset-11">&nbsp;</div>
+              <div class="col-xs-2 col-xs-offset-10">&nbsp;</div>
+              <div class="col-xs-4 col-xs-offset-8">&nbsp;</div>
+              <div class="col-xs-8 col-xs-offset-4">&nbsp;</div>
+              <div class="col-xs-11 col-xs-offset-1">&nbsp;</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;div class="flex"><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-1 col-xs-offset-11">&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-2 col-xs-offset-10">&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-4 col-xs-offset-8">&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-8 col-xs-offset-4">&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-11 col-xs-offset-1">&lt;/div><br>
+              &lt;/div>
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="demo__table">
+        <div class="flex demo__display">
+          <div class="col-xs-12 padding--lr-1">
+
+            <h6 class="flex-demo__header">Responsive</h6>
+            <div class="flex flex-demo">
+              <div class="col-xs-12 col-md-6 col-lg-4">&nbsp;</div>
+              <div class="col-xs-12 col-md-6 col-lg-4">&nbsp;</div>
+              <div class="col-xs-12 col-md-12 col-lg-4">&nbsp;</div>
+            </div>
+
+          </div>
+        </div>
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;div class="flex"><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-6 col-lg-4">&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-6 col-lg-4">&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-12 col-lg-4">&lt;/div><br>
+              &lt;/div>
             </code>
           </pre>
         </div>
       </div>
 
 
-    </div>
-    <div class="panel__body">
-      <h6 class="flex-demo__header">Offset</h6>
-      <div class="flex flex-demo">
-        <div class="col-xs-3 col-xs-offset-9">&nbsp;</div>
-        <div class="col-xs-6 col-xs-offset-6">&nbsp;</div>
-        <div class="col-xs-10 col-xs-offset-2">&nbsp;</div>
-      </div>
+
     </div>
 
     <div class="panel__body">
-      <h6 class="flex-demo__header">Responsive</h6>
-      <div class="flex flex-demo">
-        <div class="col-xs-12 col-md-6 col-lg-4">&nbsp;</div>
-        <div class="col-xs-12 col-md-6 col-lg-4">&nbsp;</div>
-        <div class="col-xs-12 col-md-12 col-lg-4">&nbsp;</div>
-      </div>
-    </div>
+      <div class="demo__table">
+        <div class="flex demo__display">
+          <div class="col-xs-12 padding--lr-1">
 
-    <div class="panel__body">
-      <h6 class="flex-demo__header">Nest</h6>
+            <h6 class="flex-demo__header">Nest</h6>
+            <div class="flex flex-demo">
+              <div class="col-xs-7">
+                <div class="flex flex-demo">
+                  <div class="col-xs-6">&nbsp;</div>
+                  <div class="col-xs-6">&nbsp;</div>
+                </div>
+              </div>
+              <div class="col-xs-5">
+                <div class="flex flex-demo">
+                  <div class="col-xs-6">&nbsp;</div>
+                  <div class="col-xs-6">&nbsp;</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;div class="flex"><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-7"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="flex"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-xs-6">&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-xs-6">&lt;/div><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="col-xs-5"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="flex"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-xs-6">&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-xs-6">&lt;/div><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;/div><br>
+              &lt;/div>
+            </code>
+          </pre>
+        </div>
+      </div>
     </div>
     <div class="panel__body">
       <h6 class="flex-demo__header">Alignment</h6>
@@ -89,41 +186,3 @@ secondaryNav: grid
       <h6 class="flex-demo__header">Distribution</h6>
     </div>
   </div>
-
-  <pre class="demo demo--border">
-    <code class="demo">
-      &lt;div class="flex"><br>
-        &nbsp;&nbsp;&lt;div class="col-xs">&nbsp;&lt;/div><br>
-      &lt;/div><br><br>
-
-      &lt;div class="flex"><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-6">&nbsp;&lt;/div><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-6">&nbsp;&lt;/div><br>
-      &lt;/div><br><br>
-
-      &lt;div class="flex"><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-4">&nbsp;&lt;/div><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-4">&nbsp;&lt;/div><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-4">&nbsp;&lt;/div><br>
-      &lt;/div><br><br>
-
-      &lt;div class="flex"><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-3">&nbsp;&lt;/div><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-3">&nbsp;&lt;/div><br>
-        &nbsp;&nbsp;&lt;div class="col-xs">&nbsp;&lt;/div><br>
-      &lt;/div><br><br>
-      // offset<br>
-      &lt;div class="flex"><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-3 col-xs-offset-9">&nbsp;&lt;/div><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-6 col-xs-offset-6">&nbsp;&lt;/div><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-10 col-xs-offset-2">&nbsp;&lt;/div><br>
-      &lt;/div><br><br>
-
-      // responsive!<br>
-      &lt;div class="flex flex-demo"><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-6 col-lg-4">&nbsp;&lt;/div><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-6 col-lg-4">&nbsp;&lt;/div><br>
-        &nbsp;&nbsp;&lt;div class="col-xs-12 col-md-12 col-lg-4">&nbsp;&lt;/div><br>
-      &lt;/div>
-    </code>
-  </pre>
