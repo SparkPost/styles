@@ -4,5 +4,4 @@ exclude: [
   'package.json',
   '*.scss'
 ]
-source:      _src
 destination: _site
