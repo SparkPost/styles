@@ -23,9 +23,9 @@ $page-accent-height: 6px;
 
   &__content {
     width: 100%;
-    max-width: break(xxl);
+    max-width: break(xl);
     margin: 0 auto;
-    
+
     padding: 1rem 1rem 1rem $nav-width + 1rem;
 
     .page--open-nav & {

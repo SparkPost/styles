@@ -111,10 +111,10 @@ $gray-border: darken(grayscale(6), 8);
 .button-group {
   display: inline-block;
   margin-right: 1rem;
-  
+
   & > .button {
     position: relative;
-    margin-right: -3px;
+    margin-right: -4px;
 
     &:after {
       display: block;

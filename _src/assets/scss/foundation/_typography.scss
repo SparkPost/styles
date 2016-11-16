@@ -9,13 +9,11 @@ html {
 body {
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
-
   font:{
-    size: 0.667em;
+    size: rem(15);
     family: $gotham-narrow;
     weight: 300;
   }
-
   line-height: 2em;
 }
 
@@ -62,7 +60,7 @@ a {
 }
 
 // Header Sizing
-$headers: (h1: 27, h2: 24, h3: 21, h4: 18, h5: 15, h6: 12);
+$headers: (h1: 27, h2: 24, h3: 21, h4: 18, h5: 15, h6: 15);
 
 @each $header, $size in $headers {
   #{$header} {

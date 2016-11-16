@@ -2703,6 +2703,7 @@ th {
 /*
   * Adjusts baseline font size.
   * Vertical rhythm is set through this baseline.
+  * REM values will be based of this
   */
 /*
  * SparkPost Brand Colors 🖌
@@ -3895,7 +3896,7 @@ html {
   font-size: 18px; }
 
 body {
-  font-size: 0.667em;
+  font-size: 0.83333rem;
   font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", sans-serif;
   font-weight: 300;
   line-height: 2em; }
@@ -3944,7 +3945,7 @@ h5 {
   font-size: 0.83333rem; }
 
 h6 {
-  font-size: 0.66667rem; }
+  font-size: 0.83333rem; }
 
 h1 {
   line-height: 3rem; }
@@ -4314,7 +4315,7 @@ Box Helpers
     position: relative; }
   .page__content {
     width: 100%;
-    max-width: 98em;
+    max-width: 80em;
     margin: 0 auto;
     padding: 1rem 1rem 1rem 7rem; }
     .page--open-nav .page__content {
@@ -4466,7 +4467,7 @@ Box Helpers
   margin-right: 1rem; }
   .button-group > .button {
     position: relative;
-    margin-right: -3px; }
+    margin-right: -4px; }
     .button-group > .button:after {
       display: block;
       content: "";
@@ -4712,7 +4713,8 @@ code.inline {
 
 pre.demo, code.demo {
   background: transparent;
-  margin: 0; }
+  margin: 0;
+  font-size: 0.66667rem; }
 
 pre.demo--border {
   padding: 1rem;

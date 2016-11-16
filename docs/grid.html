@@ -91,7 +91,7 @@
       <div class="page__content">
           <div class="panel">
     <div class="panel__heading">
-      <h5>Grid</h5>
+      <h4>Grid</h4>
     </div>
     <div class="panel__body">
 
@@ -99,30 +99,52 @@
 
       <p>The grid uses a responsive 12 column system built on flexbox. Wrap columns with the grid namespace <code>&lt;div class="flex"&gt;</code>. Use them like you would use a <em>row</em>, but because this is flexbox, they aren't necessarily rows and could be columns, ya know? The grid takes full the width of its parent, you can place these anywhere, ie. within a container, modal, or within another grid column.</p>
 
-      <p>A column without a declared width will grow to fill in the row.</p>
+      <p>A column without a declared width will figure it out by itself.</p>
 
-      <h6 class="flex-demo__header">.flex</h6>
+      <div class="demo__table">
+        <div class="flex demo__display">
+          <div class="col-xs-12 padding--lr-1">
 
-      <div class="flex flex-demo">
-        <div class="col-xs">&nbsp;</div>
+            <h6 class="flex-demo__header">Fluid</h6>
+
+            <div class="flex flex-demo">
+              <div class="col-xs">&nbsp;</div>
+            </div>
+
+            <div class="flex flex-demo">
+              <div class="col-xs-6">&nbsp;</div>
+              <div class="col-xs-6">&nbsp;</div>
+            </div>
+
+            <div class="flex flex-demo">
+              <div class="col-xs-4">&nbsp;</div>
+              <div class="col-xs-4">&nbsp;</div>
+              <div class="col-xs-4">&nbsp;</div>
+            </div>
+
+            <div class="flex flex-demo">
+              <div class="col-xs-3">&nbsp;</div>
+              <div class="col-xs-3">&nbsp;</div>
+              <div class="col-xs">&nbsp;</div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              &lt;button class="button"&gt;...&lt;/button&gt;<br>
+              &lt;button class="button button--blue"&gt;...&lt;/button&gt;<br>
+              &lt;button class="button button--muted"&gt;...&lt;/button&gt;<br>
+              // or<br>
+              &lt;a class="button"&gt;...&lt;/a&gt;<br>
+            </code>
+          </pre>
+        </div>
       </div>
 
-      <div class="flex flex-demo">
-        <div class="col-xs-6">&nbsp;</div>
-        <div class="col-xs-6">&nbsp;</div>
-      </div>
 
-      <div class="flex flex-demo">
-        <div class="col-xs-4">&nbsp;</div>
-        <div class="col-xs-4">&nbsp;</div>
-        <div class="col-xs-4">&nbsp;</div>
-      </div>
-
-      <div class="flex flex-demo">
-        <div class="col-xs-3">&nbsp;</div>
-        <div class="col-xs-3">&nbsp;</div>
-        <div class="col-xs">&nbsp;</div>
-      </div>
     </div>
     <div class="panel__body">
       <h6 class="flex-demo__header">Offset</h6>
