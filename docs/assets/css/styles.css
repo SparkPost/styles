@@ -4836,9 +4836,6 @@ Box Helpers
   .flex-demo .flex-demo > *:last-child {
     padding-right: 1rem; }
 
-.demo__display, .demo__desc {
-  margin-left: 0; }
-
 .demo__table {
   border-right: 1px solid #e1e1e6;
   border-top: 1px solid #e1e1e6;
@@ -4850,6 +4847,13 @@ Box Helpers
   text-align: center;
   border-left: 1px solid #e1e1e6;
   border-bottom: 1px solid #e1e1e6; }
+
+.col-highlight {
+  background: #828287 !important;
+  color: #ffffff; }
+
+.demo__display, .demo__desc {
+  margin-left: 0; }
 
 .demo__desc {
   padding: 1rem;

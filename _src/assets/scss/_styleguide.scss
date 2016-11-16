@@ -31,10 +31,6 @@
   }
 }
 
-.demo__display, .demo__desc {
-  margin-left: 0;
-}
-
 
 .demo__table {
   border-right: 1px solid grayscale(8);
@@ -59,6 +55,15 @@
       // border: none;
     }
   }
+}
+
+.col-highlight {
+  background: grayscale(4) !important;
+  color: grayscale(10);
+}
+
+.demo__display, .demo__desc {
+  margin-left: 0;
 }
 
 .demo__desc {

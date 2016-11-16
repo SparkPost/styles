@@ -330,14 +330,49 @@ secondaryNav: grid
 
             <h6 class="flex-demo__header">Order</h6>
 
+            <div class="flex flex-demo">
+              <div class="col-xs-12">
+                <div class="flex flex-demo">
+                  <div class="col-xs">1</div>
+                  <div class="col-xs">2</div>
+                  <div class="col-xs">3</div>
+                  <div class="col-xs padding--r-1">4</div>
+                  <div class="col-xs first-xs padding--r-0 col-highlight">5</div>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="flex flex-demo">
+                  <div class="col-xs last-xs padding--r-1 col-highlight">1</div>
+                  <div class="col-xs">2</div>
+                  <div class="col-xs">3</div>
+                  <div class="col-xs">4</div>
+                  <div class="col-xs padding--r-0">5</div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
         <div class="flex demo__desc">
           <pre class="demo">
             <code class="html demo">
               // first-<br>
+              &lt;div class="flex"><br>
+                &nbsp&nbsp&lt;div class="col-xs">1&lt;/div><br>
+                &nbsp&nbsp&lt;div class="col-xs">2&lt;/div><br>
+                &nbsp&nbsp&lt;div class="col-xs">3&lt;/div><br>
+                &nbsp&nbsp&lt;div class="col-xs">4&lt;/div><br>
+                &nbsp&nbsp&lt;div class="col-xs first-xs">5&lt;/div><br>
+              &lt;/div><br><br>
+
               // last-<br>
-              // reverse-
+              &lt;div class="flex"><br>
+                &nbsp&nbsp&lt;div class="col-xs last-xs">1&lt;/div><br>
+                &nbsp&nbsp&lt;div class="col-xs">2&lt;/div><br>
+                &nbsp&nbsp&lt;div class="col-xs">3&lt;/div><br>
+                &nbsp&nbsp&lt;div class="col-xs">4&lt;/div><br>
+                &nbsp&nbsp&lt;div class="col-xs">5&lt;/div><br>
+              &lt;/div><br>
             </code>
           </pre>
         </div>
