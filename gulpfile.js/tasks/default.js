@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-var defaultTask = ['fonts', 'serve', 'html', 'watch'];
+var defaultTask = ['jekyll', 'serve', 'watch'];
 // var buildTask = ['html', 'css'];
 
 gulp.task('default', defaultTask);

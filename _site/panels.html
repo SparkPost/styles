@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sparkpost Styleguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+
+  </head>
+  <body class="page page--open-nav">
+    <div class="page__container">
+      <nav class="navigation is-open">
+  <ul class="navigation__primary-list">
+
+    <li class="navigation__item">
+      <a class="navigation__link">logo here</a>
+    </li>
+
+    <li class="navigation__item ">
+      <a class="navigation__link" href="/">Overview</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/">Overview</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled" href="/codeguidelines.html">Code Guidelines</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item">
+      <a class="navigation__link is-disabled">Design</a>
+    </li>
+
+    <li class="navigation__item is-active">
+      <a class="navigation__link" href="/buttons.html">Components</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/buttons.html">Buttons</a>
+        </li>
+        <li class="navigation__item is-active">
+          <a class="navigation__link" href="/panels.html">Panels</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/formelements.html">Form elements</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/tables.html">Tables</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled" href="/">Tooltips</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled" href="/">Icons</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled" href="/">Pagination</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled" href="/">Progress Bars</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled" href="/">Navigation</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item ">
+      <a class="navigation__link" href="/grid.html">Utility</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="/grid.html">Grid</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled" href="/">Helpers</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+
+      <div class="page__content">
+          <div class="panel">
+    <div class="panel__heading">
+      <h5>Panels</h5>
+    </div>
+    <div class="panel__body">
+      <p>This container is a panel!</p>
+      <p><code class="inline">.panel__heading</code> holds the panel title, and <code class="inline">.panel__body</code> holds the content. You can omit the heading if needed.</p>
+      <p>The modifier <code class="inline">.panel--accent</code> adds an orange accent bar to the top of the panel.</p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel__heading"><h5>Hello World</h5></div>
+    <div class="panel__body">Foo</div>
+  </div>
+
+  <pre class="demo demo--border margin--b-3">
+    <code class="demo">
+      &lt;div class="panel"><br>
+        &nbsp;&nbsp;&lt;div class="panel__heading">&lt;h5>...&lt;/h5>&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="panel__body">...&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="panel__body">...&lt;/div><br>
+      &lt;/div>
+    </code>
+  </pre>
+
+  <div class="panel">
+    <div class="panel__heading">
+      <h5>Panel widths</h5>
+    </div>
+    <div class="panel__body">
+      <p>Panels fill in the width of their parent container. Here's an example of how to use panels with our <a href="/grid.html">grid system</a>.</p>
+    </div>
+  </div>
+
+  <div class="flex">
+    <div class="col-xs-8">
+      <div class="panel panel--accent">
+        <div class="panel__body">Hello</div>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="panel">
+        <div class="panel__body">World</div>
+      </div>
+    </div>
+  </div>
+
+  <pre class="demo demo--border">
+    <code class="demo">
+      &lt;div class="flex"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-xs-8"><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel panel--accent"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel__body">...&lt;/div><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-xs-4"><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel__body">...&lt;/div><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+      &lt;/div>
+    </code>
+  </pre>
+
+      </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="public/js/bundle.js"></script> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

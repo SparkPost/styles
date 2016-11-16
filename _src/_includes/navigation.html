@@ -1,0 +1,75 @@
+<nav class="navigation {% if include.secondaryNav %}is-open{% endif %}">
+  <ul class="navigation__primary-list">
+
+    <li class="navigation__item">
+      <a class="navigation__link">logo here</a>
+    </li>
+
+    <li class="navigation__item {% if include.primaryNav == 'overview' %}is-active{% endif %}">
+      <a class="navigation__link" href="{{ site.github.url }}/">Overview</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item {% if include.secondaryNav == 'intro' %}is-active{% endif %}">
+          <a class="navigation__link" href="{{ site.github.url }}/">Overview</a>
+        </li>
+        <li class="navigation__item {% if include.secondaryNav == 'codeguidelines' %}is-active{% endif %}">
+          <a class="navigation__link is-disabled" href="{{ site.github.url }}/codeguidelines.html">Code Guidelines</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item">
+      <a class="navigation__link is-disabled">Design</a>
+    </li>
+
+    <li class="navigation__item {% if include.primaryNav == 'components' %}is-active{% endif %}">
+      <a class="navigation__link" href="{{ site.github.url }}/buttons.html">Components</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item {% if include.secondaryNav == 'buttons' %}is-active{% endif %}">
+          <a class="navigation__link" href="{{ site.github.url }}/buttons.html">Buttons</a>
+        </li>
+        <li class="navigation__item {% if include.secondaryNav == 'panels' %}is-active{% endif %}">
+          <a class="navigation__link" href="{{ site.github.url }}/panels.html">Panels</a>
+        </li>
+        <li class="navigation__item {% if include.secondaryNav == 'formelements' %}is-active{% endif %}">
+          <a class="navigation__link" href="{{ site.github.url }}/formelements.html">Form elements</a>
+        </li>
+        <li class="navigation__item {% if include.secondaryNav == 'tables' %}is-active{% endif %}">
+          <a class="navigation__link" href="{{ site.github.url }}/tables.html">Tables</a>
+        </li>
+        <li class="navigation__item {% if include.secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link is-disabled" href="{{ site.github.url }}/">Tooltips</a>
+        </li>
+        <li class="navigation__item {% if include.secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link is-disabled" href="{{ site.github.url }}/">Icons</a>
+        </li>
+        <li class="navigation__item {% if include.secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link is-disabled" href="{{ site.github.url }}/">Pagination</a>
+        </li>
+        <li class="navigation__item {% if include.secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link is-disabled" href="{{ site.github.url }}/">Progress Bars</a>
+        </li>
+        <li class="navigation__item {% if include.secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link is-disabled" href="{{ site.github.url }}/">Navigation</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item {% if include.primaryNav == 'utility' %}is-active{% endif %}">
+      <a class="navigation__link" href="{{ site.github.url }}/grid.html">Utility</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item {% if include.secondaryNav == 'grid' %}is-active{% endif %}">
+          <a class="navigation__link" href="{{ site.github.url }}/grid.html">Grid</a>
+        </li>
+        <li class="navigation__item {% if include.secondaryNav == '' %}is-active{% endif %}">
+          <a class="navigation__link is-disabled" href="{{ site.github.url }}/">Helpers</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>

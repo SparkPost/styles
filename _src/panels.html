@@ -1,0 +1,70 @@
+---
+layout: main
+title: Sparkpost Styleguide
+primaryNav: components
+secondaryNav: panels
+---
+  <div class="panel">
+    <div class="panel__heading">
+      <h5>Panels</h5>
+    </div>
+    <div class="panel__body">
+      <p>This container is a panel!</p>
+      <p><code class="inline">.panel__heading</code> holds the panel title, and <code class="inline">.panel__body</code> holds the content. You can omit the heading if needed.</p>
+      <p>The modifier <code class="inline">.panel--accent</code> adds an orange accent bar to the top of the panel.</p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel__heading"><h5>Hello World</h5></div>
+    <div class="panel__body">Foo</div>
+  </div>
+
+  <pre class="demo demo--border margin--b-3">
+    <code class="demo">
+      &lt;div class="panel"><br>
+        &nbsp;&nbsp;&lt;div class="panel__heading">&lt;h5>...&lt;/h5>&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="panel__body">...&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="panel__body">...&lt;/div><br>
+      &lt;/div>
+    </code>
+  </pre>
+
+  <div class="panel">
+    <div class="panel__heading">
+      <h5>Panel widths</h5>
+    </div>
+    <div class="panel__body">
+      <p>Panels fill in the width of their parent container. Here's an example of how to use panels with our <a href="/grid.html">grid system</a>.</p>
+    </div>
+  </div>
+
+  <div class="flex">
+    <div class="col-xs-8">
+      <div class="panel panel--accent">
+        <div class="panel__body">Hello</div>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="panel">
+        <div class="panel__body">World</div>
+      </div>
+    </div>
+  </div>
+
+  <pre class="demo demo--border">
+    <code class="demo">
+      &lt;div class="flex"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-xs-8"><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel panel--accent"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel__body">...&lt;/div><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-xs-4"><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel__body">...&lt;/div><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+      &lt;/div>
+    </code>
+  </pre>

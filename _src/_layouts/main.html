@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="{{ site.github.url }}/assets/css/styles.min.css">
+
+  </head>
+  <body class="page {% if page.secondaryNav %}page--open-nav{% endif %}">
+    <div class="page__container">
+      {% include navigation.html primaryNav=page.primaryNav secondaryNav=page.secondaryNav %}
+      <div class="page__content">
+        {{ content }}
+      </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="public/js/bundle.js"></script> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

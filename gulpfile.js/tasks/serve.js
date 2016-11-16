@@ -1,18 +1,22 @@
 var browserSync = require('browser-sync').create();
 var gulp = require('gulp');
 
+var rebuildTask = function() {
+  browserSync.reload();
+}
+
 var serveTask = function() {
   browserSync.init({
 
       // Static Server
       server: {
-        baseDir: "./docs"
+        baseDir: "./_site"
       },
 
       // proxy: '',
 
       files: [
-        './build/public/css/*.css'
+        './_site/assets/css/*.css'
       ],
 
       ghostMode: {
@@ -25,7 +29,7 @@ var serveTask = function() {
       open: "internal"
   });
 
-  gulp.watch('./docs/*.html').on('change', browserSync.reload);
+  gulp.watch('./_site/*.html').on('change', browserSync.reload);
   // gulp.watch('./dist/public/js/*.js').on('change', browserSync.reload);
 }
 
