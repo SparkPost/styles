@@ -28,9 +28,11 @@ a {
   color: color(blue);
   font-weight: 500;
   transition: 0.15s;
+  text-decoration: none;
 
   &:hover {
     color: color(blue--dark);
+    text-decoration: underline;;
   }
 }
 

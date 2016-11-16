@@ -1,0 +1,199 @@
+// $tooltip-default-transform: translate(-50%, 3px);
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 200px;
+
+  margin-bottom: 0.5rem;
+  transform: translate(-50%, 3px) scale(0.98);
+
+  background: grayscale(white);
+  border: 1px solid grayscale(7);
+  box-shadow: shadow(1);
+
+  padding: rem(6);
+
+  font-size: rem(11);
+  line-height: rem(18);
+  color: grayscale(dark);
+  text-transform: none;
+  letter-spacing: 0;
+  text-align: center;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: 0.15s;
+  z-index: 1;
+
+  // Arrow
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -4px;
+
+    height: 8px;
+    width: 8px;
+
+    background: grayscale(white);
+    border: {
+      bottom: 1px solid grayscale(7);
+      right: 1px solid grayscale(7);
+    }
+
+    transform: rotate(45deg);
+  }
+
+  // Sizes
+  &--s {
+    width: 100px;
+  }
+
+  &--m {
+    width: 150px;
+  }
+
+  &--l {
+    width: 300px;
+  }
+
+  // Positioning
+  &--left, &--right {
+    bottom: auto;
+    top: 50%;
+    margin-bottom: 0;
+
+    &:before {
+      top: 50%;
+      margin-left: 0;
+      margin-top: -5px;
+    }
+  }
+
+  &--left {
+    left: auto;
+    right: 100%;
+    margin-right: 0.5rem;
+    transform: translate(3px, -50%) scale(0.98);
+
+    &:before {
+      left: auto;
+      bottom: auto;
+      right: -5px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--right {
+    left: 100%;
+    margin-left: 0.5rem;
+    transform: translate(-3px, -50%) scale(0.98);
+
+    &:before {
+      left: -5px;
+      bottom: auto;
+      transform: rotate(135deg);
+    }
+  }
+
+  &--bottom {
+    bottom: auto;
+    top: 100%;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+
+    transform: translate(-50%, -3px) scale(0.98);
+
+    &:before {
+      top: -5px;
+      bottom: auto;
+      transform: rotate(225deg);
+    }
+  }
+
+  // Alignment
+  &--leftAligned {
+    left: 0;
+    transform: translate(0, 3px) scale(0.98);
+
+    &.tooltip--bottom {
+      transform: translate(0, -3px) scale(0.98);
+    }
+
+    &:before {
+      left: 1rem;
+    }
+  }
+
+  &--rightAligned {
+    right: 0;
+    left: auto;
+    transform: translate(0, 3px) scale(0.98);
+
+    &.tooltip--bottom {
+      transform: translate(0, -3px) scale(0.98);
+    }
+
+    &:before {
+      right: 1rem;
+      left: auto;
+    }
+  }
+
+  // Colors
+  &--dark {
+    background: grayscale(1);
+    border: 1px solid darken(grayscale(1), 4);
+    color: grayscale(white);
+
+    &:before {
+      background: grayscale(1);
+      border: {
+        bottom: 1px solid darken(grayscale(1), 4);
+        right: 1px solid darken(grayscale(1), 4);
+      }
+    }
+  }
+
+  &--orange {
+    background: color(orange);
+    border: 1px solid color(orange--dark);
+    color: grayscale(white);
+
+    &:before {
+      background: color(orange);
+      border: {
+        bottom: 1px solid color(orange--dark);
+        right: 1px solid color(orange--dark);
+      }
+    }
+  }
+
+  // Trigger
+  &__trigger {
+    position: relative;
+
+    &:hover .tooltip {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(-50%, 0) scale(1);
+
+      &--leftAligned, &--rightAligned {
+        transform: translate(0, 0) scale(1);
+
+        &.tooltip--bottom {
+          transform: translate(0, 0) scale(1);
+        }
+      }
+
+      &--left, &--right {
+        transform: translate(0, -50%) scale(1);
+      }
+    }
+  }
+}

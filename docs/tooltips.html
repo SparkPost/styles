@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sparkpost Styleguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+
+  </head>
+  <body class="page page--open-nav">
+    <div class="page__container">
+      <nav class="navigation is-open">
+  <ul class="navigation__primary-list">
+
+    <li class="navigation__item">
+      <a class="navigation__link">logo here</a>
+    </li>
+
+    <li class="navigation__item ">
+      <a class="navigation__link" href="./">Overview</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./">Overview</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Code Guidelines</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item">
+      <a class="navigation__link is-disabled">Design</a>
+    </li>
+
+    <li class="navigation__item is-active">
+      <a class="navigation__link" href="./buttons.html">Components</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./buttons.html">Buttons</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./panels.html">Panels</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./formelements.html">Form elements</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./tables.html">Tables</a>
+        </li>
+        <li class="navigation__item is-active">
+          <a class="navigation__link" href="./tooltips.html">Tooltips</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Icons</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Pagination</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Progress Bars</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Navigation</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item ">
+      <a class="navigation__link" href="./grid.html">Utility</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./grid.html">Grid</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Helpers</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+
+      <div class="page__content">
+          <div class="panel">
+    <div class="panel__heading">
+      <h4>Tooltips</h4>
+    </div>
+    <div class="panel__body">
+
+      <h5>Tooltip sizes</h5>
+      <p>Define tooltip sizes with <code class="inline">.tooltip--s</code>, <code class="inline">.tooltip--m</code>, or <code class="inline">.tooltip--l</code>. These set the width of the tooltip.</p>
+
+      <div class="demo__table">
+        <div class="flex demo__display">
+
+          <div class="col-xs-12 col-md-4">
+            <button class="button tooltip__trigger">Hover me<span class="tooltip tooltip--s">I am a small tooltip</span></button>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <button class="button tooltip__trigger">
+              Hover me
+              <span class="tooltip">I am a medium sized tooltip, also the defalt size.</span>
+            </button>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <button class="button tooltip__trigger">
+              Hover me
+              <span class="tooltip tooltip--l">I am a very very very very very very very very very large tooltip</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+                &lt;button class="button tooltip__trigger"><br>
+                &nbsp;&nbsp;...<br>
+                &nbsp;&nbsp;&lt;span class="tooltip tooltip--s"> ... &lt;/span><br>
+                &lt;/button><br><br>
+
+                &lt;button class="button tooltip__trigger"><br>
+                &nbsp;&nbsp; ... <br>
+                &nbsp;&nbsp;&lt;span class="tooltip"> ... &lt;/span> // or tooltip--m<br>
+                &lt;/button><br><br>
+
+                &lt;button class="button tooltip__trigger"><br>
+                &nbsp;&nbsp; ... <br>
+                &nbsp;&nbsp;&lt;span class="tooltip tooltip--l"> ... &lt;/span><br>
+                &lt;/button>
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <h5>Tooltip alignment</h5>
+      <p>Use the modifiers <code class="inline">.tooltip--leftAligned</code> and <code class="inline">.tooltip--rightAligned</code> to align tooltips to the left or right. These only work with top or bottom positioning.</p>
+
+      <div class="demo__table">
+        <div class="flex demo__display">
+
+          <div class="col-xs-12 col-md-6 padding--lr-1">
+            <button class="button button--muted button--full tooltip__trigger">
+              Hover me
+              <span class="tooltip tooltip--leftAligned"><i class="fa fa-arrow-left"></i> &nbsp; I am a left aligned tooltip.</span>
+            </button>
+          </div>
+
+          <div class="col-xs-12 col-md-6 padding--lr-1">
+            <button class="button button--muted button--full tooltip__trigger">
+              Hover me
+              <span class="tooltip tooltip--bottom tooltip--rightAligned"><i class="fa fa-arrow-right"></i> &nbsp; I am right aligned tooltip.</span>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+
+              &lt;button class="button button--muted button--full tooltip__trigger"><br>
+                &nbsp;&nbsp;...<br>
+                &nbsp;&nbsp;&lt;span class="tooltip tooltip--leftAligned"> ... &lt;/span><br>
+              &lt;/button><br><br>
+
+              &lt;button class="button button--muted button--full tooltip__trigger"><br>
+                &nbsp;&nbsp;...<br>
+                &nbsp;&nbsp;&lt;span class="tooltip tooltip--bottom tooltip--rightAligned"> ... &lt;/span><br>
+              &lt;/button><br>
+
+            </code>
+          </pre>
+        </div>
+      </div>
+
+
+      <h5>Tooltip colors</h5>
+      <p>Use the modifiers <code class="inline">.tooltip--orange</code> and <code class="inline">.tooltip--dark</code> to change background color. White is used by default.</p>
+      <div class="demo__table">
+        <div class="flex demo__display">
+
+          <div class="col-xs-12 col-md-6 padding--lr-1">
+
+            <fieldset class="fieldset margin--b-0 margin--t-1">
+
+              <label class="label">
+                Label
+                <span class="tooltip__trigger">
+                  <i class="fa fa-question-circle"></i>
+                  <span class="tooltip tooltip--dark">I am a dark tooltip.</span>
+                </span>
+              </label>
+
+              <div class="input__group">
+                <input class="input__text" type="text" placeholder="Hover over the ?" />
+              </div>
+
+            </fieldset>
+
+          </div>
+
+          <div class="col-xs-12 col-md-6 padding--lr-1">
+            <fieldset class="fieldset margin--b-0 margin--t-1">
+
+              <label class="label">
+                Label
+                <span class="tooltip__trigger">
+                  <i class="fa fa-question-circle"></i>
+                  <span class="tooltip tooltip--orange">I am an orange tooltip.</span>
+                </span>
+              </label>
+
+              <div class="input__group">
+                <input class="input__text" type="text" placeholder="Hover over the ?" />
+              </div>
+
+            </fieldset>
+          </div>
+
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+
+              &lt;label class="label"><br>
+                &nbsp;&nbsp;Label <br>
+                &nbsp;&nbsp;&lt;span class="tooltip__trigger"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-question-circle">&lt;/i><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="tooltip tooltip--orange">I am a dark tooltip.&lt;/span><br>
+                &nbsp;&nbsp;&lt;/span><br>
+              &lt;/label><br><br>
+
+              &lt;label class="label"><br>
+                &nbsp;&nbsp;Label <br>
+                &nbsp;&nbsp;&lt;span class="tooltip__trigger"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-question-circle">&lt;/i><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="tooltip tooltip--orange">I am an orange tooltip.&lt;/span><br>
+                &nbsp;&nbsp;&lt;/span><br>
+              &lt;/label><br><br>
+
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <h5>Tooltip placement</h5>
+      <p>Use the modifiers <code class="inline">.tooltip--left</code>, <code class="inline">.tooltip--right</code>, and <code class="inline">.tooltip--bottom</code> to change positioning around the trigger. Top is used by default.</p>
+      <div class="demo__table">
+        <div class="flex demo__display">
+
+          <div class="col-xs-12 col-md-4 padding--lr-1">
+            <a class="tooltip__trigger" href="">
+              Hover me
+              <span class="tooltip tooltip--left">I am a left positioned tooltip.</span>
+            </a>
+          </div>
+
+          <div class="col-xs-12 col-md-4 padding--lr-1">
+            <a class="tooltip__trigger" href="">
+              Hover me
+              <span class="tooltip tooltip--right">I am right positioned tooltip.</span>
+            </a>
+          </div>
+
+          <div class="col-xs-12 col-md-4 padding--lr-1">
+            <a class="tooltip__trigger" href="">
+              Hover me
+              <span class="tooltip tooltip--bottom">I am bottom positioned tooltip.</span>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+
+                &lt;a class="tooltip__trigger" ... ><br>
+                  &nbsp;&nbsp;...<br>
+                  &nbsp;&nbsp;&lt;span class="tooltip tooltip--left"> ... &lt;/span><br>
+                &lt;/a><br><br>
+
+                &lt;a class="tooltip__trigger" ... ><br>
+                  &nbsp;&nbsp;...<br>
+                  &nbsp;&nbsp;&lt;span class="tooltip tooltip--right"> ... &lt;/span><br>
+                &lt;/a><br><br>
+
+                &lt;a class="tooltip__trigger" ... ><br>
+                  &nbsp;&nbsp;...<br>
+                  &nbsp;&nbsp;&lt;span class="tooltip tooltip--bottom"> ... &lt;/span><br>
+                &lt;/a><br>
+
+            </code>
+          </pre>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+      </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="public/js/bundle.js"></script> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

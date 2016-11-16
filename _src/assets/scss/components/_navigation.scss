@@ -45,6 +45,7 @@
 
     &:hover, &:active, &:focus {
       color: grayscale(white);
+      text-decoration: none;
     }
 
     &:hover[href], &:active[href], &:focus[href] {

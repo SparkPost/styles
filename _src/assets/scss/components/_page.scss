@@ -19,6 +19,7 @@ $page-accent-height: 6px;
 
   &__container {
     position: relative;
+    overflow: hidden;
   }
 
   &__content {
