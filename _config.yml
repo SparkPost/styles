@@ -5,4 +5,4 @@ exclude: [
   '*.scss'
 ]
 source:      _src
-destination: _site
+destination: docs

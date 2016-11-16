@@ -10,13 +10,13 @@ var serveTask = function() {
 
       // Static Server
       server: {
-        baseDir: "./_site"
+        baseDir: "./docs"
       },
 
       // proxy: '',
 
       files: [
-        './_site/assets/css/*.css'
+        './docs/assets/css/*.css'
       ],
 
       ghostMode: {
