@@ -52,7 +52,7 @@ secondaryNav: panels
     </div>
   </div>
 
-  <pre class="demo demo--border">
+  <pre class="demo demo--border margin--b-3">
     <code class="demo">
       &lt;div class="flex"><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-xs-8"><br>
@@ -66,5 +66,37 @@ secondaryNav: panels
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
       &lt;/div>
+    </code>
+  </pre>
+
+  <div class="panel">
+    <div class="panel__heading">
+      <h5>Tabs</h5>
+    </div>
+    <div class="panel__body">
+      <p>Append a <code class="inline">ul.panel__tabList</code> element to create a tab group. Use <code class="inline">li.panel__tabItem > a.panel__tabLink</code> to define the individual tabs.</p>
+      <p>Add <code class="inline">.is-active</code> to <code class="inline">.tabItem</code> to use its active state.</p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <ul class="panel__tabList">
+      <li class="panel__tabItem"><a href="" class="panel__tabLink">Tab 1</a></li>
+      <li class="panel__tabItem is-active"><a href="" class="panel__tabLink">Tab 2</a></li>
+      <li class="panel__tabItem"><a href="" class="panel__tabLink">Tab 3</a></li>
+    </ul>
+    <div class="panel__body">Body</div>
+  </div>
+
+  <pre class="demo demo--border margin--b-3">
+    <code class="demo">
+      &lt;div class="panel"><br>
+        &nbsp;&nbsp;&lt;ul class="panel__tabList"><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="panel__tabItem">&lt;a class="panel__tabLink"> ... &lt;/a>&lt;/li><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="panel__tabItem is-active">&lt;a class="panel__tabLink"> ... &lt;/a>&lt;/li><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="panel__tabItem">&lt;a class="panel__tabLink"> ... &lt;/a>&lt;/li><br>
+        &nbsp;&nbsp;&lt;/ul><br>
+        &nbsp;&nbsp;&lt;div class="panel__body"> ... &lt;/div><br>
+      &lt;/div><br>
     </code>
   </pre>

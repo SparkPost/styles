@@ -1,34 +1,69 @@
 .panel {
-  $panel-padding: 1rem;
+  $panel-padding: rem(18);
+  margin-bottom: rem(18);
 
-  margin-bottom: 1rem;
-  background: grayscale(white);
-  border-bottom: 1px solid grayscale(8);
-  box-shadow: shadow(1);
+  border-bottom: 1px solid grayscale(9);
 
   &__heading, &__body {
+    position: relative;
     padding: $panel-padding;
+
+    background: grayscale(white);
+    box-shadow: shadow(1);
+    border-bottom: 1px solid grayscale(9);
 
     & > *:last-child {
       margin-bottom: 0;
     }
   }
 
-  &__body {
-    border-top: 1px solid grayscale(9);
+  &__body:last-child {
+    border: none;
+  }
 
-    &:first-child {
-      border: none;
+  &--accent:before {
+    display: block;
+    content: "";
+    height: 3px;
+    margin-bottom: -3px;
+    background: color(orange);
+  }
+
+  &__tabList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__tabItem {
+    display: inline-block;
+
+    &.is-active {
+      background: grayscale(white);
+      pointer-events: none;
+
+      &:before {
+        display: block;
+        content: "";
+        height: 3px;
+        margin-bottom: -3px;
+        background: color(orange);
+      }
+
+      .panel__tabLink {
+        color: grayscale(1);
+        box-shadow: shadow(1);
+      }
     }
   }
 
-  &--accent {
-    &:before {
-      display: block;
-      content: "";
-      height: 3px;
-      margin-bottom: -3px;
-      background: color(orange);
+  &__tabLink {
+    display: block;
+    padding: rem(12) rem(36);
+    color: grayscale(4);
+
+    &:hover, &:active {
+      text-decoration: none;
     }
   }
 }
