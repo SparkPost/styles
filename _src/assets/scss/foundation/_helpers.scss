@@ -65,51 +65,52 @@ $box-map: (
   sm: rem(12),
   md: rem(18),
   lg: rem(36),
-  xl: rem(54)
+  xl: rem(54),
+  xxl: rem(72)
 );
 
 @each $size, $n in $box-map {
 
   // Margins
-  .margin-#{$size} {
+  .margin--#{$size} {
     margin: #{$n} !important;
   }
 
-  .marginTop-#{$size} {
+  .marginTop--#{$size} {
     margin-top: #{$n} !important;
   }
 
-  .marginRight-#{$size} {
+  .marginRight--#{$size} {
     margin-right: #{$n} !important;
   }
 
-  .marginBottom-#{$size} {
+  .marginBottom--#{$size} {
     margin-bottom: #{$n} !important;
   }
 
-  .marginLeft-#{$size} {
+  .marginLeft--#{$size} {
     margin-left: #{$n} !important;
   }
 
 
   // Padding
-  .padding-#{$size} {
+  .padding--#{$size} {
     padding: #{$n} !important;
   }
 
-  .paddingTop-#{$size} {
+  .paddingTop--#{$size} {
     padding-top: #{$n} !important;
   }
 
-  .paddingRight-#{$size} {
+  .paddingRight--#{$size} {
     padding-right: #{$n} !important;
   }
 
-  .paddingBottom-#{$size} {
+  .paddingBottom--#{$size} {
     padding-bottom: #{$n} !important;
   }
 
-  .paddingLeft-#{$size} {
+  .paddingLeft--#{$size} {
     padding-left: #{$n} !important;
   }
 }
