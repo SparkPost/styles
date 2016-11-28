@@ -1,7 +1,7 @@
 // Styleguide specific styles
 .flex-demo {
   & > * {
-    margin-bottom: 1rem !important;
+    margin-bottom: rem(18) !important;
     background: grayscale(8);
     background-clip: content-box;
     text-align: center;
@@ -14,19 +14,19 @@
   &__header {
     text-align: center;
     color: grayscale(4);
-    margin: 0.5rem;
+    margin: rem(9);
     font-weight: 500;
   }
   & .flex-demo {
     margin-left: 0;
   }
   & .flex-demo > * {
-    margin-top: 1rem;
+    margin-top: rem(18);
     background-clip: content-box !important;
     background: grayscale(6);
 
     &:last-child {
-      padding-right: 1rem;
+      padding-right: rem(18);
     }
   }
 }
@@ -41,7 +41,7 @@
 
 .demo__display {
   & > * {
-    padding: 2rem 0;
+    padding: rem(36) 0;
     text-align: center;
 
     border-left: 1px solid grayscale(8);
@@ -67,7 +67,7 @@
 }
 
 .demo__desc {
-  padding: 1rem;
+  padding: rem(18);
   border-bottom: 1px solid grayscale(8);
   border-left: 1px solid grayscale(8);
   background: grayscale(9);
@@ -85,7 +85,7 @@ pre.demo, code.demo {
 }
 
 pre.demo--border {
-  padding: 1rem;
+  padding: rem(18);
   border: 1px solid grayscale(8);
 }
 // Syntax Highlighting

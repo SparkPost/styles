@@ -6,7 +6,7 @@
   left: 50%;
   width: 200px;
 
-  margin-bottom: 0.5rem;
+  margin-bottom: rem(9);
   transform: translate(-50%, 3px) scale(0.98);
 
   background: grayscale(white);
@@ -78,7 +78,7 @@
   &--left {
     left: auto;
     right: 100%;
-    margin-right: 0.5rem;
+    margin-right: rem(9);
     transform: translate(3px, -50%) scale(0.98);
 
     &:before {
@@ -91,7 +91,7 @@
 
   &--right {
     left: 100%;
-    margin-left: 0.5rem;
+    margin-left: rem(9);
     transform: translate(-3px, -50%) scale(0.98);
 
     &:before {
@@ -105,7 +105,7 @@
     bottom: auto;
     top: 100%;
     margin-bottom: 0;
-    margin-top: 0.5rem;
+    margin-top: rem(9);
 
     transform: translate(-50%, -3px) scale(0.98);
 
@@ -126,7 +126,7 @@
     }
 
     &:before {
-      left: 1rem;
+      left: rem(18);
     }
   }
 
@@ -140,7 +140,7 @@
     }
 
     &:before {
-      right: 1rem;
+      right: rem(18);
       left: auto;
     }
   }

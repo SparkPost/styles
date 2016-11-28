@@ -14,7 +14,7 @@
 
 .label {
   display: inline-block;;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 
   font-weight: 700;
   font-size: rem(15);
@@ -99,29 +99,29 @@
 // Text Input
 .input__text {
   @extend %input-base;
-  padding: 0.667rem;
+  padding: rem(12);
 
   .input__group--icon & {
-    padding-left: 2rem;
+    padding-left: rem(36);
   }
 
   & ~ .fa {
     top: 49%;
-    left: 0.667rem;
+    left: rem(12);
     transform: translate(0, -50%);
   }
 
   &--s {
-    padding: 0.334rem;
+    padding: rem(6);
     font-size: rem(13);
   }
 
   &--m {
-    padding: 0.667rem;
+    padding: rem(12);
   }
 
   &--l {
-    padding: 1rem;
+    padding: rem(18);
   }
 }
 
@@ -129,46 +129,46 @@
 .input__textarea {
   @extend %input-base;
   max-width: 100%;
-  padding: 0.667rem;
+  padding: rem(12);
 
   & ~ .fa {
-    top: 0.667rem;
-    left: 0.667rem;
+    top: rem(12);
+    left: rem(12);
     transform: none;
   }
 
   .input__group--icon & {
-    padding-left: 2rem;
+    padding-left: rem(36);
   }
 
   &--s {
-    padding: 0.334rem;
+    padding: rem(6);
     font-size: rem(13);
 
     .input__group--icon & {
-      padding-left: 1.334rem;
+      padding-left: rem(24);
     }
 
     & ~ .fa {
-      top: 0.334rem;
-      left: 0.334rem;
+      top: rem(6);
+      left: rem(6);
     }
   }
 
   &--m {
-    padding: 0.667rem;
+    padding: rem(12);
   }
 
   &--l {
-    padding: 1rem;
+    padding: rem(18);
 
     .input__group--icon & {
-      padding-left: 2.334rem;
+      padding-left: rem(42);
     }
 
     & ~ .fa {
-      top: 1rem;
-      left: 1rem;
+      top: rem(18);
+      left: rem(18);
     }
   }
 }
@@ -179,39 +179,39 @@
   @extend %input-base;
   appearance: none;
   max-width: 100%;
-  padding: 0.667rem 3rem 0.667rem 0.667rem;
+  padding: rem(12) rem(54) rem(12) rem(12);
 
   border-radius: 0;
   background: transparent;
 
   .input__group--icon & {
-    padding-left: 2rem;
+    padding-left: rem(36);
   }
 
   & ~ .fa {
     top: 49%;
-    left: 0.667rem;
+    left: rem(12);
     transform: translate(0, -50%);
   }
 
   &--s {
-    padding: 0.334rem 3rem 0.334rem 0.334rem;
+    padding: rem(6) rem(54) rem(6) rem(6);
     font-size: rem(13);
   }
 
   &--m {
-    padding: 0.667rem 3rem 0.667rem 0.667rem;
+    padding: rem(12) rem(54) rem(12) rem(12);
   }
 
   &--l {
-    padding: 1rem 3rem 1rem 1rem;
+    padding: rem(18) rem(54) rem(18) rem(18);
   }
 
   &Arrow {
     display: block;
     content: "";
     position: absolute;
-    right: 1rem;
+    right: rem(18);
     top: 50%;
     transform: translate(0, -50%);
 

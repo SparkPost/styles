@@ -27,10 +27,10 @@ $page-accent-height: 6px;
     max-width: break(xl);
     margin: 0 auto;
 
-    padding: 1rem 1rem 1rem $nav-width + 1rem;
+    padding: rem(18) rem(18) rem(18) $nav-width + rem(18);
 
     .page--open-nav & {
-      padding: 1rem 1rem 1rem $nav-width + $secondary-nav-width + 1rem;
+      padding: rem(18) rem(18) rem(18) $nav-width + $secondary-nav-width + rem(18);
     }
 
     .page--full & {

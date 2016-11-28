@@ -3950,13 +3950,13 @@ h6 {
   font-size: 0.83333rem; }
 
 h1 {
-  line-height: 3rem; }
+  line-height: 0remcalc(18 * 3)/18; }
 
 h2, h3 {
-  line-height: 2rem; }
+  line-height: 0remcalc(18 * 2)/18; }
 
 h4, h5, h6 {
-  line-height: 1.5rem; }
+  line-height: 0remcalc(18 * 1.5)/18; }
 
 code, pre {
   -webkit-font-smoothing: antialiased;
@@ -4468,13 +4468,13 @@ Box Helpers
       border: 1px solid #a9a9af;
       color: #414146; }
   .button--l {
-    padding: 0 1.334rem;
+    padding: 0 1.16667rem;
     font-size: 15px; }
   .button--m {
     padding: 0 1rem;
     font-size: 12px; }
   .button--s {
-    padding: 0 0.667rem;
+    padding: 0 0.66667rem;
     font-size: 10px; }
   .button--full {
     display: block;
@@ -4518,7 +4518,7 @@ Box Helpers
 
 .label {
   display: inline-block;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 0.83333rem; }
 
@@ -4591,46 +4591,46 @@ Box Helpers
     opacity: 1; }
 
 .input__text {
-  padding: 0.667rem; }
+  padding: 0.66667rem; }
   .input__group--icon .input__text {
     padding-left: 2rem; }
   .input__text ~ .fa {
     top: 49%;
-    left: 0.667rem;
+    left: 0.66667rem;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%); }
   .input__text--s {
-    padding: 0.334rem;
+    padding: 0.33333rem;
     font-size: 0.72222rem; }
   .input__text--m {
-    padding: 0.667rem; }
+    padding: 0.66667rem; }
   .input__text--l {
     padding: 1rem; }
 
 .input__textarea {
   max-width: 100%;
-  padding: 0.667rem; }
+  padding: 0.66667rem; }
   .input__textarea ~ .fa {
-    top: 0.667rem;
-    left: 0.667rem;
+    top: 0.66667rem;
+    left: 0.66667rem;
     -webkit-transform: none;
             transform: none; }
   .input__group--icon .input__textarea {
     padding-left: 2rem; }
   .input__textarea--s {
-    padding: 0.334rem;
+    padding: 0.33333rem;
     font-size: 0.72222rem; }
     .input__group--icon .input__textarea--s {
-      padding-left: 1.334rem; }
+      padding-left: 1.33333rem; }
     .input__textarea--s ~ .fa {
-      top: 0.334rem;
-      left: 0.334rem; }
+      top: 0.33333rem;
+      left: 0.33333rem; }
   .input__textarea--m {
-    padding: 0.667rem; }
+    padding: 0.66667rem; }
   .input__textarea--l {
     padding: 1rem; }
     .input__group--icon .input__textarea--l {
-      padding-left: 2.334rem; }
+      padding-left: 2.33333rem; }
     .input__textarea--l ~ .fa {
       top: 1rem;
       left: 1rem; }
@@ -4641,21 +4641,21 @@ Box Helpers
      -moz-appearance: none;
           appearance: none;
   max-width: 100%;
-  padding: 0.667rem 3rem 0.667rem 0.667rem;
+  padding: 0.66667rem 3rem 0.66667rem 0.66667rem;
   border-radius: 0;
   background: transparent; }
   .input__group--icon .input__select {
     padding-left: 2rem; }
   .input__select ~ .fa {
     top: 49%;
-    left: 0.667rem;
+    left: 0.66667rem;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%); }
   .input__select--s {
-    padding: 0.334rem 3rem 0.334rem 0.334rem;
+    padding: 0.33333rem 3rem 0.33333rem 0.33333rem;
     font-size: 0.72222rem; }
   .input__select--m {
-    padding: 0.667rem 3rem 0.667rem 0.667rem; }
+    padding: 0.66667rem 3rem 0.66667rem 0.66667rem; }
   .input__select--l {
     padding: 1rem 3rem 1rem 1rem; }
   .input__selectArrow {
@@ -4688,7 +4688,7 @@ Box Helpers
   .table__body {
     font-weight: 300; }
   .table__cell, .table__heading {
-    padding: 0.882rem 1rem; }
+    padding: 0.83333rem 1rem; }
   .table__row {
     -webkit-transition: border 0.15s;
     transition: border 0.15s; }

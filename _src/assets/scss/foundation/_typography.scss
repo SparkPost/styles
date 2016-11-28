@@ -38,7 +38,7 @@ a {
 
 %header {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: rem(18);
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -72,15 +72,15 @@ $headers: (h1: 27, h2: 24, h3: 21, h4: 18, h5: 15, h6: 15);
 }
 
 h1 {
-  line-height: 3rem;
+  line-height: rem(calc(18 * 3));
 }
 
 h2, h3 {
-  line-height: 2rem;
+  line-height: rem(calc(18 * 2));
 }
 
 h4, h5, h6 {
-  line-height: 1.5rem;
+  line-height: rem(calc(18 * 1.5));;
 }
 
 code, pre {
