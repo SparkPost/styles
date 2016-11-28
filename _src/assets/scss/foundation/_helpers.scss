@@ -54,61 +54,63 @@
 /*
 Box Helpers
  This is to ensure vertical rhythm and spacing consistency.
- All block elements and buttons have a margin bottom of base(1), 1rem.
- Do NOT use .padding--l on .row or .col elements unless you do not have a gutter width.
+ Most block elements and components have a margin bottom of rem(1).
+ Do NOT use .padding on .flex or .col elements unless you do not have a gutter width.
 */
 
-@for $i from 0 through 5 {
-  .margin--t-#{$i} {
-    margin-top: $i + 0rem !important;
+$box-map: (
+  none: 0,
+  xxs: rem(6),
+  xs: rem(9),
+  sm: rem(12),
+  md: rem(18),
+  lg: rem(36),
+  xl: rem(54)
+);
+
+@each $size, $n in $box-map {
+
+  // Margins
+  .margin-#{$size} {
+    margin: #{$n} !important;
   }
 
-  .margin--b-#{$i} {
-    margin-bottom: $i + 0rem !important;
+  .marginTop-#{$size} {
+    margin-top: #{$n} !important;
   }
 
-  .margin--l-#{$i} {
-    margin-left: $i + 0rem !important;
+  .marginRight-#{$size} {
+    margin-right: #{$n} !important;
   }
 
-  .margin--r-#{$i} {
-    margin-right: $i + 0rem !important;
+  .marginBottom-#{$size} {
+    margin-bottom: #{$n} !important;
   }
 
-  .margin--tb-#{$i} {
-    margin-top: $i + 0rem !important;
-    margin-bottom: $i + 0rem !important;
+  .marginLeft-#{$size} {
+    margin-left: #{$n} !important;
   }
 
-  .margin--lr-#{$i}{
-    margin-left: $i + 0rem !important;
-    margin-right: $i + 0rem !important;
+
+  // Padding
+  .padding-#{$size} {
+    padding: #{$n} !important;
   }
 
-  .padding--t-#{$i} {
-    padding-top: $i + 0rem !important;
+  .paddingTop-#{$size} {
+    padding-top: #{$n} !important;
   }
 
-  .padding--b-#{$i} {
-    padding-bottom: $i + 0rem !important;
+  .paddingRight-#{$size} {
+    padding-right: #{$n} !important;
   }
 
-  .padding--l-#{$i} {
-    padding-left: $i + 0rem !important;
+  .paddingBottom-#{$size} {
+    padding-bottom: #{$n} !important;
   }
 
-  .padding--r-#{$i} {
-    padding-right: $i + 0rem !important;
-  }
-
-  .padding--tb-#{$i} {
-    padding-top: $i + 0rem !important;
-    padding-bottom: $i + 0rem !important;
-  }
-
-  .padding--lr-#{$i}{
-    padding-left: $i + 0rem !important;
-    padding-right: $i + 0rem !important;
+  .paddingLeft-#{$size} {
+    padding-left: #{$n} !important;
   }
 }
 
