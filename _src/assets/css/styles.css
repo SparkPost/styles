@@ -4885,6 +4885,22 @@ Box Helpers
   .flex-demo .flex-demo > *:last-child {
     padding-right: 1rem; }
 
+.flex-demo--box > * {
+  margin-bottom: 18px !important;
+  background: #e1e1e6;
+  background-clip: content-box; }
+
+.flex-demo--box .flex-demo--box {
+  position: relative;
+  height: 100%;
+  margin-left: 0; }
+
+.flex-demo--box .flex-demo--box > * {
+  height: 100%;
+  margin-bottom: 0 !important;
+  background: #bebec3;
+  text-align: center; }
+
 .demo__table {
   border-right: 1px solid #e1e1e6;
   border-top: 1px solid #e1e1e6;

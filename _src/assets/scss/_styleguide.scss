@@ -29,6 +29,26 @@
       padding-right: rem(18);
     }
   }
+
+  &--box {
+
+    & > * {
+      margin-bottom: 18px !important;
+      background: grayscale(8);
+      background-clip: content-box;
+    }
+    & .flex-demo--box {
+      position: relative;
+      height: 100%;
+      margin-left: 0;
+    }
+    & .flex-demo--box > * {
+      height: 100%;
+      margin-bottom: 0 !important;
+      background: grayscale(6);
+      text-align: center;
+    }
+  }
 }
 
 
