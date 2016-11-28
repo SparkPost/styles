@@ -4835,6 +4835,31 @@ Box Helpers
         -webkit-transform: translate(0, -50%) scale(1);
                 transform: translate(0, -50%) scale(1); }
 
+.progressBar {
+  position: relative;
+  height: 1rem;
+  margin-bottom: 1rem;
+  background: #e1e1e6; }
+  .progressBar:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(65, 65, 70, 0.06); }
+  .progressBar__completed {
+    display: block;
+    height: 100%;
+    background: #fa6423;
+    box-shadow: 0px 1px 2px rgba(65, 65, 70, 0.1); }
+    .progressBar--blue .progressBar__completed {
+      background: #37aadc; }
+    .progressBar--green .progressBar__completed {
+      background: #9bcd5a; }
+    .progressBar--red .progressBar__completed {
+      background: #f00a0a; }
+
 .flex-demo > * {
   margin-bottom: 1rem !important;
   background: #e1e1e6;

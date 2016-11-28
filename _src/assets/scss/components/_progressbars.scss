@@ -1,0 +1,36 @@
+.progressBar {
+  position: relative;
+  height: rem(18);
+  margin-bottom: rem(18);
+  background: grayscale(8);
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+
+    background: rgba(grayscale(1), 0.06);
+  }
+
+  &__completed {
+    display: block;
+    height: 100%;
+    background: color(orange);
+    box-shadow: shadow(1);
+
+    .progressBar--blue & {
+      background: color(blue);
+    }
+
+    .progressBar--green & {
+      background: color(green);
+    }
+
+    .progressBar--red & {
+      background: color(alert);
+    }
+  }
+}
