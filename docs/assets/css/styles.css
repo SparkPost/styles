@@ -4397,6 +4397,8 @@ Box Helpers
   .panel__body:last-child {
     border: none; }
   .panel--accent:before {
+    position: relative;
+    z-index: 1;
     display: block;
     content: "";
     height: 3px;
@@ -4898,7 +4900,7 @@ Box Helpers
 .flex-demo--box .flex-demo--box > * {
   height: 100%;
   margin-bottom: 0 !important;
-  background: #bebec3;
+  background: #aaaaaf;
   text-align: center; }
 
 .demo__table {
