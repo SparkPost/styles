@@ -18,3 +18,8 @@ hr {
   border: none;
   border-bottom: 1px solid grayscale(8);
 }
+
+ul, ol {
+  text-align: left;
+  padding-left: rem(18);
+}

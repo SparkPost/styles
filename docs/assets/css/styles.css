@@ -2739,6 +2739,10 @@ hr {
   border: none;
   border-bottom: 1px solid #e1e1e6; }
 
+ul, ol {
+  text-align: left;
+  padding-left: 1rem; }
+
 .flex {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4820,22 +4824,23 @@ Box Helpers
       background: #fa6423;
       border-bottom: 1px solid #e9591b;
       border-right: 1px solid #e9591b; }
-  .tooltip__trigger {
+  .tooltip__group {
     position: relative; }
-    .tooltip__trigger:hover .tooltip {
-      opacity: 1;
-      pointer-events: auto;
-      -webkit-transform: translate(-50%, 0) scale(1);
-              transform: translate(-50%, 0) scale(1); }
-      .tooltip__trigger:hover .tooltip--leftAligned, .tooltip__trigger:hover .tooltip--rightAligned {
-        -webkit-transform: translate(0, 0) scale(1);
-                transform: translate(0, 0) scale(1); }
-        .tooltip__trigger:hover .tooltip--leftAligned.tooltip--bottom, .tooltip__trigger:hover .tooltip--rightAligned.tooltip--bottom {
-          -webkit-transform: translate(0, 0) scale(1);
-                  transform: translate(0, 0) scale(1); }
-      .tooltip__trigger:hover .tooltip--left, .tooltip__trigger:hover .tooltip--right {
-        -webkit-transform: translate(0, -50%) scale(1);
-                transform: translate(0, -50%) scale(1); }
+
+.is-active.tooltip, .tooltip__hoverTrigger:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translate(-50%, 0) scale(1);
+          transform: translate(-50%, 0) scale(1); }
+  .is-active.tooltip--leftAligned, .is-active.tooltip--rightAligned, .tooltip__hoverTrigger:hover .tooltip--leftAligned, .tooltip__hoverTrigger:hover .tooltip--rightAligned {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1); }
+    .is-active.tooltip--leftAligned.tooltip--bottom, .is-active.tooltip--rightAligned.tooltip--bottom, .tooltip__hoverTrigger:hover .tooltip--leftAligned.tooltip--bottom, .tooltip__hoverTrigger:hover .tooltip--rightAligned.tooltip--bottom {
+      -webkit-transform: translate(0, 0) scale(1);
+              transform: translate(0, 0) scale(1); }
+  .is-active.tooltip--left, .is-active.tooltip--right, .tooltip__hoverTrigger:hover .tooltip--left, .tooltip__hoverTrigger:hover .tooltip--right {
+    -webkit-transform: translate(0, -50%) scale(1);
+            transform: translate(0, -50%) scale(1); }
 
 .progressBar {
   position: relative;

@@ -17,18 +17,18 @@ secondaryNav: tooltips
         <div class="flex demo__display">
 
           <div class="col-xs-12 col-md-4">
-            <button class="button tooltip__trigger">Hover me<span class="tooltip tooltip--s">I am a small tooltip</span></button>
+            <button class="button tooltip__group tooltip__hoverTrigger">Hover me<span class="tooltip tooltip--s">I am a small tooltip</span></button>
           </div>
 
           <div class="col-xs-12 col-md-4">
-            <button class="button tooltip__trigger">
+            <button class="button tooltip__group tooltip__hoverTrigger">
               Hover me
               <span class="tooltip">I am a medium sized tooltip, also the defalt size.</span>
             </button>
           </div>
 
           <div class="col-xs-12 col-md-4">
-            <button class="button tooltip__trigger">
+            <button class="button tooltip__group tooltip__hoverTrigger">
               Hover me
               <span class="tooltip tooltip--l">I am a very very very very very very very very very large tooltip</span>
             </button>
@@ -38,17 +38,17 @@ secondaryNav: tooltips
         <div class="flex demo__desc">
           <pre class="demo">
             <code class="html demo">
-                &lt;button class="button tooltip__trigger"><br>
+                &lt;button class="button tooltip__group tooltip__hoverTrigger"><br>
                 &nbsp;&nbsp;...<br>
                 &nbsp;&nbsp;&lt;span class="tooltip tooltip--s"> ... &lt;/span><br>
                 &lt;/button><br><br>
 
-                &lt;button class="button tooltip__trigger"><br>
+                &lt;button class="button tooltip__group tooltip__hoverTrigger"><br>
                 &nbsp;&nbsp; ... <br>
                 &nbsp;&nbsp;&lt;span class="tooltip"> ... &lt;/span> // or tooltip--m<br>
                 &lt;/button><br><br>
 
-                &lt;button class="button tooltip__trigger"><br>
+                &lt;button class="button tooltip__group tooltip__hoverTrigger"><br>
                 &nbsp;&nbsp; ... <br>
                 &nbsp;&nbsp;&lt;span class="tooltip tooltip--l"> ... &lt;/span><br>
                 &lt;/button>
@@ -64,14 +64,14 @@ secondaryNav: tooltips
         <div class="flex demo__display">
 
           <div class="col-xs-12 col-md-6 padding--md">
-            <button class="button button--muted button--full tooltip__trigger">
+            <button class="button button--muted button--full tooltip__group tooltip__hoverTrigger">
               Hover me
               <span class="tooltip tooltip--leftAligned"><i class="fa fa-arrow-left"></i> &nbsp; I am a left aligned tooltip.</span>
             </button>
           </div>
 
           <div class="col-xs-12 col-md-6 padding--md">
-            <button class="button button--muted button--full tooltip__trigger">
+            <button class="button button--muted button--full tooltip__group tooltip__hoverTrigger">
               Hover me
               <span class="tooltip tooltip--bottom tooltip--rightAligned"><i class="fa fa-arrow-right"></i> &nbsp; I am right aligned tooltip.</span>
             </button>
@@ -83,12 +83,12 @@ secondaryNav: tooltips
           <pre class="demo">
             <code class="html demo">
 
-              &lt;button class="button button--muted button--full tooltip__trigger"><br>
+              &lt;button class="button button--muted button--full tooltip__group tooltip__hoverTrigger"><br>
                 &nbsp;&nbsp;...<br>
                 &nbsp;&nbsp;&lt;span class="tooltip tooltip--leftAligned"> ... &lt;/span><br>
               &lt;/button><br><br>
 
-              &lt;button class="button button--muted button--full tooltip__trigger"><br>
+              &lt;button class="button button--muted button--full tooltip__group tooltip__hoverTrigger"><br>
                 &nbsp;&nbsp;...<br>
                 &nbsp;&nbsp;&lt;span class="tooltip tooltip--bottom tooltip--rightAligned"> ... &lt;/span><br>
               &lt;/button><br>
@@ -110,7 +110,7 @@ secondaryNav: tooltips
 
               <label class="label">
                 Label
-                <span class="tooltip__trigger">
+                <span class="tooltip__group tooltip__hoverTrigger">
                   <i class="fa fa-question-circle"></i>
                   <span class="tooltip tooltip--dark">I am a dark tooltip.</span>
                 </span>
@@ -129,7 +129,7 @@ secondaryNav: tooltips
 
               <label class="label">
                 Label
-                <span class="tooltip__trigger">
+                <span class="tooltip__group tooltip__hoverTrigger">
                   <i class="fa fa-question-circle"></i>
                   <span class="tooltip tooltip--orange">I am an orange tooltip.</span>
                 </span>
@@ -150,15 +150,15 @@ secondaryNav: tooltips
 
               &lt;label class="label"><br>
                 &nbsp;&nbsp;Label <br>
-                &nbsp;&nbsp;&lt;span class="tooltip__trigger"><br>
+                &nbsp;&nbsp;&lt;span class="tooltip__group tooltip__hoverTrigger"><br>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-question-circle">&lt;/i><br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="tooltip tooltip--orange">I am a dark tooltip.&lt;/span><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="tooltip tooltip--dark">I am a dark tooltip.&lt;/span><br>
                 &nbsp;&nbsp;&lt;/span><br>
               &lt;/label><br><br>
 
               &lt;label class="label"><br>
                 &nbsp;&nbsp;Label <br>
-                &nbsp;&nbsp;&lt;span class="tooltip__trigger"><br>
+                &nbsp;&nbsp;&lt;span class="tooltip__group tooltip__hoverTrigger"><br>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-question-circle">&lt;/i><br>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="tooltip tooltip--orange">I am an orange tooltip.&lt;/span><br>
                 &nbsp;&nbsp;&lt;/span><br>
@@ -175,21 +175,21 @@ secondaryNav: tooltips
         <div class="flex demo__display">
 
           <div class="col-xs-12 col-md-4 padding--md">
-            <a class="tooltip__trigger" href="">
+            <a class="tooltip__group tooltip__hoverTrigger" href="">
               Hover me
               <span class="tooltip tooltip--left">I am a left positioned tooltip.</span>
             </a>
           </div>
 
           <div class="col-xs-12 col-md-4 padding--md">
-            <a class="tooltip__trigger" href="">
+            <a class="tooltip__group tooltip__hoverTrigger" href="">
               Hover me
               <span class="tooltip tooltip--right">I am right positioned tooltip.</span>
             </a>
           </div>
 
           <div class="col-xs-12 col-md-4 padding--md">
-            <a class="tooltip__trigger" href="">
+            <a class="tooltip__group tooltip__hoverTrigger" href="">
               Hover me
               <span class="tooltip tooltip--bottom">I am bottom positioned tooltip.</span>
             </a>
@@ -201,20 +201,64 @@ secondaryNav: tooltips
           <pre class="demo">
             <code class="html demo">
 
-                &lt;a class="tooltip__trigger" ... ><br>
+                &lt;a class="tooltip__group tooltip__hoverTrigger" ... ><br>
                   &nbsp;&nbsp;...<br>
                   &nbsp;&nbsp;&lt;span class="tooltip tooltip--left"> ... &lt;/span><br>
                 &lt;/a><br><br>
 
-                &lt;a class="tooltip__trigger" ... ><br>
+                &lt;a class="tooltip__group tooltip__hoverTrigger" ... ><br>
                   &nbsp;&nbsp;...<br>
                   &nbsp;&nbsp;&lt;span class="tooltip tooltip--right"> ... &lt;/span><br>
                 &lt;/a><br><br>
 
-                &lt;a class="tooltip__trigger" ... ><br>
+                &lt;a class="tooltip__group tooltip__hoverTrigger" ... ><br>
                   &nbsp;&nbsp;...<br>
                   &nbsp;&nbsp;&lt;span class="tooltip tooltip--bottom"> ... &lt;/span><br>
                 &lt;/a><br>
+
+            </code>
+          </pre>
+        </div>
+      </div>
+
+
+      <h5>Active state</h5>
+      <p>If you need to activate the tooltip through means other than hover (eg, through javascript), omit the <code class="inline">.tooltip__hoverTrigger</code> class. Toggle visibility of the tooltip with the <code class="inline">.is-active</code> class on the tooltip itself. You will still need the group class to position the tooltip.</p>
+      <div class="demo__table">
+        <div class="flex demo__display">
+
+          <div class="col-xs-12 padding--lg">
+
+            <fieldset class="fieldset">
+
+              <label class="label">Password</label>
+
+              <div class="input__group tooltip__group">
+                <input class="input__text" type="password" placeholder="" />
+                <span class="tooltip tooltip--l tooltip--dark tooltip--leftAligned tooltip--bottom is-active">
+                  <ul class="marginBottom--none">
+                    <li>Must be at least 8 characters.</li>
+                    <li>Must be at least one number and one letter.</li>
+                  </ul>
+                </span>
+              </div>
+
+            </fieldset>
+
+          </div>
+
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+
+              &lt;div class="input__group tooltip__group"><br>
+                &nbsp;&nbsp;&lt;input class="input__text" ... /><br>
+                &nbsp;&nbsp;&lt;span class="tooltip tooltip--l tooltip--dark tooltip--leftAligned tooltip--bottom is-active"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                &nbsp;&nbsp;&lt;/span><br>
+              &lt;/div><br>
 
             </code>
           </pre>

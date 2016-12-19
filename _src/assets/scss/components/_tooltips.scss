@@ -174,26 +174,26 @@
     }
   }
 
-  // Trigger
-  &__trigger {
+  &__group {
     position: relative;
+  }
+}
 
-    &:hover .tooltip {
-      opacity: 1;
-      pointer-events: auto;
-      transform: translate(-50%, 0) scale(1);
+// Active
+.is-active.tooltip, .tooltip__hoverTrigger:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, 0) scale(1);
 
-      &--leftAligned, &--rightAligned {
-        transform: translate(0, 0) scale(1);
+  &--leftAligned, &--rightAligned {
+    transform: translate(0, 0) scale(1);
 
-        &.tooltip--bottom {
-          transform: translate(0, 0) scale(1);
-        }
-      }
-
-      &--left, &--right {
-        transform: translate(0, -50%) scale(1);
-      }
+    &.tooltip--bottom {
+      transform: translate(0, 0) scale(1);
     }
+  }
+
+  &--left, &--right {
+    transform: translate(0, -50%) scale(1);
   }
 }
