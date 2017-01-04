@@ -4482,17 +4482,29 @@ Box Helpers
   .button--s {
     padding: 0 0.66667rem;
     font-size: 10px; }
+  .button--icon {
+    position: relative;
+    padding: 0 0.5rem;
+    width: 1.77778rem;
+    height: 1.77778rem; }
+    .button--icon .fa {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+    .button--icon.button--s {
+      width: 1.5rem;
+      height: 1.5rem; }
+    .button--icon.button--m {
+      width: 1.77778rem;
+      height: 1.77778rem; }
+    .button--icon.button--l {
+      width: 2.16667rem;
+      height: 2.16667rem; }
   .button--full {
     display: block;
     width: 100%; }
-  .button > .fa {
-    line-height: 2em; }
-  .button > .fa-lg {
-    font-size: 1.5em; }
-  .button > .fa-2x {
-    font-size: 2em; }
-  .button > .fa-3x {
-    font-size: 3em; }
 
 .button-group {
   display: inline-block;

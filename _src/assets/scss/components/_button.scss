@@ -81,29 +81,37 @@ $gray-border: darken(grayscale(6), 8);
     font-size: 10px;
   }
 
+  &--icon {
+    position: relative;
+    padding: 0 rem(9);
+    width: rem(32);
+    height: rem(32);
+
+    .fa {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &.button--s {
+      width: rem(27);
+      height: rem(27);
+    }
+    &.button--m {
+      width: rem(32);
+      height: rem(32);
+    }
+    &.button--l {
+      width: rem(39);
+      height: rem(39);
+    }
+  }
+
   // Other Options
   &--full {
     display: block;
     width: 100%;
-  }
-
-  & > .fa {
-    line-height: 2em;
-  }
-
-  & > .fa-lg {
-    font-size: 1.5em;
-
-  }
-
-  & > .fa-2x {
-    font-size: 2em;
-
-  }
-
-  & > .fa-3x {
-    font-size: 3em;
-    //line-height: 1.6em;
   }
 }
 
