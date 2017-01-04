@@ -4,21 +4,31 @@
 
   border-bottom: 1px solid grayscale(9);
 
-  &__heading, &__body {
+  &__heading, &__body, &__footer {
     position: relative;
     padding: $panel-padding;
 
     background: grayscale(white);
     box-shadow: shadow(1);
-    border-bottom: 1px solid grayscale(9);
+    border-top: 1px solid grayscale(9);
 
     & > *:last-child {
       margin-bottom: 0;
     }
   }
 
-  &__body:last-child {
+  &__body:first-child, &__body:first-of-type, &__footer {
     border: none;
+  }
+
+  &__body.panel__body--lightGray {
+    background: lighten(grayscale(9), 2);
+    border-top: none;
+  }
+
+  &__body.panel__body--darkGray {
+    background: grayscale(8);
+    border-top: none;
   }
 
   &--accent:before {
@@ -31,6 +41,13 @@
     background: color(orange);
   }
 
+  // Footer
+  &__footer {
+    background: lighten(grayscale(9), 2);
+    box-shadow: inset 0 4px 4px -4px #ccc, shadow(1);
+  }
+
+  // Tabs
   &__tabList {
     list-style: none;
     margin: 0;

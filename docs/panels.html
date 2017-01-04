@@ -95,14 +95,18 @@
     </div>
     <div class="panel__body">
       <p>This container is a panel!</p>
-      <p><code class="inline">.panel__heading</code> holds the panel title, and <code class="inline">.panel__body</code> holds the content. You can omit the heading.</p>
-      <p>The modifier <code class="inline">.panel--accent</code> adds an orange accent bar to the top of the panel.</p>
+      <p><code class="inline">.panel__heading</code> holds the panel title, <code class="inline">.panel__body</code> holds the content, and <code class="inline">.panel__footer</code> creates a slightly darker section with an inset box shadow</p>
+
+      <p>The modifier <code class="inline">.panel--accent</code> adds an orange accent bar to the top of the panel. <code class="inline">.panel__body--darkGray</code> and <code class="inline">.panel__body--lightGray</code> are also available to change the background color of a section.</p>
     </div>
   </div>
 
   <div class="panel">
     <div class="panel__heading"><h5>Hello World</h5></div>
     <div class="panel__body">Foo</div>
+    <!-- <div class="panel__body panel__body--darkGray">Foo</div>
+    <div class="panel__body panel__body--lightGray">Foo</div> -->
+    <div class="panel__footer">Bar</div>
   </div>
 
   <pre class="demo demo--border marginBottom--xl">
@@ -110,7 +114,7 @@
       &lt;div class="panel"><br>
         &nbsp;&nbsp;&lt;div class="panel__heading">&lt;h5>...&lt;/h5>&lt;/div><br>
         &nbsp;&nbsp;&lt;div class="panel__body">...&lt;/div><br>
-        &nbsp;&nbsp;&lt;div class="panel__body">...&lt;/div><br>
+        &nbsp;&nbsp;&lt;div class="panel__footer">...&lt;/div><br>
       &lt;/div>
     </code>
   </pre>
