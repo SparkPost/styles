@@ -81,11 +81,10 @@
 .input__error {
   display: block;
   position: absolute;
-  right: 0;
-  bottom: 102%;
+  bottom: rem(-16);
 
   color: color(alert);
-  font-size: rem(11);
+  font-size: rem(13);
   font-weight: 500;
   line-height: rem(13);
 

@@ -4607,10 +4607,9 @@ Box Helpers
 .input__error {
   display: block;
   position: absolute;
-  right: 0;
-  bottom: 102%;
+  bottom: -0.88889rem;
   color: #f00a0a;
-  font-size: 0.61111rem;
+  font-size: 0.72222rem;
   font-weight: 500;
   line-height: 0.72222rem;
   opacity: 0; }
