@@ -1,13 +1,13 @@
 $orange-border: darken(color(orange--dark), 8);
 $blue-border: darken(color(blue--dark), 8);
-$gray-border: darken(grayscale(6), 8);
+$gray-border: darken(grayscale(7), 8);
 
 .button {
   display: inline-block;
   vertical-align: top;
 
   margin-bottom: 0;
-  padding: 0 1.5em;
+  padding: 0 1em;
 
   background: color(orange);
   border: 1px solid rgba($orange-border, 0);
@@ -51,11 +51,11 @@ $gray-border: darken(grayscale(6), 8);
 
   &--muted {
     color: grayscale(1);
-    background: grayscale(7);
+    background: grayscale(8);
     border: 1px solid rgba($gray-border, 0);
 
     &:hover, &:active, &:focus, &.is-pressed {
-      background: grayscale(6);
+      background: grayscale(7);
       border: 1px solid rgba($gray-border, 1);
       color: grayscale(1);
     }
@@ -64,6 +64,29 @@ $gray-border: darken(grayscale(6), 8);
 
     }
   }
+
+  // Button Accents
+  //   green         : #9bcd5a,
+    // magenta       : #b94696,
+    // mustard       : #e3af00,
+    // teal          : #0097b3,
+  &--blueAccent, &--greenAccent, &--tealAccent, &--magentaAccent {
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      height: 4px;
+    }
+  }
+
+  &--blueAccent:after    { background: color(blue);     }
+  &--greenAccent:after   { background: color(green);    }
+  &--tealAccent:after    { background: color(teal);     }
+  &--magentaAccent:after { background: color(magenta);  }
 
   // Button Sizes
   &--l {
