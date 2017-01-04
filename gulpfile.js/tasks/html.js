@@ -12,7 +12,7 @@ var gulp            = require('gulp'),
 //
 
 var buildTask = function(done) {
-  const jekyll = child.spawn('jekyll', ['serve'], {
+  const jekyll = child.spawn('jekyll', ['build'], {
     stdio: 'inherit'
   });
 }

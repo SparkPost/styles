@@ -1,0 +1,67 @@
+.dropdown {
+
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 400px;
+
+  margin-top: rem(9);
+  margin-left: rem(-13); // To center the arrow
+  transform: translate(0, -3px) scale(0.98);
+
+  background: grayscale(white);
+  border: 1px solid grayscale(7);
+  box-shadow: shadow(1);
+
+  padding: rem(18);
+
+  font-size: rem(14);
+  line-height: rem(21);
+  color: grayscale(dark);
+  text-transform: none;
+  letter-spacing: 0;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: 0.15s;
+  z-index: 1;
+
+  // Arrow
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: rem(18);
+    top: -5px;
+    margin-left: -4px;
+
+    height: 8px;
+    width: 8px;
+
+    background: grayscale(white);
+    border: {
+      bottom: 1px solid grayscale(7);
+      right: 1px solid grayscale(7);
+    }
+
+    transform: rotate(225deg);
+  }
+
+  &__group {
+    position: relative;
+  }
+
+  &__trigger:hover {
+    cursor: pointer;
+  }
+}
+
+.dropdown.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(0,0) scale(1);
+}
