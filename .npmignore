@@ -1,0 +1,13 @@
+.DS_Store
+
+.sass-cache
+node_modules
+
+docs
+gulpfile.js
+_config.yml
+
+*.html
+_src/_includes
+_src/_layouts
+_src/assets/js

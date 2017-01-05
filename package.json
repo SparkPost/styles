@@ -1,12 +1,12 @@
 {
-  "name": "sparkpost-styleguide",
+  "name": "@sparkpost/styles",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "A package for application styles",
   "license": "",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": ""
+  "author": {
+    "name": "SparkPost",
+    "email": "appteam@sparkpost.com"
   },
   "repository": {
     "type": "git",
