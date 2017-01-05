@@ -1,21 +1,24 @@
-// $tooltip-default-transform: translate(-50%, 3px);
+// $popover-default-transform: translate(-50%, 3px);
 
-.tooltip {
+.popover {
   position: absolute;
   bottom: 100%;
   left: 50%;
-  width: 200px;
+  width: 220px;
 
   margin-bottom: rem(9);
   transform: translate(-50%, 3px) scale(0.98);
 
   background: grayscale(white);
   border: 1px solid grayscale(7);
-  box-shadow: shadow(1);
+  box-shadow: shadow(2);
 
-  padding: rem(6);
+  padding: rem(12);
 
+  font-family: $gotham-regular;
   font-size: rem(11);
+  font-weight: 500;
+
   line-height: rem(18);
   color: grayscale(dark);
   text-transform: none;
@@ -51,15 +54,15 @@
 
   // Sizes
   &--s {
-    width: 100px;
+    width: 200px;
   }
 
   &--m {
-    width: 150px;
+    width: 300px;
   }
 
   &--l {
-    width: 300px;
+    width: 400px;
   }
 
   // Positioning
@@ -121,7 +124,7 @@
     left: 0;
     transform: translate(0, 3px) scale(0.98);
 
-    &.tooltip--bottom {
+    &.popover--bottom {
       transform: translate(0, -3px) scale(0.98);
     }
 
@@ -135,7 +138,7 @@
     left: auto;
     transform: translate(0, 3px) scale(0.98);
 
-    &.tooltip--bottom {
+    &.popover--bottom {
       transform: translate(0, -3px) scale(0.98);
     }
 
@@ -177,10 +180,33 @@
   &__group {
     position: relative;
   }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+
+    a {
+      display: block;
+      padding: rem(9) rem(6);
+
+      text-decoration: none;
+      font-size: rem(12);
+      color: grayscale(1);
+
+      &:hover {
+        color: color(blue);
+      }
+
+      &:first-child {
+        //padding: rem(15) rem(6);
+      }
+    }
+  }
 }
 
-// Active
-.is-active.tooltip, .tooltip__hoverTrigger:hover .tooltip {
+// Open
+.is-open.popover, .popover__hoverTrigger:hover .popover {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, 0) scale(1);
@@ -188,7 +214,7 @@
   &--leftAligned, &--rightAligned {
     transform: translate(0, 0) scale(1);
 
-    &.tooltip--bottom {
+    &.popover--bottom {
       transform: translate(0, 0) scale(1);
     }
   }

@@ -1,34 +1,37 @@
 import $ from 'jquery';
 
-let dropdown = {
+let popover = {
   init() {
     this._cacheDOM();
     this._bindEvents();
   },
 
   _cacheDOM() {
-    this.$trigger = $('.js-dropdown-demo');
-    this.$dropdowns = $('.dropdown');
+    this.$trigger = $('.popover__group');
+    this.$popovers = $('.popover');
   },
 
   _bindEvents() {
     $(window).on('click', function() {
-      dropdown.hideDropdowns();
+      popover.hideAll();
     });
 
-    this.$trigger.on('click', function() {
+    this.$trigger.on('click', function(event) {
       event.stopPropagation();
-      dropdown.toggleDropdown(this);
+      event.preventDefault();
+      if (!$(this).hasClass('popover__hoverTrigger')) {
+          popover.togglePopover(this);
+      }
     });
   },
 
-  toggleDropdown(el) {
-    $(el).siblings('.dropdown').toggleClass('is-open');
+  togglePopover(el) {
+    $(el).find('.popover').toggleClass('is-open');
   },
 
-  hideDropdowns() {
-    this.$dropdowns.removeClass('is-open');
+  hideAll() {
+    this.$popovers.removeClass('is-open');
   }
 };
 
-dropdown.init();
+popover.init();

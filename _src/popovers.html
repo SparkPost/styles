@@ -1,0 +1,348 @@
+---
+layout: main
+title: Sparkpost Styleguide
+primaryNav: components
+secondaryNav: popovers
+---
+  <div class="panel">
+    <div class="panel__heading">
+      <h4>Popovers</h4>
+    </div>
+    <div class="panel__body">
+
+      <h5>Popover sizes</h5>
+      <p>Define popover sizes with <code class="inline">.popover--s</code>, <code class="inline">.popover--m</code>, or <code class="inline">.popover--l</code>. These set the width of the popover. You can also specify width manually.</p>
+
+      <div class="demo__table">
+        <div class="flex demo__display">
+
+          <div class="col-xs-12 col-md-4">
+            <button class="button popover__group">Click me<span class="popover popover--s">I am a small popover</span></button>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <button class="button popover__group">
+              Click me
+              <span class="popover">I am a medium sized popover, also the defalt size.</span>
+            </button>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <div class="popover__group">
+              <button class="button">Click me</button>
+              <span class="popover popover--l">I am a very very very very very very very very very large popover</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+                &lt;button class="button popover__group"><br>
+                &nbsp;&nbsp;...<br>
+                &nbsp;&nbsp;&lt;span class="popover popover--s"> ... &lt;/span><br>
+                &lt;/button><br><br>
+
+                &lt;button class="button popover__group"><br>
+                &nbsp;&nbsp; ... <br>
+                &nbsp;&nbsp;&lt;span class="popover"> ... &lt;/span> // or popover--m<br>
+                &lt;/button><br><br>
+
+                // Another way to structure these<br>
+                &lt;div class="popover__group"><br>
+                  &nbsp;&nbsp;&lt;button class="button"> ... &lt;/button><br>
+                  &nbsp;&nbsp;&lt;span class="popover popover--l"> ... &lt;/span><br>
+                &lt;/div><br>
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <h5>Popover alignment</h5>
+      <p>Use the modifiers <code class="inline">.popover--leftAligned</code> and <code class="inline">.popover--rightAligned</code> to align popovers to the left or right. These only work with top or bottom positioning.</p>
+
+      <div class="demo__table">
+        <div class="flex demo__display">
+
+          <div class="col-xs-12 col-md-6 padding--md">
+            <button class="button button--muted button--full popover__group">
+              Click Me
+              <span class="popover popover--leftAligned"><i class="fa fa-arrow-left"></i> &nbsp; I am a left aligned popover.</span>
+            </button>
+          </div>
+
+          <div class="col-xs-12 col-md-6 padding--md">
+            <button class="button button--muted button--full popover__group">
+              Click Me
+              <span class="popover popover--bottom popover--rightAligned"><i class="fa fa-arrow-right"></i> &nbsp; I am right aligned popover.</span>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+
+              &lt;button class="button button--muted button--full popover__group"><br>
+                &nbsp;&nbsp;...<br>
+                &nbsp;&nbsp;&lt;span class="popover popover--leftAligned"> ... &lt;/span><br>
+              &lt;/button><br><br>
+
+              &lt;button class="button button--muted button--full popover__group"><br>
+                &nbsp;&nbsp;...<br>
+                &nbsp;&nbsp;&lt;span class="popover popover--bottom popover--rightAligned"> ... &lt;/span><br>
+              &lt;/button><br>
+
+            </code>
+          </pre>
+        </div>
+      </div>
+
+
+      <h5>Popover colors</h5>
+      <p>Use the modifiers <code class="inline">.popover--orange</code> and <code class="inline">.popover--dark</code> to change background color. White is used by default.</p>
+      <div class="demo__table">
+        <div class="flex demo__display">
+
+          <div class="col-xs-12 col-md-6 padding--md">
+
+            <fieldset class="fieldset">
+
+              <label class="label">
+                Label
+                <span class="popover__group popover__hoverTrigger">
+                  <i class="fa fa-question-circle"></i>
+                  <span class="popover popover--dark">I am a dark popover.</span>
+                </span>
+              </label>
+
+              <div class="input__group">
+                <input class="input__text" type="text" placeholder="Hover over the ?" />
+              </div>
+
+            </fieldset>
+
+          </div>
+
+          <div class="col-xs-12 col-md-6 padding--md">
+            <fieldset class="fieldset">
+
+              <label class="label">
+                Label
+                <span class="popover__group popover__hoverTrigger">
+                  <i class="fa fa-question-circle"></i>
+                  <span class="popover popover--orange">I am an orange popover.</span>
+                </span>
+              </label>
+
+              <div class="input__group">
+                <input class="input__text" type="text" placeholder="Hover over the ?" />
+              </div>
+
+            </fieldset>
+          </div>
+
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+
+              &lt;label class="label"><br>
+                &nbsp;&nbsp;Label <br>
+                &nbsp;&nbsp;&lt;span class="popover__group"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-question-circle">&lt;/i><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="popover popover--dark">I am a dark popover.&lt;/span><br>
+                &nbsp;&nbsp;&lt;/span><br>
+              &lt;/label><br><br>
+
+              &lt;label class="label"><br>
+                &nbsp;&nbsp;Label <br>
+                &nbsp;&nbsp;&lt;span class="popover__group"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-question-circle">&lt;/i><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="popover popover--orange">I am an orange popover.&lt;/span><br>
+                &nbsp;&nbsp;&lt;/span><br>
+              &lt;/label><br><br>
+
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <h5>Popover placement</h5>
+      <p>Use the modifiers <code class="inline">.popover--left</code>, <code class="inline">.popover--right</code>, and <code class="inline">.popover--bottom</code> to change positioning around the trigger. Top is used by default.</p>
+      <div class="demo__table">
+        <div class="flex demo__display">
+
+          <div class="col-xs-12 col-md-4 padding--md">
+            <a class="popover__group" href="">
+              Click Me
+              <span class="popover popover--left">I am a left positioned popover.</span>
+            </a>
+          </div>
+
+          <div class="col-xs-12 col-md-4 padding--md">
+            <a class="popover__group" href="">
+              Click Me
+              <span class="popover popover--right">I am right positioned popover.</span>
+            </a>
+          </div>
+
+          <div class="col-xs-12 col-md-4 padding--md">
+            <a class="popover__group" href="">
+              Click Me
+              <span class="popover popover--bottom">I am bottom positioned popover.</span>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+
+                &lt;a class="popover__group" ... ><br>
+                  &nbsp;&nbsp;...<br>
+                  &nbsp;&nbsp;&lt;span class="popover popover--left"> ... &lt;/span><br>
+                &lt;/a><br><br>
+
+                &lt;a class="popover__group" ... ><br>
+                  &nbsp;&nbsp;...<br>
+                  &nbsp;&nbsp;&lt;span class="popover popover--right"> ... &lt;/span><br>
+                &lt;/a><br><br>
+
+                &lt;a class="popover__group" ... ><br>
+                  &nbsp;&nbsp;...<br>
+                  &nbsp;&nbsp;&lt;span class="popover popover--bottom"> ... &lt;/span><br>
+                &lt;/a><br>
+
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <h5>Open state</h5>
+      <p>If you need to activate the popover through hover, add the <code class="inline">.popover__hoverTrigger</code> class to the wrapper group. Toggle visibility of the popover with the <code class="inline">.is-open</code> class on the popover itself.</p>
+      <div class="demo__table">
+        <div class="flex demo__display">
+
+          <div class="col-xs-12 padding--lg">
+
+            <fieldset class="fieldset">
+
+              <label class="label">Password</label>
+
+              <div class="input__group popover__group popover__hoverTrigger">
+                <input class="input__text" type="password" placeholder="" />
+                <span class="popover popover--l popover--dark popover--leftAligned popover--bottom is-active">
+                  <ul class="marginBottom--none">
+                    <li>Must be at least 8 characters.</li>
+                    <li>Must be at least one number and one letter.</li>
+                  </ul>
+                </span>
+              </div>
+
+            </fieldset>
+
+          </div>
+
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+
+              &lt;div class="input__group popover__group popover__hoverTrigger"><br>
+                &nbsp;&nbsp;&lt;input class="input__text" ... /><br>
+                &nbsp;&nbsp;&lt;span class="popover popover--l popover--dark popover--leftAligned popover--bottom is-active"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                &nbsp;&nbsp;&lt;/span><br>
+              &lt;/div><br>
+
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <h5>Delete Example</h5>
+      <div class="demo__table">
+        <div class="flex demo__display">
+
+          <div class="col-xs-12 padding--lg">
+
+            <span class="popover__group">
+              <a href=""><i class="fa fa-trash"></i> Delete</a>
+              <div class="popover popover--l popover--bottom padding--md">
+                <h6>Are you sure you want to delete this template?</h6>
+
+                <button type="button" class="button marginRight--md" name="button">Yes, delete</button>
+                <button type="button" class="button button--muted" name="button">Cancel</button>
+              </div>
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+
+              &lt;span class="popover__group"><br>
+                &nbsp;&nbsp;&lt;a href="">&lt;i class="fa fa-trash">&lt;/i> Delete&lt;/a><br>
+                &nbsp;&nbsp;&lt;div class="popover popover--l popover--bottom padding--md"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;h6>Are you sure you want to delete this template?&lt;/h6><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="button marginRight--md">Yes, delete&lt;/button><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="button button--muted">Cancel&lt;/button><br>
+                &nbsp;&nbsp;&lt;/div><br>
+              &lt;/span><br>
+
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <h5>Popover with links</h5>
+      <div class="demo__table">
+        <div class="flex demo__display">
+
+          <div class="col-xs-12 padding--lg">
+
+            <div class="popover__group">
+              <button class="button">Click me</button>
+              <div class="popover popover--s">
+                <div class="popover__list">
+                  <a href="">No Filter</a>
+                  <a href="">Published</a>
+                  <a href="">Draft</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+
+              &lt;div class="popover__group"><br>
+                &nbsp;&nbsp;&lt;button class="button"> ... &lt;/button><br>
+                &nbsp;&nbsp;&lt;div class="popover popover--s padding--none"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="popover__list"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""> ... &lt;/a><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""> ... &lt;/a><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""> ... &lt;/a><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;/div><br>
+              &lt;/div><br>
+
+            </code>
+          </pre>
+        </div>
+      </div>
+
+    </div>
+  </div>

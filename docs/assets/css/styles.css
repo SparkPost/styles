@@ -4551,54 +4551,6 @@ Box Helpers
     .button-group > .button:first-child:after {
       display: none; }
 
-.dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 400px;
-  margin-top: 0.5rem;
-  margin-left: -0.72222rem;
-  -webkit-transform: translate(0, -3px) scale(0.98);
-          transform: translate(0, -3px) scale(0.98);
-  background: #ffffff;
-  border: 1px solid #d2d2d7;
-  box-shadow: 0px 1px 2px rgba(65, 65, 70, 0.1);
-  padding: 1rem;
-  font-size: 0.77778rem;
-  line-height: 1.16667rem;
-  color: #414146;
-  text-transform: none;
-  letter-spacing: 0;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: 0.15s;
-  transition: 0.15s;
-  z-index: 1; }
-  .dropdown:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 1rem;
-    top: -5px;
-    margin-left: -4px;
-    height: 8px;
-    width: 8px;
-    background: #ffffff;
-    border-bottom: 1px solid #d2d2d7;
-    border-right: 1px solid #d2d2d7;
-    -webkit-transform: rotate(225deg);
-            transform: rotate(225deg); }
-  .dropdown__group {
-    position: relative; }
-  .dropdown__trigger:hover {
-    cursor: pointer; }
-
-.dropdown.is-open {
-  opacity: 1;
-  pointer-events: auto;
-  -webkit-transform: translate(0, 0) scale(1);
-          transform: translate(0, 0) scale(1); }
-
 .fieldset {
   display: inline-block;
   width: 100%;
@@ -4791,19 +4743,21 @@ Box Helpers
       .table--transparent .table__body > .table__row:nth-child(2n + 1) {
         background: transparent; }
 
-.tooltip {
+.popover {
   position: absolute;
   bottom: 100%;
   left: 50%;
-  width: 200px;
+  width: 220px;
   margin-bottom: 0.5rem;
   -webkit-transform: translate(-50%, 3px) scale(0.98);
           transform: translate(-50%, 3px) scale(0.98);
   background: #ffffff;
   border: 1px solid #d2d2d7;
-  box-shadow: 0px 1px 2px rgba(65, 65, 70, 0.1);
-  padding: 0.33333rem;
+  box-shadow: 0px 1px 2px rgba(65, 65, 70, 0.1), 0px 5px 9px rgba(65, 65, 70, 0.14);
+  padding: 0.66667rem;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 0.61111rem;
+  font-weight: 500;
   line-height: 1rem;
   color: #414146;
   text-transform: none;
@@ -4814,7 +4768,7 @@ Box Helpers
   -webkit-transition: 0.15s;
   transition: 0.15s;
   z-index: 1; }
-  .tooltip:before {
+  .popover:before {
     content: "";
     display: block;
     position: absolute;
@@ -4828,105 +4782,117 @@ Box Helpers
     border-right: 1px solid #d2d2d7;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
-  .tooltip--s {
-    width: 100px; }
-  .tooltip--m {
-    width: 150px; }
-  .tooltip--l {
+  .popover--s {
+    width: 200px; }
+  .popover--m {
     width: 300px; }
-  .tooltip--left, .tooltip--right {
+  .popover--l {
+    width: 400px; }
+  .popover--left, .popover--right {
     bottom: auto;
     top: 50%;
     margin-bottom: 0; }
-    .tooltip--left:before, .tooltip--right:before {
+    .popover--left:before, .popover--right:before {
       top: 50%;
       margin-left: 0;
       margin-top: -5px; }
-  .tooltip--left {
+  .popover--left {
     left: auto;
     right: 100%;
     margin-right: 0.5rem;
     -webkit-transform: translate(3px, -50%) scale(0.98);
             transform: translate(3px, -50%) scale(0.98); }
-    .tooltip--left:before {
+    .popover--left:before {
       left: auto;
       bottom: auto;
       right: -5px;
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg); }
-  .tooltip--right {
+  .popover--right {
     left: 100%;
     margin-left: 0.5rem;
     -webkit-transform: translate(-3px, -50%) scale(0.98);
             transform: translate(-3px, -50%) scale(0.98); }
-    .tooltip--right:before {
+    .popover--right:before {
       left: -5px;
       bottom: auto;
       -webkit-transform: rotate(135deg);
               transform: rotate(135deg); }
-  .tooltip--bottom {
+  .popover--bottom {
     bottom: auto;
     top: 100%;
     margin-bottom: 0;
     margin-top: 0.5rem;
     -webkit-transform: translate(-50%, -3px) scale(0.98);
             transform: translate(-50%, -3px) scale(0.98); }
-    .tooltip--bottom:before {
+    .popover--bottom:before {
       top: -5px;
       bottom: auto;
       -webkit-transform: rotate(225deg);
               transform: rotate(225deg); }
-  .tooltip--leftAligned {
+  .popover--leftAligned {
     left: 0;
     -webkit-transform: translate(0, 3px) scale(0.98);
             transform: translate(0, 3px) scale(0.98); }
-    .tooltip--leftAligned.tooltip--bottom {
+    .popover--leftAligned.popover--bottom {
       -webkit-transform: translate(0, -3px) scale(0.98);
               transform: translate(0, -3px) scale(0.98); }
-    .tooltip--leftAligned:before {
+    .popover--leftAligned:before {
       left: 1rem; }
-  .tooltip--rightAligned {
+  .popover--rightAligned {
     right: 0;
     left: auto;
     -webkit-transform: translate(0, 3px) scale(0.98);
             transform: translate(0, 3px) scale(0.98); }
-    .tooltip--rightAligned.tooltip--bottom {
+    .popover--rightAligned.popover--bottom {
       -webkit-transform: translate(0, -3px) scale(0.98);
               transform: translate(0, -3px) scale(0.98); }
-    .tooltip--rightAligned:before {
+    .popover--rightAligned:before {
       right: 1rem;
       left: auto; }
-  .tooltip--dark {
+  .popover--dark {
     background: #414146;
     border: 1px solid #37373b;
     color: #ffffff; }
-    .tooltip--dark:before {
+    .popover--dark:before {
       background: #414146;
       border-bottom: 1px solid #37373b;
       border-right: 1px solid #37373b; }
-  .tooltip--orange {
+  .popover--orange {
     background: #fa6423;
     border: 1px solid #e9591b;
     color: #ffffff; }
-    .tooltip--orange:before {
+    .popover--orange:before {
       background: #fa6423;
       border-bottom: 1px solid #e9591b;
       border-right: 1px solid #e9591b; }
-  .tooltip__group {
+  .popover__group {
     position: relative; }
+  .popover__list {
+    padding: 0;
+    margin: 0;
+    text-align: left; }
+    .popover__list a {
+      display: block;
+      padding: 0.5rem 0.33333rem;
+      text-decoration: none;
+      font-size: 0.66667rem;
+      color: #414146; }
+      .popover__list a:hover {
+        color: #37aadc; }
 
-.is-active.tooltip, .tooltip__hoverTrigger:hover .tooltip {
+.is-open.popover, .popover__hoverTrigger:hover .popover {
   opacity: 1;
   pointer-events: auto;
   -webkit-transform: translate(-50%, 0) scale(1);
           transform: translate(-50%, 0) scale(1); }
-  .is-active.tooltip--leftAligned, .is-active.tooltip--rightAligned, .tooltip__hoverTrigger:hover .tooltip--leftAligned, .tooltip__hoverTrigger:hover .tooltip--rightAligned {
+  .is-open.popover--leftAligned, .is-open.popover--rightAligned, .popover__hoverTrigger:hover .popover--leftAligned, .popover__hoverTrigger:hover .popover--rightAligned {
     -webkit-transform: translate(0, 0) scale(1);
             transform: translate(0, 0) scale(1); }
-    .is-active.tooltip--leftAligned.tooltip--bottom, .is-active.tooltip--rightAligned.tooltip--bottom, .tooltip__hoverTrigger:hover .tooltip--leftAligned.tooltip--bottom, .tooltip__hoverTrigger:hover .tooltip--rightAligned.tooltip--bottom {
+    .is-open.popover--leftAligned.popover--bottom, .is-open.popover--rightAligned.popover--bottom, .popover__hoverTrigger:hover .popover--leftAligned.popover--bottom, .popover__hoverTrigger:hover .popover--rightAligned.popover--bottom {
       -webkit-transform: translate(0, 0) scale(1);
               transform: translate(0, 0) scale(1); }
-  .is-active.tooltip--left, .is-active.tooltip--right, .tooltip__hoverTrigger:hover .tooltip--left, .tooltip__hoverTrigger:hover .tooltip--right {
+  .is-open.popover--left, .is-open.popover--right, .popover__hoverTrigger:hover .popover--left, .popover__hoverTrigger:hover .popover--right {
     -webkit-transform: translate(0, -50%) scale(1);
             transform: translate(0, -50%) scale(1); }
 
