@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sparkpost Styleguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+
+  </head>
+  <body class="page page--open-nav">
+    <div class="page__container">
+      <nav class="navigation is-open">
+  <ul class="navigation__primary-list">
+
+    <li class="navigation__item">
+      <a class="navigation__link">logo here</a>
+    </li>
+
+    <li class="navigation__item ">
+      <a class="navigation__link" href="./">Overview</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./">Overview</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Code Guidelines</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item">
+      <a class="navigation__link is-disabled">Design</a>
+    </li>
+
+    <li class="navigation__item ">
+      <a class="navigation__link" href="./buttons.html">Components</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./buttons.html">Buttons</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./dropdowns.html">Dropdowns</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./panels.html">Panels</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./formelements.html">Form elements</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./tables.html">Tables</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./popovers.html">Popovers</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./progressbars.html">Progress Bars</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Navigation</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item is-active">
+      <a class="navigation__link" href="./grid.html">Utility</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./grid.html">Grid</a>
+        </li>
+        <li class="navigation__item is-active">
+          <a class="navigation__link" href="./boxmodel.html">Box Model</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Text</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Display</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+
+      <div class="page__content">
+          <div class="panel">
+    <div class="panel__heading">
+      <h5>Box model helpers</h5>
+    </div>
+    <div class="panel__body">
+      <p>
+        Spacing can be applied using the <code class="inline">margin</code> and <code class="inline">padding</code> helpers. Both margin and padding share the same scale. There are 8 spacing sizes available through these suffixes; <code class="inline">--xxs</code>, <code class="inline">--xs</code>, <code class="inline">--sm</code>, <code class="inline">--md</code>,
+        <code class="inline">--lg</code>, <code class="inline">--xl</code>, <code class="inline">--xxl</code>, and <code class="inline">--none</code>.
+      </p>
+      <p><code class="inline">--md</code> outputs 1 rem, and is used as the baseline for vertical rhythm.</p>
+
+      <p><em>These aren't responsive.. yet!</em></p>
+
+      <div class="demo__table">
+        <div class="flex demo__display">
+          <div class="col-xs-12 padding--md">
+
+            <div class="flex flex-demo--box">
+
+              <div class="col-xs-6" style="height:160px">
+                <div class="flex flex-demo--box padding--none">
+                  <div class="col-xs">&nbsp;</div>
+                </div>
+              </div>
+
+              <div class="col-xs-6" style="height:160px">
+                <div class="flex flex-demo--box padding--xxs">
+                  <div class="col-xs">&nbsp;</div>
+                </div>
+              </div>
+
+              <div class="col-xs-6" style="height:160px">
+                <div class="flex flex-demo--box padding--xs">
+                  <div class="col-xs">&nbsp;</div>
+                </div>
+              </div>
+
+              <div class="col-xs-6" style="height:160px">
+                <div class="flex flex-demo--box padding--md">
+                  <div class="col-xs">&nbsp;</div>
+                </div>
+              </div>
+
+              <div class="col-xs-6" style="height:160px">
+                <div class="flex flex-demo--box padding--lg">
+                  <div class="col-xs">&nbsp;</div>
+                </div>
+              </div>
+
+              <div class="col-xs-6" style="height:160px">
+                <div class="flex flex-demo--box padding--xl">
+                  <div class="col-xs">&nbsp;</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              // padding<br>
+              &lt;div class="padding--none">&lt;/div><br>
+              &lt;div class="padding--xxs">&lt;/div><br>
+              &lt;div class="padding--xs">&lt;/div><br>
+              &lt;div class="padding--sm">&lt;/div><br>
+              &lt;div class="padding--md">&lt;/div><br>
+              &lt;div class="padding--lg">&lt;/div><br>
+              &lt;div class="padding--xl">&lt;/div><br>
+              &lt;div class="padding--xxl">&lt;/div><br><br>
+
+              // margin<br>
+              &lt;div class="margin--none">&lt;/div><br>
+              &lt;div class="margin--xxs">&lt;/div><br>
+              &lt;div class="margin--xs">&lt;/div><br>
+              &lt;div class="margin--sm">&lt;/div><br>
+              &lt;div class="margin--md">&lt;/div><br>
+              &lt;div class="margin--lg">&lt;/div><br>
+              &lt;div class="margin--xl">&lt;/div><br>
+              &lt;div class="margin--xxl">&lt;/div><br>
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="demo__table">
+        <div class="flex demo__display">
+          <div class="col-xs-12 col-md-3 padding--md">
+
+            <div class="flex flex-demo--box">
+              <div class="col-xs-12" style="height:120px;margin-bottom:0!important;">
+                <div class="flex flex-demo--box paddingTop--lg">
+                  <div class="col-xs">&nbsp;</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-xs-12 col-md-3 padding--md">
+
+            <div class="flex flex-demo--box">
+              <div class="col-xs-12" style="height:120px;margin-bottom:0!important;">
+                <div class="flex flex-demo--box paddingRight--lg">
+                  <div class="col-xs">&nbsp;</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-xs-12 col-md-3 padding--md">
+
+            <div class="flex flex-demo--box">
+              <div class="col-xs-12" style="height:120px;margin-bottom:0!important;">
+                <div class="flex flex-demo--box paddingBottom--lg">
+                  <div class="col-xs">&nbsp;</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-xs-12 col-md-3 padding--md">
+
+            <div class="flex flex-demo--box">
+              <div class="col-xs-12" style="height:120px;margin-bottom:0!important;">
+                <div class="flex flex-demo--box paddingLeft--lg">
+                  <div class="col-xs">&nbsp;</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              // padding<br>
+              &lt;div class="paddingTop--md">&lt;/div><br>
+              &lt;div class="paddingRight--md">&lt;/div><br>
+              &lt;div class="paddingBottom--md">&lt;/div><br>
+              &lt;div class="paddingLeft--md">&lt;/div><br><br>
+
+              // margin<br>
+              &lt;div class="marginTop--md">&lt;/div><br>
+              &lt;div class="marginRight--md">&lt;/div><br>
+              &lt;div class="marginBottom--md">&lt;/div><br>
+              &lt;div class="marginLeft--md">&lt;/div><br>
+            </code>
+          </pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+      </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="public/js/bundle.js"></script> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script src="./assets/js/bundle.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

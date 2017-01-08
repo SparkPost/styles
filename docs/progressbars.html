@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sparkpost Styleguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+
+  </head>
+  <body class="page page--open-nav">
+    <div class="page__container">
+      <nav class="navigation is-open">
+  <ul class="navigation__primary-list">
+
+    <li class="navigation__item">
+      <a class="navigation__link">logo here</a>
+    </li>
+
+    <li class="navigation__item ">
+      <a class="navigation__link" href="./">Overview</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./">Overview</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Code Guidelines</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item">
+      <a class="navigation__link is-disabled">Design</a>
+    </li>
+
+    <li class="navigation__item is-active">
+      <a class="navigation__link" href="./buttons.html">Components</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./buttons.html">Buttons</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./dropdowns.html">Dropdowns</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./panels.html">Panels</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./formelements.html">Form elements</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./tables.html">Tables</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./popovers.html">Popovers</a>
+        </li>
+        <li class="navigation__item is-active">
+          <a class="navigation__link" href="./progressbars.html">Progress Bars</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Navigation</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <li class="navigation__item ">
+      <a class="navigation__link" href="./grid.html">Utility</a>
+
+      <ul class="navigation__secondary-list">
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./grid.html">Grid</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="./boxmodel.html">Box Model</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Text</a>
+        </li>
+        <li class="navigation__item ">
+          <a class="navigation__link is-disabled">Display</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+
+      <div class="page__content">
+          <div class="panel">
+    <div class="panel__heading">
+      <h5>Progress Bars</h5>
+    </div>
+    <div class="panel__body">
+
+      <div class="demo__table">
+        <div class="flex demo__display">
+          <div class="col-xs-12 col-md-4 paddingLeft--md paddingRight--md">
+            <div class="progressBar">
+              <span class="progressBar__completed" style="width: 20%"></span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 paddingLeft--md paddingRight--md">
+            <div class="progressBar progressBar--blue">
+              <span class="progressBar__completed" style="width: 50%"></span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 paddingLeft--md paddingRight--md">
+            <div class="progressBar progressBar--green">
+              <span class="progressBar__completed" style="width: 90%"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex demo__desc">
+          <pre class="demo">
+            <code class="html demo">
+              // default orange<br>
+              &lt;div class="progressBar"><br>
+                &nbsp;&nbsp;&lt;span class="progressBar__completed" style="width: 20%">&lt;/span><br>
+              &lt;/div><br><br>
+              // blue<br>
+              &lt;div class="progressBar progressBar--blue"><br>
+                &nbsp;&nbsp;&lt;span class="progressBar__completed" style="width: 50%">&lt;/span><br>
+              &lt;/div><br><br>
+              // green<br>
+              &lt;div class="progressBar progressBar--green"><br>
+                &nbsp;&nbsp;&lt;span class="progressBar__completed" style="width: 90%">&lt;/span><br>
+              &lt;/div><br><br>
+            </code>
+          </pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+      </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="public/js/bundle.js"></script> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script src="./assets/js/bundle.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
