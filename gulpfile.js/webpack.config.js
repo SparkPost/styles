@@ -2,9 +2,9 @@ var webpack = require('webpack');
 
 module.exports = {
   context: process.env.PWD,
-  entry: "./_src/assets/js/_entry",
+  entry: "./src/assets/js/_entry",
   output: {
-    path: "./_src/assets/js",
+    path: "./src/assets/js",
     filename: "bundle.js"
   },
   module: {
