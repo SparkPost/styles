@@ -4,5 +4,5 @@ exclude: [
   'package.json',
   '*.scss'
 ]
-source:      _src
+source:      src
 destination: docs
