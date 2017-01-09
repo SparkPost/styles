@@ -1,7 +1,6 @@
 var gulp          = require('gulp'),
     gutil         = require('gulp-util'),
     webpack       = require('webpack'),
-    // argv          = require('yargs').argv,
     config        = require('../webpack.config');
 
 var javascriptTask = function (callback) {

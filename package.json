@@ -1,8 +1,8 @@
 {
   "name": "@sparkpost/styles",
   "version": "0.0.1",
-  "description": "A package for application styles",
-  "license": "",
+  "description": "A package for SparkPost application styles",
+  "license": "Apache-2.0",
   "main": "gulpfile.js",
   "author": {
     "name": "SparkPost",
@@ -11,6 +11,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/SparkPost/sparkpost-styleguide"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
@@ -30,5 +33,6 @@
   },
   "dependencies": {
     "font-awesome": "^4.7.0"
-  }
+  },
+  "homepage": "https://sparkpost.github.io/styles/"
 }

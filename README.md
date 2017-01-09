@@ -1,4 +1,4 @@
-# styleguide
+# @sparkpost/styles
 
 ```bash
 npm install
