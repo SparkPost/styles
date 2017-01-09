@@ -148,35 +148,6 @@
     }
   }
 
-  // Colors
-  &--dark {
-    background: grayscale(1);
-    border: 1px solid darken(grayscale(1), 4);
-    color: grayscale(white);
-
-    &:before {
-      background: grayscale(1);
-      border: {
-        bottom: 1px solid darken(grayscale(1), 4);
-        right: 1px solid darken(grayscale(1), 4);
-      }
-    }
-  }
-
-  &--orange {
-    background: color(orange);
-    border: 1px solid color(orange--dark);
-    color: grayscale(white);
-
-    &:before {
-      background: color(orange);
-      border: {
-        bottom: 1px solid color(orange--dark);
-        right: 1px solid color(orange--dark);
-      }
-    }
-  }
-
   &__group {
     position: relative;
   }

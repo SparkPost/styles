@@ -4850,22 +4850,6 @@ Box Helpers
     .popover--rightAligned:before {
       right: 1rem;
       left: auto; }
-  .popover--dark {
-    background: #414146;
-    border: 1px solid #37373b;
-    color: #ffffff; }
-    .popover--dark:before {
-      background: #414146;
-      border-bottom: 1px solid #37373b;
-      border-right: 1px solid #37373b; }
-  .popover--orange {
-    background: #fa6423;
-    border: 1px solid #e9591b;
-    color: #ffffff; }
-    .popover--orange:before {
-      background: #fa6423;
-      border-bottom: 1px solid #e9591b;
-      border-right: 1px solid #e9591b; }
   .popover__group {
     position: relative; }
   .popover__list {
