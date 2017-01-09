@@ -1,9 +1,9 @@
 # @sparkpost/styles
 
-Usage Docs: [https://sparkpost.github.io/styles/]
+Usage Docs: https://sparkpost.github.io/styles/
 
 
-Note: styleguide is ignored through NPM.
+Note: styleguide website is not included through NPM.
 
 To run the styleguide locally, first install [Jekyll](https://jekyllrb.com/docs/installation/). Then:
 
