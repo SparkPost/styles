@@ -31,8 +31,6 @@
     "require-dir": "^0.3.1",
     "webpack": "^1.14.0"
   },
-  "dependencies": {
-    "font-awesome": "^4.7.0"
-  },
+  "dependencies": {},
   "homepage": "https://sparkpost.github.io/styles/"
 }
