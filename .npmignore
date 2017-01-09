@@ -11,3 +11,5 @@ _config.yml
 _src/_includes
 _src/_layouts
 _src/assets/js
+_src/asssets/fonts
+_src/asssets/scss/_styleguide.scss
