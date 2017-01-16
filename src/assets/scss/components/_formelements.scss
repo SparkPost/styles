@@ -98,7 +98,8 @@
 // Text Input
 .input__text {
   @extend %input-base;
-  padding: rem(12);
+  padding: 0 rem(12);
+  line-height: rem(36);
 
   .input__group--icon & {
     padding-left: rem(36);
@@ -111,16 +112,19 @@
   }
 
   &--s {
-    padding: rem(6);
-    font-size: rem(13);
+    padding: 0 rem(9);
+    font-size: 13px;
+    line-height: rem(32);
   }
 
   &--m {
-    padding: rem(12);
+    padding: 0 rem(12);
+    line-height: rem(36);
   }
 
   &--l {
-    padding: rem(18);
+    padding: 0 rem(18);
+    line-height: rem(45);
   }
 }
 
@@ -191,19 +195,6 @@
     top: 49%;
     left: rem(12);
     transform: translate(0, -50%);
-  }
-
-  &--s {
-    padding: rem(6) rem(54) rem(6) rem(6);
-    font-size: rem(13);
-  }
-
-  &--m {
-    padding: rem(12) rem(54) rem(12) rem(12);
-  }
-
-  &--l {
-    padding: rem(18) rem(54) rem(18) rem(18);
   }
 
   &Arrow {
