@@ -3,18 +3,21 @@
  */
 
 @import "vendor/normalize";
-@import "vendor/fa/font-awesome";
+
+/*
+ *  Shared
+ */
+
+@import "shared/config";
+@import "shared/functions";
+
 /*
  *  Base
  */
-
-@import "foundation/config";
-@import "foundation/functions";
 @import "foundation/base";
 @import "foundation/grid";
 @import "foundation/typography";
 @import "foundation/helpers";
-
 
 /*
  *  Components
@@ -28,5 +31,3 @@
 @import "components/table";
 @import "components/popover";
 @import "components/progressbars";
-
-@import "styleguide";
