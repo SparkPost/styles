@@ -1680,6 +1680,12 @@ code, pre {
 .text--right {
   text-align: right; }
 
+.text--muted {
+  color: #aaaaaf; }
+
+.text--white {
+  color: #ffffff; }
+
 .float--right {
   float: right; }
 
