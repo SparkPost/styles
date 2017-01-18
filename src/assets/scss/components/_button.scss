@@ -27,6 +27,7 @@ $gray-border: darken(grayscale(7), 8);
     background: color(orange--dark);
     border: 1px solid rgba($orange-border, 1);
     color: grayscale(white);
+    text-decoration: none;
   }
 
   &:active, &.is-pressed {
@@ -138,6 +139,7 @@ $gray-border: darken(grayscale(7), 8);
   &--full {
     display: block;
     width: 100%;
+    text-align: center;
   }
 }
 

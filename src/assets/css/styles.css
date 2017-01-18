@@ -2066,7 +2066,8 @@ Box Helpers
 
 .panel {
   margin-bottom: 1rem;
-  border-bottom: 1px solid #f2f2f5; }
+  border-bottom: 1px solid #f2f2f5;
+  text-align: left; }
   .panel__heading, .panel__body, .panel__footer {
     position: relative;
     padding: 1rem;
@@ -2139,7 +2140,8 @@ Box Helpers
   .button:hover, .button:active, .button:focus, .button.is-pressed {
     background: #e9591b;
     border: 1px solid #c84a13;
-    color: #ffffff; }
+    color: #ffffff;
+    text-decoration: none; }
   .button:active, .button.is-pressed {
     box-shadow: inset 2px 3px 6px rgba(65, 65, 70, 0.2); }
   .button.is-disabled, .button[disabled] {
@@ -2211,7 +2213,8 @@ Box Helpers
       height: 2.16667rem; }
   .button--full {
     display: block;
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
 
 .button-group {
   display: inline-block;
