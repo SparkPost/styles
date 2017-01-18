@@ -2066,7 +2066,8 @@ Box Helpers
 
 .panel {
   margin-bottom: 1rem;
-  border-bottom: 1px solid #f2f2f5; }
+  border-bottom: 1px solid #f2f2f5;
+  text-align: left; }
   .panel__heading, .panel__body, .panel__footer {
     position: relative;
     padding: 1rem;
@@ -2129,7 +2130,7 @@ Box Helpers
   outline: none;
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 0.83333rem;
+  font-size: 0.66667rem;
   font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-weight: 500;
   letter-spacing: 0.04em;
