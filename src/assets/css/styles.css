@@ -2066,8 +2066,7 @@ Box Helpers
 
 .panel {
   margin-bottom: 1rem;
-  border-bottom: 1px solid #f2f2f5;
-  text-align: left; }
+  border-bottom: 1px solid #f2f2f5; }
   .panel__heading, .panel__body, .panel__footer {
     position: relative;
     padding: 1rem;
