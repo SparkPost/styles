@@ -67,11 +67,11 @@ $grayscale-map: (
  */
 
 $breakpoints: (
-  sm: 30em,
-  md: 48em,
-  lg: 64em,
-  xl: 80em,
-  xxl: 98em,
+  sm: 450px, // 30em,
+  md: 720px, // 48em,
+  lg: 960px, // 64em,
+  xl: 1200px, // 80em,
+  xxl: 1470px //98em,
 );
 
 /*
