@@ -127,20 +127,20 @@ $box-map: (
   Responsive Helpers
 */
 
-.hide--l {
-  @media screen and (max-width: break(lg)) {
+.hide--lg {
+  @media screen and (min-width: break(lg)) {
     display: none;
   }
 }
 
-.hide--m {
-  @media screen and (max-width: break(md)) {
+.hide--md {
+  @media screen and (min-width: break(md)) {
     display: none;
   }
 }
 
-.hide--s {
-  @media screen and (max-width: break(sm)) {
+.hide--sm {
+  @media screen and (min-width: break(sm)) {
     display: none;
   }
 }

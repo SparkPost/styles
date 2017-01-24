@@ -1950,16 +1950,16 @@ Box Helpers
 /*
   Responsive Helpers
 */
-@media screen and (max-width: 960px) {
-  .hide--l {
+@media screen and (min-width: 960px) {
+  .hide--lg {
     display: none; } }
 
-@media screen and (max-width: 720px) {
-  .hide--m {
+@media screen and (min-width: 720px) {
+  .hide--md {
     display: none; } }
 
-@media screen and (max-width: 450px) {
-  .hide--s {
+@media screen and (min-width: 450px) {
+  .hide--sm {
     display: none; } }
 
 /* Display Helpers */
