@@ -2426,8 +2426,8 @@ Box Helpers
       border-top: 1px solid #ececf1; }
     .table__body > .table__row:nth-child(2n + 1) {
       background: #f8f8f9; }
-      .table--transparent .table__body > .table__row:nth-child(2n + 1) {
-        background: transparent; }
+    .table--transparent .table__body > .table__row {
+      background: transparent; }
 
 .popover {
   position: absolute;

@@ -24,22 +24,10 @@
 
     .table__body > &:nth-child(2n + 1) {
       background: lighten(grayscale(9), 2);
-
-      .table--transparent & {
-        background: transparent;
-      }
     }
 
-    &.is-active {
-
+    .table--transparent .table__body > & {
+      background: transparent;
     }
-  }
-
-  &__cell {
-
-  }
-
-  &__rowDetail {
-
   }
 }
