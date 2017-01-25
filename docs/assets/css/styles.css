@@ -2258,11 +2258,24 @@ Box Helpers
 
 .input__group {
   position: relative;
+  display: table;
   width: 100%; }
 
+.input__buttonWrapper {
+  display: table-cell;
+  width: 1px;
+  border-collapse: separate;
+  vertical-align: top; }
+  .input__buttonWrapper .button {
+    position: relative;
+    margin-left: -1px; }
+    .input__buttonWrapper .button:hover {
+      z-index: 1; }
+
 .input__text, .input__textarea, .input__select {
+  position: relative;
   box-sizing: border-box;
-  display: inline-block;
+  display: block;
   width: 100%;
   outline: none;
   border: 1px solid #d2d2d7;
@@ -2284,9 +2297,11 @@ Box Helpers
     color: #828287;
     font-weight: 400; }
   .input__text:hover, .input__textarea:hover, .input__select:hover {
-    border: 1px solid #aaaaaf; }
+    border: 1px solid #aaaaaf;
+    z-index: 1; }
   .input__text:focus, .input__textarea:focus, .input__select:focus {
-    border: 1px solid #37aadc; }
+    border: 1px solid #37aadc;
+    z-index: 1; }
     .input__text:focus ~ .fa, .input__textarea:focus ~ .fa, .input__select:focus ~ .fa {
       color: #37aadc; }
   .is-disabled.input__text, .is-disabled.input__textarea, .is-disabled.input__select, [disabled].input__text, [disabled].input__textarea, [disabled].input__select {
@@ -2328,6 +2343,8 @@ Box Helpers
   line-height: 2rem; }
   .input__group--icon .input__text {
     padding-left: 2rem; }
+  .input__group--button .input__text {
+    display: block; }
   .input__text ~ .fa {
     top: 49%;
     left: 0.66667rem;

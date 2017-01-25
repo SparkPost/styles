@@ -22,12 +22,29 @@
 
 .input__group {
   position: relative;
+  display: table;
   width: 100%;
 }
 
+.input__buttonWrapper {
+  display: table-cell;
+  width: 1px;
+  border-collapse: separate;
+  vertical-align: top;
+
+  .button {
+    position: relative;
+    margin-left: -1px;
+    &:hover {
+      z-index: 1;
+    }
+  }
+}
+
 %input-base {
+  position: relative;
   box-sizing: border-box;
-  display: inline-block;
+  display: block;
   width: 100%;
 
   outline: none;
@@ -46,11 +63,13 @@
 
   &:hover {
     border: 1px solid grayscale(5);
+    z-index: 1;
   }
 
   &:focus {
     border: 1px solid color(blue);
-
+    z-index: 1;
+    
     & ~ .fa {
       color: color(blue);
     }
@@ -103,6 +122,10 @@
 
   .input__group--icon & {
     padding-left: rem(36);
+  }
+
+  .input__group--button & {
+    display: block;
   }
 
   & ~ .fa {
