@@ -35,8 +35,17 @@
   .button {
     position: relative;
     margin-left: -1px;
+
     &:hover {
       z-index: 1;
+    }
+
+    &.button--muted {
+      border: 1px solid grayscale(7);
+
+      &:hover, &:active, &:focus {
+        border: 1px solid grayscale(5);
+      }
     }
   }
 }
@@ -69,7 +78,7 @@
   &:focus {
     border: 1px solid color(blue);
     z-index: 1;
-    
+
     & ~ .fa {
       color: color(blue);
     }

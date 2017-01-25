@@ -2271,6 +2271,10 @@ Box Helpers
     margin-left: -1px; }
     .input__buttonWrapper .button:hover {
       z-index: 1; }
+    .input__buttonWrapper .button.button--muted {
+      border: 1px solid #d2d2d7; }
+      .input__buttonWrapper .button.button--muted:hover, .input__buttonWrapper .button.button--muted:active, .input__buttonWrapper .button.button--muted:focus {
+        border: 1px solid #aaaaaf; }
 
 .input__text, .input__textarea, .input__select {
   position: relative;
