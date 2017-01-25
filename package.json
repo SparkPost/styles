@@ -1,6 +1,6 @@
 {
   "name": "@sparkpost/styles",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "description": "A package for SparkPost application styles",
   "license": "Apache-2.0",
   "main": "gulpfile.js",
