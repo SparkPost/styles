@@ -16,6 +16,10 @@
     & > *:last-child {
       margin-bottom: 0;
     }
+
+    &--forceBorder {
+      border-top: 1px solid grayscale(9) !important;
+    }
   }
 
   &__body:first-child, &__body:first-of-type, &__footer {

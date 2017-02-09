@@ -4,8 +4,6 @@ html {
 }
 
 body {
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
   font:{
     size: rem(15);
     family: $gotham-narrow;
@@ -30,6 +28,13 @@ a {
   &:hover {
     color: color(blue--dark);
     text-decoration: underline;;
+  }
+}
+
+p {
+  color: grayscale(4);
+  & > strong {
+    color: grayscale(2);
   }
 }
 
@@ -69,11 +74,11 @@ $headers: (h1: 27, h2: 24, h3: 21, h4: 18, h5: 15, h6: 15);
 }
 
 h1 {
-  line-height: rem(calc(18 * 3));
+  line-height: rem(calc(54));
 }
 
 h2, h3 {
-  line-height: rem(calc(18 * 2));
+  line-height: rem(calc(36));
 }
 
 h4, h5, h6 {

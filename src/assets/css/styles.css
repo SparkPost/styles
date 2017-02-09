@@ -1602,6 +1602,11 @@ a {
     color: #2693c3;
     text-decoration: underline; }
 
+p {
+  color: #828287; }
+  p > strong {
+    color: #55555a; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -1631,10 +1636,10 @@ h6 {
   font-size: 0.83333rem; }
 
 h1 {
-  line-height: 0remcalc(18 * 3)/18; }
+  line-height: 0remcalc(54)/18; }
 
 h2, h3 {
-  line-height: 0remcalc(18 * 2)/18; }
+  line-height: 0remcalc(36)/18; }
 
 h4, h5, h6 {
   line-height: 1.5rem; }
@@ -2082,6 +2087,8 @@ Box Helpers
     border-top: 1px solid #f2f2f5; }
     .panel__heading > *:last-child, .panel__body > *:last-child, .panel__footer > *:last-child {
       margin-bottom: 0; }
+    .panel__heading--forceBorder, .panel__body--forceBorder, .panel__footer--forceBorder {
+      border-top: 1px solid #f2f2f5 !important; }
   .panel__body:first-child, .panel__body:first-of-type, .panel__footer {
     border: none; }
   .panel__body.panel__body--lightGray {
@@ -2306,8 +2313,6 @@ Box Helpers
   .input__text:focus, .input__textarea:focus, .input__select:focus {
     border: 1px solid #37aadc;
     z-index: 1; }
-    .input__text:focus ~ .fa, .input__textarea:focus ~ .fa, .input__select:focus ~ .fa {
-      color: #37aadc; }
   .is-disabled.input__text, .is-disabled.input__textarea, .is-disabled.input__select, [disabled].input__text, [disabled].input__textarea, [disabled].input__select {
     background: #f2f2f5;
     border: 1px solid #d2d2d7;
@@ -2322,22 +2327,13 @@ Box Helpers
       color: #bebec3; }
   .has-error > .input__text, .has-error > .input__textarea, .has-error > .input__select {
     border: 1px solid #f00a0a; }
-  .input__text ~ .fa, .input__textarea ~ .fa, .input__select ~ .fa {
-    position: absolute;
-    line-height: 1.5em;
-    font-size: 0.83333rem;
-    color: #aaaaaf;
-    -webkit-transition: 0.15s;
-    transition: 0.15s; }
 
 .input__error {
   display: block;
-  position: absolute;
-  bottom: -0.88889rem;
   color: #f00a0a;
   font-size: 0.72222rem;
   font-weight: 500;
-  line-height: 0.72222rem;
+  line-height: 1.33333rem;
   opacity: 0; }
   .has-error > .input__error {
     opacity: 1; }
@@ -2345,15 +2341,8 @@ Box Helpers
 .input__text {
   padding: 0 0.66667rem;
   line-height: 2rem; }
-  .input__group--icon .input__text {
-    padding-left: 2rem; }
   .input__group--button .input__text {
     display: block; }
-  .input__text ~ .fa {
-    top: 49%;
-    left: 0.66667rem;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%); }
   .input__text--s {
     padding: 0 0.5rem;
     font-size: 13px;
@@ -2368,30 +2357,13 @@ Box Helpers
 .input__textarea {
   max-width: 100%;
   padding: 0.66667rem; }
-  .input__textarea ~ .fa {
-    top: 0.66667rem;
-    left: 0.66667rem;
-    -webkit-transform: none;
-            transform: none; }
-  .input__group--icon .input__textarea {
-    padding-left: 2rem; }
   .input__textarea--s {
     padding: 0.33333rem;
     font-size: 0.72222rem; }
-    .input__group--icon .input__textarea--s {
-      padding-left: 1.33333rem; }
-    .input__textarea--s ~ .fa {
-      top: 0.33333rem;
-      left: 0.33333rem; }
   .input__textarea--m {
     padding: 0.66667rem; }
   .input__textarea--l {
     padding: 1rem; }
-    .input__group--icon .input__textarea--l {
-      padding-left: 2.33333rem; }
-    .input__textarea--l ~ .fa {
-      top: 1rem;
-      left: 1rem; }
 
 .input__select {
   box-sizing: border-box;
@@ -2402,13 +2374,6 @@ Box Helpers
   padding: 0.66667rem 3rem 0.66667rem 0.66667rem;
   border-radius: 0;
   background: transparent; }
-  .input__group--icon .input__select {
-    padding-left: 2rem; }
-  .input__select ~ .fa {
-    top: 49%;
-    left: 0.66667rem;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%); }
   .input__selectArrow {
     display: block;
     content: "";

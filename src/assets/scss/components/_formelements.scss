@@ -78,10 +78,6 @@
   &:focus {
     border: 1px solid color(blue);
     z-index: 1;
-
-    & ~ .fa {
-      color: color(blue);
-    }
   }
 
   &.is-disabled, &[disabled] {
@@ -96,25 +92,15 @@
   .has-error > & {
     border: 1px solid color(alert);
   }
-
-  & ~ .fa {
-    position: absolute;
-    line-height: 1.5em;
-    font-size: rem(15);
-    color: grayscale(5);
-    transition: 0.15s;
-  }
 }
 
 .input__error {
   display: block;
-  position: absolute;
-  bottom: rem(-16);
 
   color: color(alert);
   font-size: rem(13);
   font-weight: 500;
-  line-height: rem(13);
+  line-height: rem(24);
 
   opacity: 0;
 
@@ -129,18 +115,8 @@
   padding: 0 rem(12);
   line-height: rem(36);
 
-  .input__group--icon & {
-    padding-left: rem(36);
-  }
-
   .input__group--button & {
     display: block;
-  }
-
-  & ~ .fa {
-    top: 49%;
-    left: rem(12);
-    transform: translate(0, -50%);
   }
 
   &--s {
@@ -166,28 +142,9 @@
   max-width: 100%;
   padding: rem(12);
 
-  & ~ .fa {
-    top: rem(12);
-    left: rem(12);
-    transform: none;
-  }
-
-  .input__group--icon & {
-    padding-left: rem(36);
-  }
-
   &--s {
     padding: rem(6);
     font-size: rem(13);
-
-    .input__group--icon & {
-      padding-left: rem(24);
-    }
-
-    & ~ .fa {
-      top: rem(6);
-      left: rem(6);
-    }
   }
 
   &--m {
@@ -196,15 +153,6 @@
 
   &--l {
     padding: rem(18);
-
-    .input__group--icon & {
-      padding-left: rem(42);
-    }
-
-    & ~ .fa {
-      top: rem(18);
-      left: rem(18);
-    }
   }
 }
 
@@ -218,16 +166,6 @@
 
   border-radius: 0;
   background: transparent;
-
-  .input__group--icon & {
-    padding-left: rem(36);
-  }
-
-  & ~ .fa {
-    top: 49%;
-    left: rem(12);
-    transform: translate(0, -50%);
-  }
 
   &Arrow {
     display: block;
