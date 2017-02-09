@@ -2576,3 +2576,28 @@ Box Helpers
       background: #9bcd5a; }
     .progressBar--red .progressBar__completed {
       background: #f00a0a; }
+
+.logo {
+  display: inline-block; }
+  .logo__base {
+    fill: #55555a; }
+  .logo__flame {
+    fill: #fa6423; }
+  .logo.logo--muted .logo__base, .logo.logo--muted .logo__flame {
+    fill: #55555a; }
+  .logo.logo--white .logo__base, .logo.logo--white .logo__flame {
+    fill: #ffffff; }
+  .logo__wrapper {
+    position: relative; }
+    .logo__wrapper a:hover {
+      text-decoration: none;
+      opacity: 0.7; }
+  .logo__divider {
+    display: inline-block;
+    position: relative;
+    height: 68%;
+    width: 1px;
+    margin: 0 0.33333rem;
+    background: #d2d2d7; }
+  .logo__property {
+    fill: #fa6423; }

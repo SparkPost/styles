@@ -1,0 +1,44 @@
+.logo {
+  display: inline-block;
+
+  &__base {
+    fill: grayscale(2);
+  }
+  &__flame {
+    fill: color(orange);
+  }
+
+  &.logo--muted {
+    .logo__base, .logo__flame {
+      fill: grayscale(2);
+    }
+  }
+
+  &.logo--white {
+    .logo__base, .logo__flame {
+      fill: grayscale(white);
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    a:hover {
+      text-decoration: none;
+      opacity: 0.7;
+    }
+  }
+
+  &__divider {
+    display: inline-block;
+    position: relative;
+    height: 68%;
+    width: 1px;
+    margin: 0 rem(6);
+    background: grayscale(7);
+  }
+
+  &__property {
+    fill: color(orange);
+  }
+}
